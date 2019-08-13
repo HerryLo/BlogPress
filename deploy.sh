@@ -17,9 +17,14 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:HerryLo/HerryLo.github.io.git master
+# git push -f git@github.com:HerryLo/HerryLo.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+
+git config --local user.name "Herrylo"
+git config --local user.email "herryloyopai@163.com"
+
+git push -f https://${access_token}@github.com/HerryLo/HerryLo.github.io.git master
 
 cd -
