@@ -1,5 +1,5 @@
 ---
-title: '[译] JavaScript如何工作'
+title: '[译] JavaScript垃圾回收机制'
 tags: 垃圾回收机制 内存泄漏
 ---
 

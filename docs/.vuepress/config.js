@@ -1,6 +1,6 @@
 module.exports = {
-    title: '前端开发',
-    description: '不断提供有趣的技术博文',
+    title: '拾慧开发',
+    description: '不是技术的创造者，只是技术的搬运工',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
       ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
     ],
@@ -9,6 +9,7 @@ module.exports = {
       lineNumbers: false // 代码块显示行号
     },
     themeConfig: {
+      lastUpdated: true,
       sidebarDepth: 5,
       nav:[ // 导航栏配置
         {text: '博文', link: '/front/' },
