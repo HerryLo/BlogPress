@@ -9,7 +9,7 @@ module.exports = {
       lineNumbers: false // 代码块显示行号
     },
     themeConfig: {
-      lastUpdated: true,
+      lastUpdated: '上次更新',
       sidebarDepth: 5,
       nav:[ // 导航栏配置
         {text: '博文', link: '/front/' },

@@ -4,9 +4,10 @@
             v-for="item in list" 
             v-bind:key="item.path">
             <a v-bind:href="item.path">
-                <div>{{item.title}}</div>
+                <div>{{item.frontmatter.title}}</div>
             </a>
-            <div class="detail">{{item.detail}}</div>
+            <div class="detail">{{item.lastUpdated}}</div>
+            <div class="detail">{{item.frontmatter.tags}}</div>
         </div>
     </div>
 </template>
@@ -17,16 +18,25 @@ import { AllDataList } from '../artConfig'
 export default {
     data() {
         return {
-            list: AllDataList
+            list: []
         }
+    },
+    mounted() {
+        let dataList = this.$site.pages
+        // console.log(this.$site)
+        dataList = dataList.filter((item)=> {
+            return !['/', '/front/'].includes(item.path)
+        })
+        console.log(dataList)
+        this.list = dataList
     }
 }
 </script>
 
 <style lang="stylus">
     .itemCard {
-        padding: 40px 0px;
-        padding-left: 10px;
+        padding: 30px 0px;
+        padding-left: 20px;
         border-radius: 10px;
         margin: 10px 0px;
 
