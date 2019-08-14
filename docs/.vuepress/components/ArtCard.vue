@@ -13,8 +13,6 @@
 </template>
 
 <script>
-import { AllDataList } from '../artConfig'
-
 export default {
     data() {
         return {
