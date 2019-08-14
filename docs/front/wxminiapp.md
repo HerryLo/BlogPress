@@ -1,0 +1,147 @@
+---
+title: '小程序个人开发指南'
+tags: 小程序 个人指南
+---
+
+[作者：HerryLo](https://github.com/HerryLo)
+
+[原文永久链接： https://github.com/AttemptWeb/Record...](https://github.com/AttemptWeb/Record/blob/master/other/wxsapp/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AA%E4%BA%BA%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97.md)
+
+小程序依附于各大平台，支付宝、微信、头条、百度等小程序，都是在平台上进行开发，平台提供对应的技术支持和用户环境。对于个人开发者，这个还是蛮方便的，它本身带有流量属性，易于传播。
+
+## 便捷开发
+
+最近在弄自己的小程序，所以觉得整一篇文章总结一下。如果你已经开发过小程序，同时开发过自己的小程序，这篇文章可以不用看了。如果你想开发自己的个人应用，这篇文章会很适合你。
+
+小程序开发相当的便捷，配合官方文档，[微信小程序文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)、[支付宝小程序文档](https://docs.alipay.com/mini/developer/getting-started)，即可在本地运行起来，如果只是单纯的展示，那只需要开发完之后上传，等待审核了。只需要一点前端基础，就可开发一个自己的小程序，有想法的同学可以行动起来。
+
+如果在开发中出现问题，也可以在小程序社区求助，[微信小程序社区](https://developers.weixin.qq.com/community/develop/question)。
+
+不是在给官方推广。如果你希望开发属于自己的应用，小程序是一个可以快速入手的方案，便捷开发，快速发布，自带传播功能。**下面我选中微信小程序讲解**。
+
+## 微信原生小程序开发
+
+[微信小程序文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)
+
+```javascript
+<!-- 项目目录结构 -->
+
+|—— component               组件目录
+|—— pages                   page页面目录
+|   ......more dir           
+|   |—— index               index页面
+|   |  |—— index.js         index.js- js逻辑文件     
+|   |  |—— index.json       index.json- json配置文件
+|   |  |—— index.wxml       index.wxml- wxml页面结构
+|   |  |—— index.wxss       index.wxss- wxss页面样式
+|—— app.js                  全局js文件
+|—— app.json                全局json配置文件
+|—— app.wxss                全局样式文件
+|—— project.config.json     项目配置
+|—— sitemap.json            爬虫文件
+```
+将项目导入到**小程序开发工具**中，就可以开始开发了。添加页面，直接在pages目录添加新的文件目录。具体细节参考[微信小程序文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)
+
+语法支持：
+* 目前最新版本库已经 支持Es6 / Es7，async/await 和 Promise；
+* 开发工具会将代码转换成Es5 语法，保证各种机型的样式适配；
+* 部分语法类似于vue和react；
+
+组件支持：
+* 提供 template 模板支持, [微信小程序 template模版](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/template.html)；
+* Component自定义组件支持，组件内部存在生命周期, [Component自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html)；
+
+API支持：
+* 可以调用封装过的系统原生方法，比如蓝牙、网络信息、扫码等API方法；
+* 常规的方法如：Storage、Reqeuest、Animation、Canvas等，更多可以查看[微信小程序 API](https://developers.weixin.qq.com/miniprogram/dev/api/ad/wx.createRewardedVideoAd.html)；
+
+除小程序原生开发外，当然也可以使用框架了，我个人觉得 Taro框架不错，支持多端小程序开发。
+
+## Taro开发
+
+[Taro开发文档](https://nervjs.github.io/taro/docs/README.html)，Taro 支持多端开发，包括微信/百度/支付宝/头条小程序、H5、React-Native，目前我只使用开发过微信小程序和支付宝小程序、H5，其他的还没有尝试过。
+
+```javascript
+|—— config                              开发配置文件
+|—— dist                                目标文件目录
+|—— src                                 开发目录
+|   |—— actions                         redux action文件
+|   |—— constants                       常量文件
+|   |—— pages                           page页面目录
+        ......more dir
+|   |   |—— index
+|   |   |   |—— index.scss
+|   |   |   |—— index.txs
+|   |—— reducers                        redux reducers文件
+|   |—— store                           redux store文件
+|   |—— app.scss                        app全局样式
+|   |—— app.tsx                         app全局js
+|   |—— index.html                      html文件
+|—— .editorconfig                       editor配置文件         
+|—— .eslintrc                           eslint配置文件
+|—— global.d.ts                         global配置
+|—— tsconfig.json                       ts配置文件
+|—— package.json
+|—— project.config.json
+|—— readme.md
+```
+
+语法支持：
+* ts 语法支持；
+* React语法规范；
+* 支持使用 CSS 预编译器；
+* Es6/Es7 语法支持，如果需要更新的语法，可以在配置config配置；
+
+组件支持：
+* react组件式开发，不过最后还是会编译成原生小程序；
+
+npm包：
+* 支持使用 npm/yarn 管理；
+* 可以使用 Redux 进行状态管理；
+
+API：
+* 对小程序API、H5 API进行一次封装，更加方便；
+
+**react + ts + npm包**，基本就是前端开发正常节奏。不论你开发的那个小程序，只需要运行对应的命令，同时，将dist目录文件导入到开发工具中，即可看见效果。
+
+## taro和原生小程序
+
+**原生小程序：上手快，对于接触过前端开发的同学，可以马上上手，基本不存在技术壁垒**。面向[微信小程序文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)编程。
+
+**Taro开发：react语法规范，react组件开发，ts语法支持，支持redux。对于react有偏好的同学，强烈推荐。如果你喜欢react，建议使用Taro开发。更加易于团队协作。**
+
+### 小程序开发问题
+
+* 微信小程序 不可以使用cookie
+
+* 微信小程序 非HTTPS的域名不被支持
+
+* 微信小程序 分享API是同步操作，同时回调成功失败被无法监听
+
+* 微信小程序 wx.setStorageSync和wx.getStorageSync的API会频繁报错
+
+* 微信小程序 setData数据的1M限制，通过数据数据拆分可以解决
+
+* 微信小程序 主包的限制2M，导致无法引入过多的外部文件（使用Taro会依赖npm包）
+
+* 微信小程序 微信开发工具占用CPU过高，导致电脑卡顿
+
+当然问题肯定不止这些，微信小程序原生组件、API、官方插件等问题，这里不一一细讲了，对于想做自己自己小程序的同学，这些基本够用。
+
+不过可能会有人问，框架不是还没有讲嘛？其实使用Tora开发小程序，你只是在使用不同的语法，在编写小程序，最后，命令工具都会将文件转换成原生小程序的文件格式。
+
+### 个人应用
+
+不论你使用哪一种方式，开发你的个人应用，最后都会回归到产品本身上。通过技术完成自己心目中的个人应用，将应用提供给用户，这个才是终极目标。（**技术只是手段，产品才是目标**）不过我个人使用得失taro开发，算是尝尝鲜了。
+
+空话就不多说了，我将自己最近的个人小程序放出来吧！希望源码代码可以对大家有参考意义
+
+[github: wxSapp 个人小程序源码](https://github.com/HerryLo/wxSapp)
+
+![](https://raw.githubusercontent.com/HerryLo/wxSapp/master/img/gh_75d5a8e03369_258.jpg)
+
+目前正在整 [github: flutter 个人应用](https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2FHerryLo%2FflutterApp) ，有兴趣可以看看。
+
+ps: 顺便推一下自己的个人公众号：Yopai，有兴趣的可以关注，每周不定期更新
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/jyLzA4jLwXMlhkoibAhjS0WL1rl8ChM65N5iaicv4APia3MkPE5pRakueWeXb3DpnKFbRmd6TnR0O2GV4anWPT6E1Q/640?wx_fmt=jpeg)
