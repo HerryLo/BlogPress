@@ -6,6 +6,9 @@ branch: master
 cache:
   directories:
     - node_modules
+  yarn: true
+install:
+  - yarn
 before_install:
   - export TZ='Asia/Shanghai'  # 设置时区
 script:

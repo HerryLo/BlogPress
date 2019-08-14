@@ -19,9 +19,10 @@ git commit -m 'deploy'
 # git push -f git@github.com:HerryLo/HerryLo.github.io.git master
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+
 git config --local user.name "HerryLo"
 git config --local user.email "herryloyopai@163.com"
 
-git push -f git@github.com:HerryLo/HerryLo.github.io.git master:gh-pages
+git push -f git@github.com:HerryLo/HerryLo.github.io.git master
 
 cd -
