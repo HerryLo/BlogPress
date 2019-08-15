@@ -21,12 +21,18 @@ export default {
     },
     mounted() {
         let dataList = this.$site.pages
-        // console.log(this.$site)
+        // 过滤
         dataList = dataList.filter((item)=> {
             return !['/', '/front/'].includes(item.path)
         })
-        console.log(dataList)
+        // 排序
+        dataList.sort((a,b)=> {
+            let ADate = new Date(a.frontmatter.data).getTime()
+            let BDate = new Date(b.frontmatter.data).getTime()
+            return BDate - ADate 
+        })
         this.list = dataList
+        console.log(this.list)
     }
 }
 </script>

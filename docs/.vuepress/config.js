@@ -25,14 +25,14 @@ module.exports = {
       sidebar: {
         '/front/': [
             '',     /* /front/ */
-            'react3',
-            'react2',
-            'react1',
-            'tcpudp',
-            'wxminiapp',
-            'closureErrorUser',  /* /front/closureErrorUser */
-            'reacthook',
-            'gc',
+            '2019-08-10',
+            '2019-08-02',
+            '2019-07-22',
+            '2019-05-13',
+            '2019-05-12',
+            '2019-04-25',
+            '2019-04-01',  /* /front/closureErrorUser */
+            '2018-12-27',
         ],
       }
     }
