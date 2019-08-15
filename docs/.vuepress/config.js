@@ -12,7 +12,8 @@ module.exports = {
       lastUpdated: '上次更新',
       sidebarDepth: 5,
       nav:[ // 导航栏配置
-        {text: '博文', link: '/front/' },
+        {text: '#博文', link: '/front/' },
+        {text: '#react', link: '/react/' },
         {
           text: 'GitHub',
           items: [
@@ -34,6 +35,13 @@ module.exports = {
             '2019-04-01',  /* /front/closureErrorUser */
             '2018-12-27',
         ],
+        '/react/': [
+          '',     /* /front/ */
+          '2019-08-10',
+          '2019-05-13',
+          '2019-05-12',
+          '2019-04-25',
+      ],
       }
     }
   };
