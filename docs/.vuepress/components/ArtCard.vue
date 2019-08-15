@@ -16,14 +16,17 @@
 export default {
     data() {
         return {
-            list: []
+            list: [],
+            path: this.type
         }
     },
+    props: ['type'],
     mounted() {
         let dataList = this.$site.pages
+        let list = [];
         // 过滤
         dataList = dataList.filter((item)=> {
-            return !['/', '/front/'].includes(item.path)
+            return !['/', '/front/', '/react/'].includes(item.path)
         })
         // 排序
         dataList.sort((a,b)=> {
@@ -31,8 +34,12 @@ export default {
             let BDate = new Date(b.frontmatter.data).getTime()
             return BDate - ADate 
         })
-        this.list = dataList
-        console.log(this.list)
+        dataList.forEach((item)=> {
+            if(item.path.indexOf(this.path) > -1){
+                list.push(item)
+            }
+        })
+        this.list = list
     }
 }
 </script>
@@ -53,9 +60,9 @@ export default {
     }
 
     .itemCard:hover {
-        background: rgba(215, 232, 224, 0.3);
+        background: rgba(215, 232, 224, 0.5)!important;
     }
     .itemCard:nth-child(2n){
-        background: rgba(215, 232, 224, 0.3);
+        background: rgba(215, 232, 224, 0.2);
     }
 </style>

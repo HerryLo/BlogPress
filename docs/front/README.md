@@ -1,4 +1,4 @@
-# 所有文章
+# #所有文章
 
 <!-- 文章卡片 -->
-<ArtCard />
+<ArtCard type='front'/>
