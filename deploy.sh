@@ -10,9 +10,12 @@ function ergodic(){
     do
         if [ -d $1"/"$file ] 
         then
-            sed -i '' '/<html/a\
-    <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body a {display:none!important;}</style>' index.html
-            ergodic $1"/"$file
+            if [-f $1"/"$file"/index.html"]
+            then
+                sed -i '' '/<html/a\
+        <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body a {display:none!important;}</style>' index.html
+                ergodic $1"/"$file
+            fi
          fi
     done
 }
