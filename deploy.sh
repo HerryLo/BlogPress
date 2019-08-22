@@ -5,6 +5,19 @@ set -e
 basepath=$(cd `dirname $0`; pwd)
 sourcePath=$basepath'/docs/.vuepress/dist/'
 
+function ergodic(){
+    for file in ` ls $1 `
+    do
+        if [ -d $1"/"$file ]
+        then
+            sed -i '' '/<html/a\
+            <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body a {display:none!important;}</style>' index.html
+            echo $file
+            ergodic $1"/"$file
+        fi
+    done
+}
+
 echo "开始构建项目"
 # 生成静态文件
 npm run build
@@ -17,11 +30,10 @@ git add -A
 git commit -m 'deploy'
 
 echo "添加代码"
-cd $sourcePath
-sed -i '' '/<html/a\
-<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body a {display:none!important;}</style>' index.html
+ergodic $sourcePath
 echo "添加代码执行完毕"
 
+cd $sourcePath
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:HerryLo/HerryLo.github.io.git master
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
