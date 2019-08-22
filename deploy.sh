@@ -16,6 +16,11 @@ git init
 git add -A
 git commit -m 'deploy'
 
+echo "添加代码"
+cd $sourcePath
+sed -i '' '/<html/a\
+<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body a {display:none!important;}</style>' index.html
+echo "添加代码执行完毕"
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:HerryLo/HerryLo.github.io.git master
