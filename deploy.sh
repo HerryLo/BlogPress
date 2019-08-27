@@ -12,11 +12,11 @@ echo "构建完毕"
 
 cd $sourcePath
 
-# echo "添加友盟代码"
-# # ergodic $sourcePath
-# sed -i '' '/<html/a\ 
-# <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body a {display:none!important;}</style>' index.html
-# echo "添加代码执行完毕"
+echo "添加友盟代码"
+# ergodic $sourcePath
+sed -i '' '/<html/a\ 
+<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>' index.html
+echo "添加代码执行完毕"
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
@@ -32,8 +32,8 @@ git commit -m 'deploy'
 git config user.name "HerryLo"
 git config user.email "herryloyopai@163.com"
 
-echo "-----------------开始上传-----------------"
+# echo "-----------------开始上传-----------------"
 git push -f git@github.com:HerryLo/HerryLo.github.io.git master
 
-echo "-----------------上传完毕-----------------"
+# echo "-----------------上传完毕-----------------"
 cd -
