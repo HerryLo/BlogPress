@@ -18,6 +18,9 @@ module.exports = {
           text: 'GitHub',
           items: [
             { text: '博客', link: 'https://github.com/AttemptWeb/Record' },
+            { text: 'GitHub', link: 'https://github.com/HerryLo' },
+            { text: '掘金', link: 'https://juejin.im/user/5b3ec4e9e51d4519162e2779' },
+            { text: '知乎', link: 'https://www.zhihu.com/people/liu-heng-88-71/activities' },
             { text: '小程序', link: 'https://github.com/HerryLo/wxSapp' },
             { text: 'koa2', link: 'https://github.com/AttemptWeb/koa-mongoDB' }
           ]

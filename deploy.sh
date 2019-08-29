@@ -32,8 +32,6 @@ git commit -m 'deploy'
 git config user.name "HerryLo"
 git config user.email "herryloyopai@163.com"
 
-# echo "-----------------开始上传-----------------"
 git push -f git@github.com:HerryLo/HerryLo.github.io.git master
 
-# echo "-----------------上传完毕-----------------"
 cd -
