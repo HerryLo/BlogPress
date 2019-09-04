@@ -14,6 +14,7 @@ module.exports = {
       nav:[ // 导航栏配置
         {text: '#博文', link: '/front/' },
         {text: '#react', link: '/react/' },
+        {text: '#学习之路', link: '/breach/' },
         {
           text: 'GitHub',
           items: [
