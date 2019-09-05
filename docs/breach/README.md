@@ -1,4 +1,5 @@
 ## 个人成长时间线
+<div class="time-line">
 
 [我的网站](https://www.didiheng.com/)，欢迎交流，邮箱: herryloyopai@gmail.com
 
@@ -58,9 +59,10 @@
 * **2016年3月 走上前端之路**
 > **走上前端之路**，学习html、css、js，《JavaScript DOM编程艺术》、《Head First HTML5 Programming》
 
+</div>
 <style style="sass">
-    .theme-default-content>blockquote, 
-    .theme-default-content>p {
+    .theme-default-content>.time-line>blockquote, 
+    .theme-default-content>.time-line>p {
         margin-left: 30px;
     };
 </style>
