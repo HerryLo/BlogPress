@@ -1,0 +1,70 @@
+{
+  "_from": "@vuepress/theme-default@1.0.3",
+  "_id": "@vuepress/theme-default@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-rS12CdMQwpSD7RI9XCM1gko13uPKhbVlbaxb7bd6ozjOQm4Iy1qAAyoZredRl1Sx29QvvcXZxLMGzAqx98GMCw==",
+  "_location": "/@vuepress/theme-default",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@vuepress/theme-default@1.0.3",
+    "name": "@vuepress/theme-default",
+    "escapedName": "@vuepress%2ftheme-default",
+    "scope": "@vuepress",
+    "rawSpec": "1.0.3",
+    "saveSpec": null,
+    "fetchSpec": "1.0.3"
+  },
+  "_requiredBy": [
+    "/vuepress"
+  ],
+  "_resolved": "https://registry.npmjs.org/@vuepress/theme-default/-/theme-default-1.0.3.tgz",
+  "_shasum": "a92025d9be1705ef7b95c53365a8ba3d917b6023",
+  "_spec": "@vuepress/theme-default@1.0.3",
+  "_where": "/Users/herrylo/learn/BlogPress/node_modules/vuepress",
+  "author": {
+    "name": "Evan You"
+  },
+  "bugs": {
+    "url": "https://github.com/vuejs/vuepress/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@vuepress/plugin-active-header-links": "^1.0.3",
+    "@vuepress/plugin-nprogress": "^1.0.3",
+    "@vuepress/plugin-search": "^1.0.3",
+    "docsearch.js": "^2.5.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vuepress-plugin-container": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Default theme for VuePress",
+  "gitHead": "6827bd115463a4609ef71f3fabfd0507d2029194",
+  "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/theme-default#readme",
+  "keywords": [
+    "documentation",
+    "vue",
+    "vuepress",
+    "generator"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "ULIVZ",
+      "email": "chl814@foxmail.com"
+    }
+  ],
+  "name": "@vuepress/theme-default",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/vuepress.git",
+    "directory": "packages/@vuepress/theme-default"
+  },
+  "version": "1.0.3"
+}
