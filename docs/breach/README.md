@@ -1,9 +1,7 @@
 ## 个人成长时间线
 <div class="time-line">
 
-[我的网站](https://www.didiheng.com/)，欢迎交流，邮箱: herryloyopai@gmail.com
-
-[GitHub: ✨✨Record Blog Articles](https://github.com/AttemptWeb/Record)，欢迎来踩😯😯！！想加入的私信我。
+[**我的网站**](https://www.didiheng.com/)，欢迎交流，邮箱: herryloyopai@gmail.com，[**掘金**：😄😄HerryLo](https://juejin.im/user/5b3ec4e9e51d4519162e2779), [**GitHub**: ✨✨Record Blog Articles](https://github.com/AttemptWeb/Record)，欢迎来踩😯😯！！想加入的私信我。
 
 * **2019年8月**
 > 学习[计算机网络](https://www.bilibili.com/video/av23124815)，输出文章[TCP和UDP协议](https://github.com/AttemptWeb/Record/issues)；同时使用[vuepress](https://vuepress.vuejs.org/)构建[我的网站](https://www.didiheng.com/)

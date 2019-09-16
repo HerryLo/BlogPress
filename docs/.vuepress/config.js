@@ -50,6 +50,14 @@ module.exports = {
           '2019-04-25',
       ],
       }
-    }
+    },
+    plugins: [
+      [
+        '@vuepress/register-components',
+        {
+          componentsDir: './components'
+        }
+      ]
+    ]
   };
   
