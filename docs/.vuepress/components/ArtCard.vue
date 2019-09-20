@@ -26,7 +26,7 @@ export default {
         let list = [];
         // 过滤
         dataList = dataList.filter((item)=> {
-            return !['/', '/front/', '/react/'].includes(item.path)
+            return !['/', '/front/', '/react/', '/essay/'].includes(item.path)
         })
         // 排序
         dataList.sort((a,b)=> {
