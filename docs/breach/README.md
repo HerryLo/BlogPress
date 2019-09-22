@@ -6,7 +6,7 @@
 [**GitHub**: ✨✨Record Blog Articles](https://github.com/AttemptWeb/Record)，[**掘金**：😄😄HerryLo](https://juejin.im/user/5b3ec4e9e51d4519162e2779)，欢迎来踩😯😯！！
 
 * **2019年9月**
-> 学习[算法与数据结构](https://www.bilibili.com/video/av2975983/?p=5&t=687)，同时自己尽量的看更多的书，不限制类型。加速学习Promise原理、redux原理、webapck原理。
+> 学习[算法与数据结构](https://www.bilibili.com/video/av2975983/?p=5&t=687)，同时自己尽量的看更多的书，不限制类型。学习Promise原理、redux原理、webapck原理。
 
 * **2019年8月**
 > 学习[计算机网络](https://www.bilibili.com/video/av23124815)，输出文章[TCP和UDP协议](https://github.com/AttemptWeb/Record/issues)；同时使用[vuepress](https://vuepress.vuejs.org/)构建[我的网站](https://www.didiheng.com/)
