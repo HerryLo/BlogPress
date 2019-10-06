@@ -34,8 +34,16 @@ export default {
             let BDate = new Date(b.frontmatter.data).getTime()
             return BDate - ADate 
         })
+        // 判断是否为数组
+        try{
+            this.path = (JSON.parse(this.path) instanceof Array) ? JSON.parse(this.path) : this.path
+        }catch(e){
+            console.log(e);
+        }
+
         dataList.forEach((item)=> {
-            if(item.path.indexOf(this.path) > -1){
+            if( (item.frontmatter.tags && this.path == 'all') ||
+                (item.path.indexOf(this.path) > -1)) {
                 list.push(item)
             }
         })
