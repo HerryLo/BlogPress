@@ -2,6 +2,7 @@
 
 # 确保脚本抛出遇到的错误
 set -e
+# fd0073ed132eb69233860692ecb5cae8cafa61aa
 basepath=$(cd `dirname $0`; pwd)
 sourcePath=$basepath'/docs/.vuepress/dist/'
 
