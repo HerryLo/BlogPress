@@ -27,9 +27,9 @@ echo "开始构建项目"
 npm run build
 echo "构建完毕"
 
-cd $sourcePath
-
 fileForEach $sourcePath
+
+cd $sourcePath
 
 echo "添加友盟代码"
 # ergodic $sourcePath
