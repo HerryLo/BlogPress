@@ -11,5 +11,6 @@ install:
   - yarn
 before_install:
   - export TZ='Asia/Shanghai'  # 设置时区
+  - chmod +x deploy.sh
 script:
-  - ./deploy.sh
+  - bash ./deploy.sh
