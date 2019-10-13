@@ -34,7 +34,7 @@ cd $sourcePath
 echo "添加友盟代码"
 # ergodic $sourcePath
 sed -i '' '/<html/a\ 
-<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>' index.html
+<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>' $sourcePath'/index.html'
 echo "添加代码执行完毕"
 
 # 如果是发布到自定义域名
