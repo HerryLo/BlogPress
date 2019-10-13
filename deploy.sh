@@ -15,8 +15,15 @@ function fileForEach() {
             if [ -n "`find $1$file -maxdepth 1 -name '*.html'`" ];
             then
                 # echo $1$file"/"*.html
-                sed -i '' '/<html/a\
-<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>' $1$file"/"*.html
+                if [[ "$OSTYPE" == "darwin"* ]]; then
+                    sed -i '' -e $1$file"/"*.html '/<html/a\
+<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>'
+                else
+                    sed -i -e $1$file"/"*.html '/<html/a\
+<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>'
+                fi
+#                 sed -i '' '/<html/a\
+# <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>' $1$file"/"*.html
             fi
         fi
     done
