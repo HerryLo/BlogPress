@@ -50,6 +50,8 @@ git commit -m 'deploy'
 git config user.name "HerryLo"
 git config user.email "herryloyopai@163.com"
 
-git push -f git@github.com:HerryLo/HerryLo.github.io.git master
+# git push -f git@github.com:HerryLo/HerryLo.github.io.git master
+
+git push -f https://${access_token}@github.com/HerryLo/HerryLo.github.io.git master
 
 cd -
