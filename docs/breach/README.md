@@ -14,7 +14,7 @@
 * **2019年7月**
 > [Taro 小程序开发](https://github.com/HerryLo/wxSapp)和[Flutter App 尝试](https://github.com/HerryLo/flutterApp)；输出文章[小程序个人开发指南 ](https://github.com/AttemptWeb/Record/issues/4)
 
-![](https://raw.githubusercontent.com/HerryLo/wxSapp/master/img/gh_75d5a8e03369_258.jpg)
+![](https://didiheng.com/Img/gh_75d5a8e03369_258.jpg)
 
 * **2019年5月**
 > 学习react源码，输出[react源码解析系列文章](https://github.com/AttemptWeb/Record/issues)，**目前还在进行中......**。
