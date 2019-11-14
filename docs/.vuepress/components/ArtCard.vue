@@ -58,6 +58,7 @@ export default {
         padding-left: 20px;
         border-radius: 10px;
         margin: 10px 0px;
+        box-shadow: 0px 0px 5px 1px #eee;
 
         .detail {
             color: #aaa;
