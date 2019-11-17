@@ -5,4 +5,4 @@
 </a>
 
 <!-- 文章卡片 -->
-<ArtCard type='all'/>
+<art-card type='all'></art-card>

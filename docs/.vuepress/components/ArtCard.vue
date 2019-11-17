@@ -14,6 +14,7 @@
 
 <script>
 export default {
+    name: 'ArtCard',
     data() {
         return {
             list: [],
@@ -24,10 +25,12 @@ export default {
     mounted() {
         let dataList = this.$site.pages
         let list = [];
+        console.log(dataList, this.path);
         // 过滤
         dataList = dataList.filter((item)=> {
             return !['/', '/front/', '/react/', '/essay/'].includes(item.path)
         })
+        console.log(dataList)
         // 排序
         dataList.sort((a,b)=> {
             let ADate = new Date(a.frontmatter.data).getTime()
