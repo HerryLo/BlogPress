@@ -57,7 +57,7 @@ export default {
         padding: 30px 0px;
         padding-left: 20px;
         border-radius: 10px;
-        margin: 10px 0px;
+        margin: 20px 0px;
         box-shadow: 0px 0px 5px 1px #eee;
 
         .detail {
