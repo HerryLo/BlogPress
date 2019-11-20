@@ -1,14 +1,15 @@
 <template>
     <div class="ArtCard">
-        <div class="itemCard"
-            v-for="item in list" 
+        <a class="itemCard"
+            v-for="item in list"
+            v-bind:href="item.path" 
             v-bind:key="item.path">
-            <a v-bind:href="item.path">
+            <div class="title" v-bind:href="item.path">
                 <div>{{item.frontmatter.title}}</div>
-            </a>
+            </div>
             <div class="detail">{{item.lastUpdated}}</div>
-            <div class="detail">{{item.frontmatter.tags}}</div>
-        </div>
+            <div class="detail tag">{{item.frontmatter.tags}}</div>
+        </a>
     </div>
 </template>
 
@@ -62,6 +63,13 @@ export default {
         border-radius: 10px;
         margin: 20px 0px;
         box-shadow: 0px 0px 5px 1px #eee;
+        display block;
+
+        .title {
+            font-weight 700
+            color #000
+            font-size 18px
+        } 
 
         .detail {
             color: #aaa;
@@ -69,12 +77,16 @@ export default {
             margin-top: 10px;
             font-size: 14px;
         }
+
+        .tag {
+            color #ec4646
+        }
     }
 
     .itemCard:hover {
-        background: rgba(215, 232, 224, 0.5)!important;
+        background: rgba(215, 232, 224, 1)!important;
     }
-    .itemCard:nth-child(2n){
-        background: rgba(215, 232, 224, 0.2);
+    .itemCard:nth-child(2n+1){
+        background: rgba(215, 232, 224, 0.5);
     }
 </style>
