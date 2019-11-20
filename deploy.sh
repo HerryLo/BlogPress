@@ -15,7 +15,7 @@ function fileForEach() {
             if [ -n "`find $1$file -maxdepth 1 -name '*.html'`" ];
             then
                 # echo $1$file"/"*.html
-                sed -i '' '/<html/a\
+                sed -i '' '/<\/body/a\
 <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>' $1$file"/"*.html
             fi
         fi
@@ -33,7 +33,7 @@ cd $sourcePath
 
 echo "添加友盟代码"
 # ergodic $sourcePath
-sed -i '' '/<html/a\ 
+sed -i '' '/<\/body/a\ 
 <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>' $sourcePath'/index.html'
 echo "添加代码执行完毕"
 
