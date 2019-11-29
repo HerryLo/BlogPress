@@ -1,0 +1,13 @@
+{
+  "name": "google-developers-copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "deploy": "bash ./deploy.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
