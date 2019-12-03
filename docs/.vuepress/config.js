@@ -37,6 +37,7 @@ module.exports = {
       sidebar: {
         '/front/': [
             '',
+            '2019-11-30',
             '../react/2019-11-24',
             '../essay/2019-11-23',
             '../essay/2019-11-17',     /* /front/ */
