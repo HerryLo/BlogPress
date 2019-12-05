@@ -7,7 +7,7 @@
             <div class="title" v-bind:href="item.path">
                 <div>{{item.frontmatter.title}}</div>
             </div>
-            <div class="detail">{{item.lastUpdated}}</div>
+            <div class="detail">上次更新：{{item.lastUpdated}}</div>
             <div class="detail tag">{{item.frontmatter.tags}}</div>
         </a>
     </div>
@@ -26,12 +26,12 @@ export default {
     mounted() {
         let dataList = this.$site.pages
         let list = [];
-        console.log(dataList, this.path);
+        // console.log(dataList, this.path);
         // 过滤
         dataList = dataList.filter((item)=> {
             return !['/', '/front/', '/react/', '/essay/'].includes(item.path)
         })
-        console.log(dataList)
+        // console.log(dataList)
         // 排序
         dataList.sort((a,b)=> {
             let ADate = new Date(a.frontmatter.data).getTime()
@@ -42,7 +42,7 @@ export default {
         try{
             this.path = (JSON.parse(this.path) instanceof Array) ? JSON.parse(this.path) : this.path
         }catch(e){
-            console.log(e);
+            // console.log(e);
         }
 
         dataList.forEach((item)=> {

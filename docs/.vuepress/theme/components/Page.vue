@@ -58,7 +58,6 @@
     </div>
 
     <slot name="bottom"/>
-
     <Valine></Valine>
   </main>
 </template>
