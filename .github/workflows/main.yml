@@ -32,7 +32,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
           ARGS: "-avz --delete"
-          SOURCE: "./doc/.vuepress/dist/"
+          SOURCE: "./docs/.vuepress/dist/"
           REMOTE_HOST: "47.111.149.160"
           REMOTE_USER: "root"
           TARGET: "/var/www/HerryLo.github.io"
