@@ -20,10 +20,10 @@ jobs:
         with:
           node-version: 10
       # npm install
-      - name: npm install and build
+      - name: npm install and deploy
         run: |
           npm install
-          npm run build
+          npm run deploy
         env:
           CI: true
       # Deploy
