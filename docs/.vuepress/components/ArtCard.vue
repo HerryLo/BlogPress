@@ -7,8 +7,15 @@
             <div class="title" v-bind:href="item.path">
                 <div>{{item.frontmatter.title}}</div>
             </div>
-            <div class="detail">上次更新：{{item.lastUpdated}}</div>
-            <div class="detail tag">{{item.frontmatter.tags}}</div>
+            <div class="detail">创建时间: {{item.frontmatter.createDate}}</div>
+            <div class="detail tags">
+                <div 
+                    class="tag"
+                    v-bind:key="tage"
+                    v-for="tage in item.frontmatter.tagList">
+                    {{tage}}
+                </div>
+            </div>
         </a>
     </div>
 </template>
@@ -24,14 +31,12 @@ export default {
     },
     props: ['type'],
     mounted() {
-        let dataList = this.$site.pages
         let list = [];
-        // console.log(dataList, this.path);
-        // 过滤
+        let dataList = this.$site.pages
+        // 类型过滤
         dataList = dataList.filter((item)=> {
             return !['/', '/front/', '/react/', '/essay/'].includes(item.path)
         })
-        // console.log(dataList)
         // 排序
         dataList.sort((a,b)=> {
             let ADate = new Date(a.frontmatter.data).getTime()
@@ -41,13 +46,14 @@ export default {
         // 判断是否为数组
         try{
             this.path = (JSON.parse(this.path) instanceof Array) ? JSON.parse(this.path) : this.path
-        }catch(e){
-            // console.log(e);
-        }
-
+        }catch(e){}
+        // 符合 this.path的 push
         dataList.forEach((item)=> {
             if( (item.frontmatter.tags && this.path == 'all') ||
                 (item.path.indexOf(this.path) > -1)) {
+                // 创建时间 
+                item.frontmatter.createDate = new Date(item.frontmatter.data).toLocaleString();
+                item.frontmatter.tagList = item.frontmatter.tags.split('，')
                 list.push(item)
             }
         })
@@ -73,13 +79,22 @@ export default {
 
         .detail {
             color: #aaa;
-            padding-left: 20px;
             margin-top: 10px;
             font-size: 14px;
         }
 
-        .tag {
-            color #ec4646
+        .tags {
+            color #ec4646;
+            display: flex;
+            align-items center
+            .tag  {
+                border-radius: 10px;
+                border: 1px solid;
+                padding: 2px 5px;
+                font-weight 900
+                font-size 12px
+                margin-right 5px
+            }
         }
     }
 
