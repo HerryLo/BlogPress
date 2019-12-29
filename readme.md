@@ -1,6 +1,6 @@
 ## BlogPress
 
-> 博客由[vuepress](https://vuepress.vuejs.org/zh/guide/)构建完成，🙏🙏**vuepress**团队
+> 博客由[vuepress cli](https://vuepress.vuejs.org/zh/guide/)构建完成
 
 ## 写法
 在新建的md文件中头部设置如下内容
@@ -13,10 +13,9 @@ tags: 小程序，个人指南
 ---
 <!-- 具体内容按照MarkDown格式编写 -->
 # 小程序开发指南之性能优化
-。。。。具体内容
+// ......具体内容
 ```
 title文章标题；description编译之后html文件描述；data文章创建时间；tags标签，用中文 ，分割。
-
 
 ### 链接
 
