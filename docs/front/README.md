@@ -5,4 +5,4 @@
 </a>
 
 <!-- 文章卡片 -->
-<art-card type='all'></art-card>
+<articlecard-component type='all'></articlecard-component>

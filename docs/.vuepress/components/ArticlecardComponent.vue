@@ -22,7 +22,7 @@
 
 <script>
 export default {
-    name: 'ArtCard',
+    name: 'ArticlecardComponent',
     data() {
         return {
             list: [],

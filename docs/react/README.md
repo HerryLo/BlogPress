@@ -3,4 +3,4 @@
 <img src="/images.jpg" style="border-radius:8px;" />
 </a>
 <!-- 文章卡片 -->
-<art-card type='react'></art-card>
+<articlecard-component type='react'></articlecard-component>

@@ -1,4 +1,4 @@
 # #随笔
 
 <!-- 随笔卡片 -->
-<art-card type='essay'></art-card>
+<articlecard-component type='essay'></articlecard-component>
