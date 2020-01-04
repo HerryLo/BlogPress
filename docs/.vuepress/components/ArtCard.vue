@@ -37,19 +37,16 @@ export default {
         dataList = dataList.filter((item)=> {
             return !['/', '/front/', '/react/', '/essay/'].includes(item.path)
         })
+        console.log(dataList)
         // 排序
         dataList.sort((a,b)=> {
             let ADate = new Date(a.frontmatter.data).getTime()
             let BDate = new Date(b.frontmatter.data).getTime()
             return BDate - ADate 
         })
-        // 判断是否为数组
-        try{
-            this.path = (JSON.parse(this.path) instanceof Array) ? JSON.parse(this.path) : this.path
-        }catch(e){}
-        // 符合 this.path的 push
+        // 判断是否符合this.path
         dataList.forEach((item)=> {
-            if( (item.frontmatter.tags && this.path == 'all') ||
+            if( (item.frontmatter.tags && this.path == 'all' && item.path.indexOf('/essay') < 0) ||
                 (item.path.indexOf(this.path) > -1)) {
                 // 创建时间 
                 item.frontmatter.createDate = new Date(item.frontmatter.data).toLocaleString();
