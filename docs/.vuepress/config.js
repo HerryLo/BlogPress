@@ -1,6 +1,6 @@
 module.exports = {
     title: "Yopai's Blog",
-    description: '拾人牙慧 不是技术的创造者，只是技术的搬运工',
+    description: '不是技术的创造者，只是技术的搬运工',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
       ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
       ['link', { rel: 'manifest', href: '/manifest.json' }],
