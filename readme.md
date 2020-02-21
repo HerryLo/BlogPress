@@ -8,14 +8,17 @@
 ---
 title: '小程序开发指南之性能优化'
 description: HerryLo, 微信公众号： Yopai
-data: 2019-11-30
+date: 2019-11-30
 tags: 小程序，个人指南
 ---
 <!-- 具体内容按照MarkDown格式编写 -->
 # 小程序开发指南之性能优化
 // ......具体内容
 ```
-title文章标题；description编译之后html文件描述；data文章创建时间；tags标签，用中文 ，分割。
+title: 文章标题；
+description: 编译之后html文件描述；
+date: 文章创建时间；
+tags: 标签，用中文，分割。
 
 ### 链接
 

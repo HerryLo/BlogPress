@@ -1,7 +1,7 @@
 ---
 title: '前端面试'
 description: HerryLo, 微信公众号： Yopai
-data: 2019-10-30
+date: 2019-10-30
 ---
 
 ## 前端面试题

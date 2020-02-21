@@ -1,7 +1,7 @@
 ---
-title: '个人成长时间线'
+title: 个人成长时间线
 description: HerryLo, 微信公众号： Yopai
-data: 2019-08-20
+date: 2019-08-20
 ---
 
 ## 个人成长时间线
