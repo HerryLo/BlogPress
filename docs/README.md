@@ -12,4 +12,5 @@ features:
   details: 不断学习，学习扩展深度和广度
 - title: 博客
   details: 通过文章分享好的内容和知识
+footer:  <a target="_blank" href="http://www.beian.miit.gov.cn/">鄂ICP备19018345号-1</a>
 ---

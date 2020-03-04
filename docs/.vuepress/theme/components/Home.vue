@@ -43,6 +43,7 @@
     <div
       class="footer"
       v-if="data.footer"
+      v-html="data.footer"
     >
       {{ data.footer }}
     </div>
@@ -126,7 +127,8 @@ export default {
     p
       color lighten($textColor, 25%)
   .footer
-    padding 2.5rem
+    font-size 0.6rem
+    padding 1.0rem
     border-top 1px solid $borderColor
     text-align center
     color lighten($textColor, 25%)

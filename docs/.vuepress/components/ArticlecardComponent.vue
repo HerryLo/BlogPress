@@ -40,8 +40,8 @@ export default {
         // console.log(dataList)
         // 排序
         dataList.sort((a,b)=> {
-            let ADate = new Date(a.frontmatter.data).getTime()
-            let BDate = new Date(b.frontmatter.data).getTime()
+            let ADate = new Date(a.frontmatter.date).getTime()
+            let BDate = new Date(b.frontmatter.date).getTime()
             return BDate - ADate 
         })
         // 判断是否符合this.path
@@ -49,7 +49,7 @@ export default {
             if( (item.frontmatter.tags && this.path == 'all' && item.path.indexOf('/essay') < 0) ||
                 (item.path.indexOf(this.path) > -1)) {
                 // 创建时间 
-                item.frontmatter.createDate = new Date(item.frontmatter.data).toLocaleString();
+                item.frontmatter.createDate = new Date(item.frontmatter.date).toLocaleString();
                 item.frontmatter.tagList = item.frontmatter.tags.split('，')
                 list.push(item)
             }
