@@ -26,8 +26,7 @@ module.exports = {
           text: '扩展',
           items: [
             {text: '#随笔', link: '/essay/' },
-            {text: '#学习之路', link: '/breach/' },
-            {text: '#GitHub', link: 'https://github.com/HerryLo' }
+            {text: '#成长线', link: '/breach/' },
           ]
         },
         {
