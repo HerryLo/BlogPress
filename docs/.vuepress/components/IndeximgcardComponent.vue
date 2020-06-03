@@ -38,7 +38,9 @@ export default {
         justify-content space-around;
         .img {
             width 360px;
-            border-radius 8px;
+            img {
+                border-radius 8px;
+            }
         }
     }
 </style>
