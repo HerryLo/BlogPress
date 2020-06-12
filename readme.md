@@ -1,7 +1,7 @@
 ## BlogPress
 
 ![](https://img.shields.io/badge/-vuepress-brightgreen)
-![](https://img.shields.io/badge/-vue-brightgreen)
+![](https://img.shields.io/badge/-vue%402.0-brightgreen)
 
 > 博客由[vuepress cli](https://vuepress.vuejs.org/zh/guide/)构建完成
 
