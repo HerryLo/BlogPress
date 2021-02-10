@@ -77,6 +77,7 @@ module.exports = {
             collapsable: false,
             path: "/front/",
             children: [
+              { title: ". 图解Promise", path: "2021-02-05" },
               { title: ". 设计模式-项目中使用订阅发布", path: "2020-12-31" },
               { title: ". JavaScript-ES6中的Iterator迭代器", path: "2020-06-04" },
               { title: ". 数据结构-二叉树的实现和遍历", path: "2020-07-01" },
