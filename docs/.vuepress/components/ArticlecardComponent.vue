@@ -37,7 +37,7 @@ export default {
         dataList = dataList.filter((item)=> {
             return !['/', '/front/', '/react/', '/essay/'].includes(item.path)
         })
-        // console.log(dataList)
+        console.log(dataList)
         // 排序
         dataList.sort((a,b)=> {
             let ADate = new Date(a.frontmatter.date).getTime()
@@ -45,11 +45,13 @@ export default {
             return BDate - ADate 
         })
         // 判断是否符合this.path
-        dataList.forEach((item)=> {
+        console.log(dataList)
+        dataList.forEach((item)=> {console.log()
+            console.log(item.frontmatter.date)
+            // 创建时间
+            item.frontmatter.createDate = item.frontmatter.date;
             if( (item.frontmatter.tags && this.path == 'all' && item.path.indexOf('/essay') < 0) ||
                 (item.path.indexOf(this.path) > -1)) {
-                // 创建时间 
-                item.frontmatter.createDate = new Date(item.frontmatter.date).toLocaleString();
                 item.frontmatter.tagList = item.frontmatter.tags.split('，')
                 list.push(item)
             }

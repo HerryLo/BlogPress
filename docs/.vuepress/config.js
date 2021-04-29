@@ -85,8 +85,8 @@ module.exports = {
               { title: ". 数据结构-栈的应用和实现", path: "2020-03-14" },
               { title: ". 数据结构-循环队列的应用和实现", path: "2020-03-02" },
               { title: ". 数据结构-链表的应用和实现", path: "2020-02-14" },
-              { title: "🔥 React-正交React组件的好处", path: "2019-12-29" },
               { title: ". JavaScript-async/await应用和原理", path: "2020-04-05" },
+              { title: "🔥 React-正交React组件的好处", path: "2019-12-29" },
               { title: "🔥 GitHub-GitHub Action一键部署", path: "2019-12-11" },
               { title: ". 小程序-小程序开发指南之性能优化", path: "2019-11-30" },
               { title: ". React-开发中应该规避的问题", path: "../react/2019-11-24" },
@@ -149,10 +149,10 @@ module.exports = {
           buttonText: "Refresh"
         }
       },
-      '@vuepress/last-updated': {
-        transformer: (timestamp, lang) => {
-          return new Date(timestamp).toLocaleString()
-        }
-      }
+      // '@vuepress/last-updated': {
+      //   transformer: (timestamp, lang) => {
+      //     return new Date(timestamp).toLocaleString()
+      //   }
+      // }
     }
   }; 
