@@ -52,7 +52,8 @@ export default {
             if(item instanceof Object) {
                 path = item.path;
             }
-            const page = pages.filter(page => page.regularPath.includes(path));
+            const date = path.split('/').pop();
+            const page = pages.filter(page => page.regularPath.includes(date));
             if(page.length){
                 page[0].frontmatter.createDate = page[0].frontmatter.date;
                 page[0].frontmatter.tagList = page[0].frontmatter.tags.split('，');
