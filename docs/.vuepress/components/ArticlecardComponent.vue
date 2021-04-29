@@ -31,32 +31,38 @@ export default {
     },
     props: ['type'],
     mounted() {
-        let list = [];
-        let dataList = this.$site.pages
-        // 类型过滤
-        dataList = dataList.filter((item)=> {
-            return !['/', '/front/', '/react/', '/essay/'].includes(item.path)
-        })
-        console.log(dataList)
-        // 排序
-        dataList.sort((a,b)=> {
-            let ADate = new Date(a.frontmatter.date).getTime()
-            let BDate = new Date(b.frontmatter.date).getTime()
-            return BDate - ADate 
-        })
-        // 判断是否符合this.path
-        console.log(dataList)
-        dataList.forEach((item)=> {console.log()
-            console.log(item.frontmatter.date)
-            // 创建时间
-            item.frontmatter.createDate = item.frontmatter.date;
-            if( (item.frontmatter.tags && this.path == 'all' && item.path.indexOf('/essay') < 0) ||
-                (item.path.indexOf(this.path) > -1)) {
-                item.frontmatter.tagList = item.frontmatter.tags.split('，')
-                list.push(item)
+        const $site = this.$site;
+        const pages = $site.pages;
+        const themeConfig = $site.themeConfig;
+        const sidebar = themeConfig.sidebar;
+        const currentSidebar = sidebar[`/${this.path}/`];
+
+        let sidebarList = [];
+        console.log(currentSidebar)
+        if(currentSidebar[0] instanceof Object) {
+            // 二维数组取第一个
+            sidebarList = sidebarList.concat(currentSidebar[0].children)
+        }else {
+            sidebarList = sidebarList.concat(currentSidebar)
+        }
+
+        const list = [];        
+        sidebarList.forEach((item)=> {
+            let path = item;
+            if(item instanceof Object) {
+                path = item.path;
+            }
+            const page = pages.filter(page => page.regularPath.includes(path));
+            if(page.length){
+                page[0].frontmatter.createDate = page[0].frontmatter.date;
+                page[0].frontmatter.tagList = page[0].frontmatter.tags.split(',');
+                list.push(page[0]);
             }
         })
         this.list = list
+    },
+    methods: {
+        
     }
 }
 </script>

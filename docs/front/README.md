@@ -8,4 +8,4 @@
 </indeximgcard-component>
 
 <!-- 文章卡片 -->
-<articlecard-component type='all'></articlecard-component>
+<articlecard-component type='front'></articlecard-component>
