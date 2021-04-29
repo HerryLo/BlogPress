@@ -55,7 +55,7 @@ export default {
             const page = pages.filter(page => page.regularPath.includes(path));
             if(page.length){
                 page[0].frontmatter.createDate = page[0].frontmatter.date;
-                page[0].frontmatter.tagList = page[0].frontmatter.tags.split(',');
+                page[0].frontmatter.tagList = page[0].frontmatter.tags.split('，');
                 list.push(page[0]);
             }
         })
