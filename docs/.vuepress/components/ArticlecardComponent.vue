@@ -38,7 +38,7 @@ export default {
         const currentSidebar = sidebar[`/${this.path}/`];
 
         let sidebarList = [];
-        console.log(currentSidebar)
+        // console.log(currentSidebar)
         if(currentSidebar[0] instanceof Object) {
             // 二维数组取第一个
             sidebarList = sidebarList.concat(currentSidebar[0].children)
@@ -46,17 +46,22 @@ export default {
             sidebarList = sidebarList.concat(currentSidebar)
         }
 
-        const list = [];        
+        const list = [];    
         sidebarList.forEach((item)=> {
-            let path = item;
+            let page = null;
             if(item instanceof Object) {
-                path = item.path;
+                const path = item.path;
+                const date = path.split('/').pop();
+                page = pages.filter(page => page.regularPath.includes(date));
+            }else if(item && typeof item === 'string') {
+                page = pages.filter(page => page.regularPath.includes(item)); 
             }
-            const date = path.split('/').pop();
-            const page = pages.filter(page => page.regularPath.includes(date));
-            if(page.length){
-                page[0].frontmatter.createDate = page[0].frontmatter.date;
-                page[0].frontmatter.tagList = page[0].frontmatter.tags.split('，');
+            if(page && page.length){
+                const frontmatter = page[0].frontmatter;
+                frontmatter.createDate = frontmatter.date;
+                if(frontmatter.tags.length) {
+                    frontmatter.tagList = frontmatter.tags.split('，');
+                }
                 list.push(page[0]);
             }
         })

@@ -22,10 +22,10 @@ module.exports = {
       nav:[ // 导航栏配置
         {text: '#博文', link: '/front/' },
         {text: '#react', link: '/react/' },
+        {text: '#随笔', link: '/essay/' },
         {
           text: '扩展',
           items: [
-            {text: '#随笔', link: '/essay/' },
             {text: '#成长线', link: '/breach/' },
           ]
         },
@@ -129,6 +129,7 @@ module.exports = {
         ],
         '/essay/': [
           '',
+          '2021-05-26',
           '2021-04-17',
           '2019-12-09',
           '2019-11-23',
