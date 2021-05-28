@@ -26,10 +26,11 @@ export default {
     data() {
         return {
             list: [],
-            path: this.type
+            path: this.type,
+            typeDesc: this.desc
         }
     },
-    props: ['type'],
+    props: ['type', 'desc'],
     mounted() {
         const $site = this.$site;
         const pages = $site.pages;
@@ -39,7 +40,10 @@ export default {
 
         let sidebarList = [];
         // console.log(currentSidebar)
-        if(currentSidebar[0] instanceof Object) {
+        if(this.typeDesc === 'principle'){
+            // 二维数组取第二个
+            sidebarList = sidebarList.concat(currentSidebar[1].children)
+        }else if(currentSidebar[0] instanceof Object) {
             // 二维数组取第一个
             sidebarList = sidebarList.concat(currentSidebar[0].children)
         }else {
