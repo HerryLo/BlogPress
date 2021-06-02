@@ -40,12 +40,6 @@ date: 2019-08-20
 * **2018年5月 尝试Koajs+mongodb+Vuejs**
 > 开始使用Koajs作为后端服务开发个人项目，[Vuejs + Element-ui](https://github.com/AttemptWeb/vue-Bam)构建前端管理系统，[Koajs + mongodb](https://github.com/AttemptWeb/koa-mongoDB)后端服务。
 
-<img 
-    src="/1567613653692.jpg" 
-    width="500" 
-    height="100%" 
-    style="text-align:center;"/>
-
 * **2018年4月 离开彩亿，加入一条**
 > 对于公司管理和项目的失望，离开彩亿，加入一条视频电商研发部。感谢在彩亿帮助过我的那些人🙏🙏。
 

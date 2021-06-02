@@ -18,9 +18,7 @@ export default {
         return {
             list: [
                 {
-                    "href": "https://www.kuaikanmanhua.com/web/topic/2583/","imgUrl": "/bcmw2-qiw8c-2.jpg"
-                },{
-                    "href": "https://www.manhuabei.com/manhua/guimiezhiren/","imgUrl": "/gmzr.jpg"
+                    "href": "https://www.kuaikanmanhua.com/web/topic/2583/","imgUrl": "/image/bcmw2-qiw8c-2.jpg"
                 }
             ]
         }
