@@ -4,6 +4,8 @@
 
     <Content class="theme-default-content"/>
 
+    <RightGroup></RightGroup>
+
     <footer class="page-edit">
       <div
         class="edit-link"
@@ -242,4 +244,7 @@ function flatten (items, res) {
       float none
       text-align left
 
+@media (max-width: $MQNarrow)
+  .right-group 
+    display none;
 </style>
