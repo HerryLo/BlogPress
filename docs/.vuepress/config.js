@@ -23,6 +23,7 @@ module.exports = {
         {text: '#博文', link: '/front/' },
         {text: '#react', link: '/react/' },
         {text: '#随笔', link: '/essay/' },
+        {text: 'GitHub', link: 'https://github.com/HerryLo' },
         {
           text: '扩展',
           items: [
@@ -32,7 +33,6 @@ module.exports = {
         {
           text: 'Github项目',
           items: [
-            { text: 'Record', link: 'https://github.com/AttemptWeb/Record' },
             { text: '小程序项目', link: 'https://github.com/HerryLo/wxSapp' },
             { text: 'react项目', link: 'https://github.com/HerryLo/react-app-16' },
             { text: 'vue多页面模版', link: 'https://github.com/AttemptWeb/vue-multipage' },
