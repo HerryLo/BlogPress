@@ -28,11 +28,6 @@ module.exports = {
           text: '扩展',
           items: [
             {text: '#成长线', link: '/breach/' },
-          ]
-        },
-        {
-          text: 'Github项目',
-          items: [
             { text: '小程序项目', link: 'https://github.com/HerryLo/wxSapp' },
             { text: 'react项目', link: 'https://github.com/HerryLo/react-app-16' },
             { text: 'vue多页面模版', link: 'https://github.com/AttemptWeb/vue-multipage' },
