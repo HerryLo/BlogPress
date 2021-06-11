@@ -44,6 +44,6 @@ tags: 小程序，个人指南
 
 [copy: 谷歌Web性能优化](https://developers.didiheng.com/)
 
-### vx欢迎交流
+### vx备注 加群交流
 
 <img width="300" height="300" center src="https://didiheng.com/image/IMG_0574.JPG" />
