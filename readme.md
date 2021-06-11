@@ -18,7 +18,7 @@ Github Actions 打包发布可以参考这边文章，[GitHub Action打包发布
 
 ## 写法
 
-在新建的md文件中头部设置如下内容
+在新建的md文件中头部设置如下内容，例如：
 ```javascript
 ---
 title: '小程序开发指南之性能优化'
@@ -30,13 +30,13 @@ tags: 小程序，个人指南
 # 小程序开发指南之性能优化
 // ......具体内容
 ```
-title: 文章标题；
+    title: 文章标题；
 
-description: 编译之后html文件描述；
+    description: 编译之后html文件描述；
 
-date: 文章创建时间；
+    date: 文章创建时间；
 
-tags: 标签，用中文，分割。
+    tags: 标签，用中文，分割。
 
 ### 链接
 
