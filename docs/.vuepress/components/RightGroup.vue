@@ -11,9 +11,9 @@
       />
     </div>
     <div class="item">
-      <span class="title">有问题可交流</span>
+      <span class="title">扫码加群可交流</span>
       <span class="desc"
-        >扫码备注 <span class="inner">技术交流</span> 欢迎</span
+        >扫码备注 <span class="inner">技术加群</span> 欢迎</span
       >
       <img
         width="100%"
