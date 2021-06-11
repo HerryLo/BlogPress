@@ -40,6 +40,10 @@ tags: 标签，用中文，分割。
 
 ### 链接
 
-[个人博客地址](https://didiheng.com/)
+[掘金技术文章发布，欢迎关注](https://juejin.cn/user/430664289365608)
 
 [copy: 谷歌Web性能优化](https://developers.didiheng.com/)
+
+### vx欢迎交流
+
+<img width="300" height="300" center src="https://didiheng.com/image/IMG_0574.JPG" />
