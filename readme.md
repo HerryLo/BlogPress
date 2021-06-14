@@ -1,9 +1,9 @@
 ## BlogPress
 
-![](https://img.shields.io/badge/-vuepress-brightgreen)
+![](https://img.shields.io/badge/-vuepress%401.0-brightgreen)
 ![](https://img.shields.io/badge/-vue%402.0-brightgreen)
 
-> 博客由[vuepress cli](https://vuepress.vuejs.org/zh/guide/)构建完成
+> 博客由[vuepress cli](https://v1.vuepress.vuejs.org/zh/guide/getting-started.html)构建完成
 
 ## 发布
 ```javscript
