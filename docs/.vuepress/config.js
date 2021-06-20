@@ -43,6 +43,7 @@ module.exports = {
             collapsable: false,
             path: "/front/",
             children: [
+              { title: ". Vite打包工具中的esbuild", path: "2021-06-18" },
               { title: ". 资本论——资本的流通过程", path: "../essay/2021-05-26" },
               { title: ". 资本论——资本的生产过程 ", path: "../essay/2021-04-17" },
               { title: ". 图解Promise", path: "2021-02-05" },
