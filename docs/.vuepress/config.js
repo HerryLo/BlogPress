@@ -43,6 +43,7 @@ module.exports = {
             collapsable: false,
             path: "/front/",
             children: [
+              { title: ". 我离开上海了", path: "../essay/2021-08-29" },
               { title: ". 2021非面试季前端知识整理总结", path: "2021-06-23" },
               { title: ". 资本论——资本的流通过程", path: "../essay/2021-05-26" },
               { title: ". 资本论——资本的生产过程 ", path: "../essay/2021-04-17" },
@@ -101,6 +102,7 @@ module.exports = {
         ],
         '/essay/': [
           '',
+          '2021-08-29',
           '2021-05-26',
           '2021-04-17',
           '2019-12-09',

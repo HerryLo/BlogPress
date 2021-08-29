@@ -17,7 +17,7 @@
       >
       <img
         width="100%"
-        src="https://didiheng.com/image/IMG_0574.JPG"
+        src="https://didiheng.com/image/img0574.jpg"
       />
     </div>
   </div>
