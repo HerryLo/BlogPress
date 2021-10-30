@@ -43,6 +43,7 @@ module.exports = {
             collapsable: false,
             path: "/front/",
             children: [
+              { title: ". Docker构建前端项目", path: "2021-10-30" },
               { title: ". 我离开上海了", path: "../essay/2021-08-29" },
               { title: ". 2021非面试季前端知识整理总结", path: "2021-06-23" },
               { title: ". 资本论——资本的流通过程", path: "../essay/2021-05-26" },
