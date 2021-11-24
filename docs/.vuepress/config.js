@@ -43,6 +43,7 @@ module.exports = {
             collapsable: false,
             path: "/front/",
             children: [
+              { title: ". AntV G2可视化引擎, 有用过嘛？", path: "2021-11-24" },
               { title: ". Docker构建前端项目", path: "2021-10-30" },
               { title: ". 我离开上海了", path: "../essay/2021-08-29" },
               { title: ". 2021非面试季前端知识整理总结", path: "2021-06-23" },
