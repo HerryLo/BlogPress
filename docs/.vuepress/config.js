@@ -43,6 +43,7 @@ module.exports = {
             collapsable: false,
             path: "/front/",
             children: [
+              { title: ". 知识扩展-SQL查询基础", path: "2022-02-11" },
               { title: ". 2021 反思的一年", path: "../essay/2022-01-21" },
               { title: ". AntV G2可视化引擎, 有用过嘛？", path: "2021-11-24" },
               { title: ". Docker构建前端项目", path: "2021-10-30" },
