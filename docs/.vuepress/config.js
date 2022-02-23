@@ -23,6 +23,7 @@ module.exports = {
         {text: '#博文', link: '/front/' },
         {text: '#react', link: '/react/' },
         {text: '#读后感', link: '/essay/' },
+        {text: '语雀', link: 'https://www.yuque.com/yopai' },
         {text: 'GitHub', link: 'https://github.com/HerryLo' },
         {
           text: '扩展',
@@ -31,8 +32,7 @@ module.exports = {
             { text: '小程序项目', link: 'https://github.com/HerryLo/wxSapp' },
             { text: 'react项目', link: 'https://github.com/HerryLo/react-app-16' },
             { text: 'vue多页面模版', link: 'https://github.com/AttemptWeb/vue-multipage' },
-            { text: 'koa项目', link: 'https://github.com/AttemptWeb/koa-mongoDB' },
-            { text: 'express项目', link: 'https://github.com/HerryLo/MongoDB_express' }
+            { text: 'koa项目', link: 'https://github.com/AttemptWeb/koa-mongoDB' }
           ]
         },
       ],
