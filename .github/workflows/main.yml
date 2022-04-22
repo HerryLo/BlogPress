@@ -10,6 +10,8 @@ jobs:
       # 切换分支
       - name: Checkout
         uses: actions/checkout@master
+      - name: work around permission issue
+        run: git config --global --add safe.directory /github/workspace
       # 下载 git submodule
       - uses: srt32/git-actions@v0.0.3
         with:
