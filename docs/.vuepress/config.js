@@ -43,6 +43,7 @@ module.exports = {
             collapsable: false,
             path: "/front/",
             children: [
+              { title: ". React Hooks useRef 使用范围", path: "../react/2022-04-22" },
               { title: ". 知识扩展-SQL查询基础", path: "2022-02-11" },
               { title: ". 2021 反思的一年", path: "../essay/2022-01-21" },
               { title: ". AntV G2可视化引擎, 有用过嘛？", path: "2021-11-24" },
@@ -97,6 +98,7 @@ module.exports = {
         ],
         '/react/': [
           '', 
+          '2022-04-22',
           '2019-11-24',
           '2019-10-06',
           '2019-08-10',
