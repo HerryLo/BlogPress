@@ -43,7 +43,7 @@ module.exports = {
             collapsable: false,
             path: "/front/",
             children: [
-              { title: ". 知识扩展-Rancher前端服务发布", path: "/2022-04-27" },
+              { title: ". 知识扩展-Rancher前端服务发布", path: "2022-04-27" },
               { title: ". React Hooks useRef 使用范围", path: "../react/2022-04-22" },
               { title: ". 知识扩展-SQL查询基础", path: "2022-02-11" },
               { title: ". 2021 反思的一年", path: "../essay/2022-01-21" },
