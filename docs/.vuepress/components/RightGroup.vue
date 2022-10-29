@@ -7,7 +7,7 @@
       >
       <img
         width="100%"
-        src="https://didiheng.com/image/qrcode_for_gh.jpg"
+        src="https://herrylo.github.io/image/qrcode_for_gh.jpg"
       />
     </div>
     <div class="item">
@@ -17,7 +17,7 @@
       >
       <img
         width="100%"
-        src="https://didiheng.com/image/img0574.jpg"
+        src="https://herrylo.github.io/image/img0574.jpg"
       />
     </div>
   </div>
