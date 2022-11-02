@@ -1,6 +1,6 @@
 module.exports = {
-    title: "Herrylo's Blog",
-    description: '不是技术的创造者，只是技术的搬运工',
+    title: "🧐Herrylo's Blog",
+    description: '🧐不是技术的创造者，只是技术的搬运工🧐',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
       ['link', { rel: 'icon', href: '/image/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
       ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -20,11 +20,11 @@ module.exports = {
       lastUpdated: '上次更新',
       sidebarDepth: 5,
       nav:[ // 导航栏配置
-        {text: '#博文', link: '/front/' },
-        {text: '#react', link: '/react/' },
-        {text: '#读后感', link: '/essay/' },
-        {text: '语雀', link: 'https://www.yuque.com/yopai' },
-        {text: 'GitHub', link: 'https://github.com/HerryLo' },
+        {text: '😎博文', link: '/front/' },
+        {text: '🧐react', link: '/react/' },
+        {text: '🙈读后感', link: '/essay/' },
+        {text: '🐦语雀', link: 'https://www.yuque.com/yopai' },
+        {text: '💻GitHub', link: 'https://github.com/HerryLo' },
         // {
         //   text: '扩展',
         //   items: [
@@ -50,10 +50,10 @@ module.exports = {
               { title: ". AntV G2可视化引擎, 有用过嘛？", path: "2021-11-24" },
               { title: ". Docker构建前端项目", path: "2021-10-30" },
               { title: ". 我离开上海了", path: "../essay/2021-08-29" },
-              { title: ". 2021非面试季前端知识整理总结", path: "2021-06-23" },
+              { title: "🔥 2021非面试季前端知识整理总结", path: "2021-06-23" },
               { title: ". 资本论——资本的流通过程", path: "../essay/2021-05-26" },
               { title: ". 资本论——资本的生产过程 ", path: "../essay/2021-04-17" },
-              { title: ". 图解Promise", path: "2021-02-05" },
+              { title: "🔥 图解Promise", path: "2021-02-05" },
               { title: ". 数据结构-项目中的使用队列", path: "2021-01-01" },
               { title: ". 设计模式-项目中使用订阅发布", path: "2020-12-31" },
               { title: ". JavaScript-ES6中的Iterator迭代器", path: "2020-06-04" },
