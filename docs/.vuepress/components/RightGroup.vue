@@ -8,7 +8,6 @@
       <img
         width="100%"
         src="https://herrylo.github.io/image/qrcode_for_gh.jpg"
-        
       />
     </div>
     <div class="item">

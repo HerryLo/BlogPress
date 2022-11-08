@@ -18,7 +18,7 @@ export default {
         return {
             list: [
                 {
-                    "href": "https://www.kuaikanmanhua.com/web/topic/2583/","imgUrl": "/image/bcmw2-qiw8c-2.jpg"
+                    "href": "https://www.kuaikanmanhua.com/web/topic/2583/","imgUrl": "/home/20221029125835.jpg"
                 }
             ]
         }
@@ -35,7 +35,7 @@ export default {
         align-items: center;
         justify-content space-around;
         .img {
-            width 360px;
+            width 100%;
             img {
                 border-radius 8px;
             }

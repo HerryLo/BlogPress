@@ -25,16 +25,16 @@ module.exports = {
         {text: '#读后感', link: '/essay/' },
         {text: '语雀', link: 'https://www.yuque.com/yopai' },
         {text: 'GitHub', link: 'https://github.com/HerryLo' },
-        {
-          text: '扩展',
-          items: [
-            {text: '#成长线', link: '/breach/' },
-            { text: '小程序项目', link: 'https://github.com/HerryLo/wxSapp' },
-            { text: 'react项目', link: 'https://github.com/HerryLo/react-app-16' },
-            { text: 'vue多页面模版', link: 'https://github.com/AttemptWeb/vue-multipage' },
-            { text: 'koa项目', link: 'https://github.com/AttemptWeb/koa-mongoDB' }
-          ]
-        },
+        // {
+        //   text: '扩展',
+        //   items: [
+        //     // {text: '#成长线', link: '/breach/' },
+        //     { text: '小程序项目', link: 'https://github.com/HerryLo/wxSapp' },
+        //     { text: 'react项目', link: 'https://github.com/HerryLo/react-app-16' },
+        //     { text: 'vue多页面模版', link: 'https://github.com/AttemptWeb/vue-multipage' },
+        //     { text: 'koa项目', link: 'https://github.com/AttemptWeb/koa-mongoDB' }
+        //   ]
+        // },
       ],
       sidebar: {
         '/front/': [
