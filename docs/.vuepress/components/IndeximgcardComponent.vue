@@ -33,9 +33,9 @@ export default {
     .imgCard {
         display: flex;
         align-items: center;
-        justify-content space-around;
+         // justify-content space-around;
         .img {
-            width 100%;
+            width 78%;
             img {
                 border-radius 8px;
             }
