@@ -1,6 +1,16 @@
 <template>
   <div class="right-group">
     <div class="item">
+      <span class="title">个人博客小程序</span>
+      <span class="desc"
+        >扫码查看 <span class="inner">欢迎</span></span
+      >
+      <img
+        width="100%"
+        src="https://herrylo.github.io/image/gh_blog.jpg"
+      />
+    </div>
+    <div class="item">
       <span class="title">关注微信公号</span>
       <span class="desc"
         >更多干货 <span class="inner">分享</span></span
