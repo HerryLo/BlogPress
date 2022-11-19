@@ -20,7 +20,7 @@ module.exports = {
       lastUpdated: '上次更新',
       sidebarDepth: 5,
       nav:[ // 导航栏配置
-        {text: '😎主页', link: '/front/' },
+        {text: '😎主页', link: '/' },
         {text: '😎博文', link: '/front/' },
         {text: '🧐react', link: '/react/' },
         {text: '🙈读后感', link: '/essay/' },
