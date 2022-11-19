@@ -1,28 +1,26 @@
 <template>
   <div class="ArtCard">
-    <a
-      class="itemCard"
-      v-for="item in list"
-      v-bind:href="item.path"
-      v-bind:key="item.path"
-    >
-      <div class="title" v-bind:href="item.path">
-        <div>{{ item.frontmatter.title }}</div>
-      </div>
-      <div class="desc">
-        <!-- <span v-for="slug in item.headers" v-bind:key="slug">{{slug.slug}}</span> -->
-      </div>
-      <div class="detail">创建时间: {{ item.frontmatter.createDate }}</div>
-      <div class="detail tags">
-        <div
-          class="tag"
-          v-bind:key="tage"
-          v-for="tage in item.frontmatter.tagList"
-        >
-          {{ tage }}
+    <div class="cardLists" v-for="(item, index) in list" v-bind:key="item.path">
+      <div class="createtime">{{ item.frontmatter.createDate }} </div>
+      <a class="itemCard" v-bind:href="item.path">
+        <div class="title" v-bind:href="item.path">
+          <div>{{ item.frontmatter.title }}</div>
         </div>
-      </div>
-    </a>
+        <div class="desc">
+          <!-- <span v-for="slug in item.headers" v-bind:key="slug">{{slug.slug}}</span> -->
+        </div>
+        <div class="line-height" v-if="index !== list.length-1"></div>
+        <!-- <div class="detail tags">
+          <div
+            class="tag"
+            v-bind:key="tage"
+            v-for="tage in item.frontmatter.tagList"
+          >
+            {{ tage }}
+          </div>
+        </div> -->
+      </a>
+    </div>
   </div>
 </template>
 
@@ -49,9 +47,11 @@ export default {
 
     let sidebarList = [];
     // console.log(currentSidebar)
-    if (currentSidebar[0] instanceof Object && this.path == 'front') {
+    if (currentSidebar[0] instanceof Object && this.path == "front") {
       // 二维数组 font页面
-      sidebarList = sidebarList.concat(currentSidebar[this.sidebarIndex].children);
+      sidebarList = sidebarList.concat(
+        currentSidebar[this.sidebarIndex].children
+      );
     } else {
       sidebarList = sidebarList.concat(currentSidebar);
     }
@@ -84,11 +84,49 @@ export default {
 </script>
 
 <style lang="stylus">
+.cardLists {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.createtime {
+  color: #3eaf7c;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  cursor pointer
+  margin-right: 10px;
+}
+.createtime::before {
+  content: '🍅';
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 4px;
+  cursor pointer
+}
+.createtime::after {
+  content: '👉';
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    top: -3px;
+    left: 5px;
+}
+.line-height {
+  background: #3eaf7c;
+  border-radius: 2px;
+  height: 50px;
+  width: 1.5px;
+  position: absolute;
+  top: 37px;
+  left: 8px;
+}
 .itemCard {
-    padding: 30px 0px;
+    flex: 1 1 auto;
+    padding: 10px 0px;
     padding-left: 20px;
     border-radius: 10px;
-    margin: 20px 0px;
+    margin: 8px 5px;
     box-shadow: 0px 0px 5px 1px #eee;
     display block;
 
@@ -126,7 +164,7 @@ export default {
 .itemCard:hover {
     background: rgba(215, 232, 224, 1)!important;
 }
-.itemCard:nth-child(2n+1){
+.itemCard:nth-child(n){
     background: rgba(215, 232, 224, 0.5);
 }
 </style>

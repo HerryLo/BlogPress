@@ -12,5 +12,13 @@ features:
   details: 不断学习，学习可扩张知识广度
 - title: 博客
   details: 输出好的文章内容
-footer:  <a target="_blank" href="http://www.beian.miit.gov.cn/">鄂ICP备19018345号-1</a>
+footer:  
 ---
+
+::: slot footer
+MIT Licensed | Copyright © 2018-present [HerryLo](https://github.com/HerryLo)
+
+Powered by [Vuepress](https://vuepress.vuejs.org/)
+
+<run-time></run-time>
+:::

@@ -20,7 +20,7 @@
         src="https://herrylo.github.io/image/qrcode_for_gh.jpg"
       />
     </div>
-    <div class="item">
+    <!-- <div class="item">
       <span class="title">扫码加V可交流</span>
       <span class="desc"
         >扫码备注 <span class="inner">博客交流</span> 欢迎</span
@@ -29,7 +29,7 @@
         width="100%"
         src="https://herrylo.github.io/image/img0574.jpg"
       />
-    </div>
+    </div> -->
   </div>
 </template>
 
