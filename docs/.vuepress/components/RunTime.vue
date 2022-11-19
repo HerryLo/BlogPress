@@ -9,7 +9,7 @@ export default {
   name: "RunTime",
   data() {
     return {
-      starttime: "2019/08/13",
+      starttime: "2019/06/13",
       time: "",
     };
   },

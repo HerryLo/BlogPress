@@ -18,7 +18,7 @@ footer:
 ::: slot footer
 MIT Licensed | Copyright © 2019-present [HerryLo](https://github.com/HerryLo)
 
-Powered by [Vuepress](https://vuepress.vuejs.org/)
-
 <run-time></run-time>
+
+Powered by [Vuepress](https://vuepress.vuejs.org/)
 :::
