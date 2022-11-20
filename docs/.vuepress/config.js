@@ -22,10 +22,8 @@ module.exports = {
       nav:[ // 导航栏配置
         {text: '😎主页', link: '/' },
         {text: '😎博文', link: '/front/' },
-        {text: '🧐react', link: '/react/' },
-        {text: '🙈读后感', link: '/essay/' },
-        {text: '🐦语雀', link: 'https://www.yuque.com/yopai' },
-        {text: '💻GitHub', link: 'https://github.com/HerryLo' },
+        {text: '🧐React', link: '/react/' },
+        {text: '🙈随笔', link: '/essay/' }
       ],
       sidebar: {
         '/front/': [
