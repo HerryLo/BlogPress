@@ -21,8 +21,7 @@ module.exports = {
       sidebarDepth: 5,
       nav:[ // 导航栏配置
         {text: '😎主页', link: '/' },
-        {text: '😎博文', link: '/front/' },
-        {text: '🧐React', link: '/react/' },
+        {text: '😎技术', link: '/front/' },
         {text: '🙈随笔', link: '/essay/' }
       ],
       sidebar: {
@@ -35,7 +34,7 @@ module.exports = {
               { title: "🔥 2022非面试季前端知识整理总结", path: "2021-06-23" },
               { title: "🔥 个人博客小程序构建", path: "2022-11-17" },
               { title: ". 知识扩展-Rancher前端服务发布", path: "2022-04-27" },
-              { title: ". React Hooks useRef 使用范围", path: "../react/2022-04-22" },
+              { title: ". React Hooks useRef 使用范围", path: "2022-04-22" },
               { title: ". 知识扩展-SQL查询基础", path: "2022-02-11" },
               { title: ". AntV G2可视化引擎, 有用过嘛？", path: "2021-11-24" },
               { title: ". Docker构建前端项目", path: "2021-10-30" },
@@ -48,15 +47,15 @@ module.exports = {
               { title: ". 数据结构-栈的应用和实现", path: "2020-03-14" },
               { title: ". 数据结构-循环队列的应用和实现", path: "2020-03-02" },
               { title: ". 数据结构-链表的应用和实现", path: "2020-02-14" },
-              { title: "🔥 React-正交React组件的好处", path: "../react/2019-12-29" },
+              { title: "🔥 React-正交React组件的好处", path: "2019-12-29" },
               { title: "🔥 GitHub-GitHub Action一键部署", path: "2019-12-11" },
               { title: ". 小程序-小程序开发指南之性能优化", path: "2019-11-30" },
-              { title: ". React-开发中应该规避的问题", path: "../react/2019-11-24" },
+              { title: ". React-开发中应该规避的问题", path: "2019-11-24" },
               { title: "🔥 JavaScript-图解的this指向", path: "2019-09-12" },
               { title: "🔥 JavaScript-图解原型链", path: "2019-09-05" },
               { title: "🔥 TCP-的三次握手和四次挥手", path: "2019-08-17" },
               { title: ". TCP&UDP-传输层的TCP和UDP协议", path: "2019-08-02" },
-              { title: ". React-React Hooks的功能组件", path: "../react/2019-04-25" },
+              { title: ". React-React Hooks的功能组件", path: "2019-04-25" },
               { title: ". 小程序-个人开发指南", path: "2019-07-22" },
               { title: "🔥 JavaScript-JavaScript如何工作：垃圾回收", path: "2019-04-01" },
               { title: "🔥 JavaScript-闭包的错误使用", path: "2018-12-27" }
@@ -73,39 +72,12 @@ module.exports = {
               {title: 'react-redux原理解析', path: "2019-12-20" },
               {title: 'redux解析', path: "2019-10-26" },
               {title: 'Promise原理解析', path: "2019-09-22" },
-              {title: 'react解析: render的中的update(四)', path: "../react/2019-10-06" },
-              {title: 'react解析 render的FiberRoot(三)', path: "../react/2019-08-10" },
-              {title: 'react解析 React.Children(二)', path: "../react/2019-05-13" },
-              {title: 'react解析: React.createElement(一)', path: "../react/2019-05-12" }
-            ]
-          },
-          {
-            title: "个人分享",
-            collapsable: true,
-            initialOpenGroupIndex: -1,
-            sidebarDepth: 3,
-            path: "/front/",
-            children: [
-              { title: ". 2021 反思的一年", path: "../essay/2022-01-21" },
-              { title: ". 我离开上海了", path: "../essay/2021-08-29" },
-              { title: ". 资本论——资本的流通过程", path: "../essay/2021-05-26" },
-              { title: ". 资本论——资本的生产过程 ", path: "../essay/2021-04-17" },
-              { title: ". 聊一聊，斯诺登的新书《永久记忆》", path: "../essay/2019-12-09" },
-              { title: "🔥 说一说'NetWork wall'所使用的技术", path: "../essay/2019-11-17" },
-              { title: "🔥 Jordan Peterson's写作指南节选", path: "../essay/2019-09-20" },
+              {title: 'react解析: render的中的update(四)', path: "2019-10-06" },
+              {title: 'react解析 render的FiberRoot(三)', path: "2019-08-10" },
+              {title: 'react解析 React.Children(二)', path: "2019-05-13" },
+              {title: 'react解析: React.createElement(一)', path: "2019-05-12" }
             ]
           }
-        ],
-        '/react/': [
-          '',
-          '2022-04-22',
-          '2019-12-29',
-          '2019-11-24',
-          '2019-10-06',
-          '2019-08-10',
-          '2019-05-13',
-          '2019-05-12',
-          '2019-04-25',
         ],
         '/essay/': [
           '',

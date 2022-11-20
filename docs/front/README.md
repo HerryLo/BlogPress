@@ -14,7 +14,3 @@
 ## 原理解析
 
 <articlecard-component type='front' desc="principle" index="1"></articlecard-component>
-
-## 个人分享
-
-<articlecard-component type='front' desc="share" index="2"></articlecard-component>
