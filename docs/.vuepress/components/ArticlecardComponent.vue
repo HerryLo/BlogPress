@@ -106,7 +106,9 @@ export default {
   overflow: hidden;
   padding-right: 10px;
 }
-
+.createtime:first-child {
+  // color: #e33131
+}
 .createtime::before {
   content: '🍅';
   display: inline-block;
@@ -127,11 +129,11 @@ export default {
 .line-height {
   border-radius: 2px;
   height: 51px;
-  width: 1.5px;
+  width: 0.5rem;
   position: absolute;
-  top: 38px;
-  left: 8px;
-  background-color: #3eaf7c;
+  top: 37px;
+  left: 5px;
+  background-color: #eee;
 }
 
 .itemCard {
@@ -182,7 +184,7 @@ export default {
 }
 
 .itemCard:nth-child(n) {
-  background: rgba(215, 232, 224, 0.5);
+  background: rgba(215, 232, 224, 1);
 }
 
 @media (max-width: 1300px) {
