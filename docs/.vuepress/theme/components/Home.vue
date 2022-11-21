@@ -40,13 +40,16 @@
 
     <Content class="theme-default-content custom"/>
 
-    <div
+    <footer>
+      <Content slot-key="footer"/>
+    </footer>
+    <!-- <div
       class="footer"
       v-if="data.footer"
       v-html="data.footer"
     >
       {{ data.footer }}
-    </div>
+    </div> -->
   </main>
 </template>
 
@@ -161,4 +164,6 @@ export default {
     .feature
       h2
         font-size 1.25rem
+.content__footer
+  text-align center
 </style>
