@@ -7,6 +7,7 @@
     <div class="right-wrapper">
       <RightObort></RightObort>
       <RightGroup></RightGroup>
+      <RightTime></RightTime>
     </div>
 
     <footer class="page-edit">

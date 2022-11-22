@@ -29,7 +29,8 @@ export default {
 .right-group {
   width: 430px;
   border: 1px solid #8f8f8f40;
-  border-radius: 5px;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 .content-title {
