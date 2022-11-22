@@ -25,7 +25,7 @@ export default {
   methods: {
     timeInterval() {
       this.timer = setInterval(() => {
-        console.log(this.intervalTime);
+        // console.log(this.intervalTime);
         const start = moment(this.starttime).valueOf();
         const current = moment().valueOf();
         const time = parseInt((current - start)/1000/60/60/24) // 天

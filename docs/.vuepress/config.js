@@ -90,7 +90,9 @@ module.exports = {
           '2019-09-20',
         ],
       },
-      activeHeaderLinks: false
+      activeHeaderLinks: true,
+      search: true,
+      searchMaxSuggestions: 10
     },
     plugins: {
       '@vuepress/register-components': {

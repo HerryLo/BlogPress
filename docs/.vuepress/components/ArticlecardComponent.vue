@@ -43,7 +43,7 @@ export default {
     const sidebar = themeConfig.sidebar;
     const currentSidebar = sidebar[`/${this.path}/`];
 
-    console.log(this);
+    // console.log(this);
 
     let sidebarList = [];
     // console.log(currentSidebar)
@@ -57,8 +57,8 @@ export default {
     }
 
     const list = [];
-    console.log(sidebarList);
-    console.log(pages);
+    // console.log(sidebarList);
+    // console.log(pages);
     sidebarList.forEach((item) => {
       let page = null;
       if (item instanceof Object) {
@@ -71,9 +71,9 @@ export default {
       if (page && page.length) {
         const frontmatter = page[0].frontmatter;
         frontmatter.createDate = frontmatter.date;
-        if (frontmatter.tags.length) {
-          frontmatter.tagList = frontmatter.tags.split("，");
-        }
+        // if (frontmatter.tags.length) {
+        //   frontmatter.tagList = frontmatter.tags.split("，");
+        // }
         list.push(page[0]);
       }
     });

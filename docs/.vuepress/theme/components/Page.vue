@@ -239,7 +239,7 @@ function flatten(items, res) {
   .right-wrapper
     display none
 
-@media (max-width: 1620px)
+@media (max-width: 1648px)
   .right-group,
   .right-wrapper
     display none

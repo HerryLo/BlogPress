@@ -24,7 +24,9 @@ Github Actions 打包发布可以参考这边文章，[GitHub Action打包发布
 title: '小程序开发指南之性能优化'
 description: HerryLo, 微信公众号： Yopai
 date: 2019-11-30
-tags: 小程序，个人指南
+tags: 
+    - 小程序
+    - 个人指南
 ---
 <!-- 具体内容按照MarkDown格式编写 -->
 # 小程序开发指南之性能优化
@@ -36,7 +38,8 @@ tags: 小程序，个人指南
 
     date: 文章创建时间；
 
-    tags: 标签，用中文，分割。
+    tags: 
+        - 标签
 
 ### 链接
 
