@@ -26,10 +26,10 @@ export default {
 
 <style  lang="stylus">
 .right-time {
-  width: 430px;
+  width: 100%;
   border: 1px solid #8f8f8f40;
-  border-radius: 0.4rem;
-  margin-bottom: 1rem;
+  border-radius: 0.4em;
+  margin-bottom: 1em;
 }
 
 .right-time .content-title {
@@ -69,4 +69,7 @@ export default {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 1600px)
+  .shield-number
+    display: none
 </style>

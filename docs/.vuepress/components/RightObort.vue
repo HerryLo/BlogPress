@@ -92,10 +92,10 @@ export default {
 
 <style lang="stylus">
 .right-obort {
-  width: 430px;
+  width: 100%;
   border: 1px solid #8f8f8f40;
-  border-radius: 0.4rem;
-  margin-bottom: 1rem;
+  border-radius: 0.4em;
+  margin-bottom: 1em;
 }
 
 .right-obort .content-title {

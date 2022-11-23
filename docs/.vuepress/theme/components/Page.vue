@@ -2,12 +2,14 @@
   <main class="page">
     <slot name="top" />
 
-    <Content class="theme-default-content" />
-    <!-- 自定义组件 -->
-    <div class="right-wrapper">
-      <RightObort></RightObort>
-      <RightGroup></RightGroup>
-      <RightTime></RightTime>
+    <div class="contentwapper">
+      <Content class="theme-default-content" />
+      <!-- 自定义组件 -->
+      <div class="right-wrapper">
+        <RightObort></RightObort>
+        <RightGroup></RightGroup>
+        <RightTime></RightTime>
+      </div>
     </div>
 
     <footer class="page-edit">
@@ -187,11 +189,14 @@ function flatten(items, res) {
 .page
   padding-bottom 2rem
   display block
+
 .right-wrapper
-  position: absolute;
-  top 100px
-  right 100px
+  width: 27%
+  margin-top 10rem
   height auto
+  margin-left: 6em
+  padding-right: 7%;
+
 .page-edit
   @extend $wrapper
   padding-top 1rem
@@ -225,6 +230,10 @@ function flatten(items, res) {
   .next
     float right
 
+.contentwapper
+  display:flex;
+  justify-content: space-between;
+
 @media (max-width: $MQMobile)
   .page-edit
     .edit-link
@@ -234,14 +243,8 @@ function flatten(items, res) {
       float none
       text-align left
 
-@media (max-width: $MQNarrow)
+@media (max-width: 1200px)
   .right-group,
   .right-wrapper
     display none
-
-@media (max-width: 1648px)
-  .right-group,
-  .right-wrapper
-    display none
-
 </style>
