@@ -69,7 +69,5 @@ export default {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 1600px)
-  .shield-number
-    display: none
+
 </style>
