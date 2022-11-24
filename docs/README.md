@@ -6,10 +6,12 @@ heroImage: /image/1.jpg
 actionText: Get Start →
 actionLink: /front/
 features:
-# - title: 分享
-#   details: 持续分享
-# - title: 学习
-#   details: 持续学习
+- title:  🔧技术 | 
+  link: /front/
+- title:  🤔随笔 | 
+  link: /essay/
+- title:  👏推荐
+  link: /recommend/
 footer:  
 ---
 

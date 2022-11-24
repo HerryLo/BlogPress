@@ -20,9 +20,10 @@ module.exports = {
       lastUpdated: '上次更新',
       sidebarDepth: 5,
       nav:[ // 导航栏配置
-        {text: '😎主页', link: '/' },
+        {text: '主页', link: '/' },
         {text: '😎技术', link: '/front/' },
-        {text: '🙈随笔', link: '/essay/' }
+        {text: '🙈随笔', link: '/essay/' },
+        {text: '👏推荐', link: '/recommend/' }
       ],
       sidebar: {
         '/front/': [

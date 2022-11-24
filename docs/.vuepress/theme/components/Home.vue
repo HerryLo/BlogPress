@@ -33,9 +33,10 @@
         v-for="(feature, index) in data.features"
         :key="index"
       >
-        <h2>{{ feature.title }}</h2>
+        <a :href="feature.link"><h2>{{ feature.title }}</h2></a>
         <p>{{ feature.details }}</p>
       </div>
+      
     </div>
 
     <Content class="theme-default-content custom"/>
@@ -116,11 +117,11 @@ export default {
     flex-wrap wrap
     align-items flex-start
     align-content stretch
-    justify-content space-between
+    justify-content center
   .feature
-    flex-grow 1
-    flex-basis 30%
-    max-width 30%
+    // flex-grow 1
+    // flex-basis 30%
+    // max-width 30%
     h2
       font-size 1.4rem
       font-weight 500
