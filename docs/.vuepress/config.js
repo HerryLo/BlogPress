@@ -90,6 +90,10 @@ module.exports = {
           '2019-11-17',
           '2019-09-20',
         ],
+        '/recommend/': [
+          '',
+          '2022-11-27'
+        ]
       },
       activeHeaderLinks: true,
       search: true,
