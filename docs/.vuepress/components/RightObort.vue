@@ -71,17 +71,17 @@ export default {
           emoji: '🚀🚀😄😄'
         },
         {
-          iconurl: "/image/sf.svg",
-          name: "segmentfault",
-          path: "https://segmentfault.com/u/herrylo",
-          color: "#00965e",
-          emoji: '🚀😄😄😄'
-        },
-        {
           iconurl: "/image/zhihu.svg",
           name: "知乎",
           path: "https://www.zhihu.com/people/liu-heng-88-71",
           color: "rgb(0, 117, 210)",
+          emoji: '🚀😄😄😄'
+        },
+        {
+          iconurl: "/image/sf.svg",
+          name: "segmentfault",
+          path: "https://segmentfault.com/u/herrylo",
+          color: "#00965e",
           emoji: '😄😄😄😄 '
         }
       ],
