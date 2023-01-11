@@ -141,6 +141,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
 }
 @media (max-width: 1600px)
   .shield-number
