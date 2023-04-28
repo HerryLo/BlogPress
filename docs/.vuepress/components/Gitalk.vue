@@ -26,6 +26,8 @@ export default {
         ],
         id: location.pathname, // Ensure uniqueness and length less than 50
         distractionFreeMode: false, // Facebook-like distraction free mode
+        createIssueManually: true,
+        proxy: 'https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token'
       };
 
       const gitalk = new Gitalk(commentConfig);

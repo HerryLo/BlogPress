@@ -45,8 +45,8 @@
     </div>
 
     <slot name="bottom" />
-    <!-- <Valine></Valine> -->
-    <Gitalk></Gitalk>
+    <Valine></Valine>
+    <!-- <Gitalk></Gitalk> -->
   </main>
 </template>
 
