@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import Gitalk from 'gitalk'
-
 export default {
   name: "Gitalk",
   data() {
@@ -15,16 +13,16 @@ export default {
   mounted: function () {
     let body = document.querySelector(".gitalk-container");
     let script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js";
+    script.src = "https://cdn.jsdelivr.net/npm/gitalk@1.8.0/dist/gitalk.min.js";
     body.appendChild(script);
     script.onload = () => {
       const commentConfig  = new Gitalk({
-        clientID: "22e32fc1121658ba0b1d",
-        clientSecret: "64731a84c1c4d875de285608adc0eb400908897a",
+        clientID: "6e6f0a068cbd14cc8791",
+        clientSecret: "4792077586eb060927834c7cc483bc91a5d85308",
         repo: "BlogPress", // The repository of store comments,
-        owner: "HerryLo",
+        owner: "Herrylo",
         admin: [
-          "HerryLo",
+          "Herrylo",
         ],
         id: location.pathname, // Ensure uniqueness and length less than 50
         distractionFreeMode: false, // Facebook-like distraction free mode
