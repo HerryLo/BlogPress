@@ -51,7 +51,6 @@
 </template>
 
 <script>
-import 'gitalk/dist/gitalk.css'
 import { resolvePage, outboundRE, endingSlashRE } from "../util";
 
 export default {
