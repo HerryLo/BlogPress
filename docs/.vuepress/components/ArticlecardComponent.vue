@@ -56,14 +56,18 @@ export default {
       sidebarList = sidebarList.concat(currentSidebar);
     }
 
+    try{
     const list = [];
-    // console.log(sidebarList);
+    console.log(sidebarList);
     // console.log(pages);
     sidebarList.forEach((item) => {
       let page = null;
-      if (item instanceof Object) {
+       if (item instanceof Array){
+        page = pages.filter((page) => page.regularPath.includes(item[0]));
+      } else if (item instanceof Object) {
         const path = item.path;
-        const date = path.split("/").pop();
+        console.log(path)
+        const date = path instanceof Array ? path[0].split("/") : path.split("/").pop();
         page = pages.filter((page) => page.regularPath.includes(date));
       } else if (item && typeof item === "string") {
         page = pages.filter((page) => page.regularPath.includes(item));
@@ -71,13 +75,11 @@ export default {
       if (page && page.length) {
         const frontmatter = page[0].frontmatter;
         frontmatter.createDate = frontmatter.date;
-        // if (frontmatter.tags.length) {
-        //   frontmatter.tagList = frontmatter.tags.split("，");
-        // }
         list.push(page[0]);
       }
     });
     this.list = list;
+    }catch(e){}
   },
   methods: {},
 };
