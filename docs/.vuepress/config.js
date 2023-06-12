@@ -23,7 +23,8 @@ module.exports = {
         {text: '主页', link: '/' },
         {text: '😎技术', link: '/front/' },
         {text: '🙈随笔', link: '/essay/' },
-        {text: '👏推荐', link: '/recommend/' }
+        {text: '👏推荐', link: '/recommend/' },
+        {text: 'GitHub', link: 'https://github.com/HerryLo/BlogPress' }
       ],
       sidebar: {
         '/front/': [

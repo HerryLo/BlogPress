@@ -7,14 +7,27 @@
 
 ## 发布
 ```javscript
-// 发布到个人GitHub域名下，如：https://herrylo.github.io
-$ npm run deploy 
+$ npm install vuepress@1.9.7
 
-// 项目发布到个人服务器，通过Github Actions 打包发布
-// 本地推送master分支即可
-$ git push origin master
+// 发布到 Github Pages，如：https://herrylo.github.io
+$ npm run deploy 
 ```
-Github Actions 打包发布可以参考这边文章，[GitHub Action打包发布 一键部署](https://juejin.cn/post/6844904022239870984)
+
+## 配置
+
+`deploy.sh` Github Pages 配置
+
+`docs/.vuepress/config.js` 网站配置
+
+`docs/.vuepress/components` 自定义组件
+
+`docs/.vuepress/theme` 全局样式组件
+
+`docs/.vuepress/public` 静态资源
+
+`docs/README.md` 网站首页
+
+更多详细内容可以参考：[vuepress官网](https://v1.vuepress.vuejs.org/zh/guide/getting-started.html)构建完成
 
 ## 写法
 
@@ -32,17 +45,3 @@ tags:
 # 小程序开发指南之性能优化
 // ......具体内容
 ```
-    title: 文章标题；
-
-    description: 编译之后html文件描述；
-
-    date: 文章创建时间；
-
-    tags: 
-        - 标签
-
-### 链接
-
-[掘金技术文章发布，欢迎关注](https://juejin.cn/user/430664289365608)
-
-[copy: 谷歌Web性能优化](https://developers.didiheng.com/)
