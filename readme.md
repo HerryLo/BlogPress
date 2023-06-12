@@ -45,3 +45,8 @@ tags:
 # 小程序开发指南之性能优化
 // ......具体内容
 ```
+
+## License
+
+[MIT](https://github.com/HerryLo/BlogPress/blob/master/LICENSE)
+
