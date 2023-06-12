@@ -19,6 +19,7 @@
 </template>
 
 <script>
+// 评论组件
 export default {
   name: 'Valine',
   mounted: function () {

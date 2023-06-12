@@ -23,22 +23,6 @@
           >{{item.emoji}}</div>
         </div>
       </a>
-
-      <!-- <a href="https://github.com/HerryLo" target="_blank">
-        <div
-          class="shield-item"
-          data-id="github"
-          style="border-color: rgb(24, 23, 23)"
-        >
-          <img src="/image/github.svg" alt="github" />
-          <div class="col-7" style="color: rgb(24, 23, 23)">GitHub</div>
-          <div
-            class="col align-self-end shield-number"
-            id="shield-number-github"
-            style="background-color: rgb(24, 23, 23)"
-          ></div>
-        </div>
-      </a> -->
     </div>
   </div>
 </template>

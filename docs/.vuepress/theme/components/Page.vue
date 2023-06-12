@@ -6,7 +6,8 @@
       <Content class="theme-default-content" />
       <!-- 自定义组件 -->
       <div class="right-wrapper">
-        <RightObort></RightObort>
+        <RightAbort></RightAbort>
+        <RightAbortMe></RightAbortMe>
         <RightGroup></RightGroup>
         <RightTime></RightTime>
       </div>
