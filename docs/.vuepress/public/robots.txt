@@ -1,8 +1,34 @@
+# robots.txt generated at https://www.sojson.com/robots/
+User-agent: Baiduspider
+Disallow: 
+User-agent: Bingbot
+Disallow: 
+User-agent: Sogou web spider
+Disallow: 
+User-agent: Sosospider
+Disallow: 
+User-agent: YodaoBot
+Disallow: 
+User-agent: 360Spider
+Disallow: 
+User-agent: YisouSpider
+Disallow: 
+User-agent: Googlebot
+Disallow: 
+User-agent: teoma
+Disallow: 
+User-agent: ia_archiver
+Disallow: 
+User-agent: twiceler
+Disallow: 
+User-agent: Robozilla
+Disallow: 
+User-agent: Gigabot
+Disallow: 
+User-agent: Mediapartners-Google
+Disallow: 
+Crawl-delay: 120
+Disallow:https://herrylo.github.io/sitemap.xml
+Disallow:/breach
 User-agent: *
-Disallow: /wp-*
-Disallow: /*&*
-Disallow: /*%*
-Disallow: /tag=*
-Disallow: /?feed
-Disallow: /?=*
-Sitemap: https://herrylo.github.io/sitemap.xml
+Disallow:
