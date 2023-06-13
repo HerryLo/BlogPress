@@ -35,7 +35,6 @@ $ npm run deploy
 ```javascript
 ---
 title: '小程序开发指南之性能优化'
-description: HerryLo, 微信公众号： Yopai
 date: 2019-11-30
 tags: 
     - 小程序
