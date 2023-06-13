@@ -1,9 +1,9 @@
 {
-    "name": "Yopai's Blog",
-    "short_name": "YB",
+    "name": "Herrylo`s Blog Blog-前端开发",
+    "short_name": "Herrylo个人博客",
     "start_url": "/",
     "display": "standalone",
-    "description": "Yopai的个人博客",
+    "description": "分享前端开发技术,让技术知识变得更加简单",
     "background_color": "#fff",
     "theme_color": "#3eaf7c",
     "icons": [

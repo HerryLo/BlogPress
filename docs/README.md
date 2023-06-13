@@ -6,11 +6,11 @@ heroImage: /image/1.jpg
 actionText: Get Start →
 actionLink: /front/
 features:
-- title:  🔧技术 | 
+- title:  技术 | 
   link: /front/
-- title:  🤔随笔 | 
+- title:  随笔 | 
   link: /essay/
-- title:  👏推荐
+- title:  推荐
   link: /recommend/
 footer:  
 ---

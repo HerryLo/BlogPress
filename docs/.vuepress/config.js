@@ -1,16 +1,20 @@
 module.exports = {
-    title: "🧐Herrylo's Blog",
+    title: "Herrylo`s Blog - 前端开发",
     description: '🧐不是技术的创造者，只是技术的搬运工🧐',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
-      ['link', { rel: 'icon', href: '/image/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
-      ['link', { rel: 'manifest', href: '/manifest.json' }],
+      ['meta', { charset: 'utf-8' }],
+      ['meta', { name: 'description', content: 'Herrylo`s Blog,分享了解的前端开发技术,让技术知识变得更加简单,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流' }],
+      ['meta', { name: 'keywords', content: '前端,JavaScript,ReactJs,前端开发,Nodejs,Docker,Rancher,数据结构,小程序,技术交流' }],
+      ['meta', { property: 'og:description', content: 'Herrylo`s Blog,分享了解的前端开发技术,让技术知识变得更加简单,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流' }],
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],
       ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
       ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+      ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+      ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+      ['link', { rel: 'icon', href: '/image/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
+      ['link', { rel: 'manifest', href: '/manifest.json' }],
       ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
       ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
-      ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
-      ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
     ],
     base: '/', // 这是部署到github相关的配置
     markdown: {
