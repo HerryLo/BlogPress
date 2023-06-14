@@ -1,6 +1,6 @@
 module.exports = {
     title: "Herrylo`s Blog - 前端开发",
-    // description: 'JavaScript,ReactJs,Nodejs,数据结构',
+    description: 'JavaScript,ReactJs,小程序,Vuejs,Nodejs',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
       ['meta', { charset: 'utf-8' }],
       ['meta', { name: 'description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流'}],
