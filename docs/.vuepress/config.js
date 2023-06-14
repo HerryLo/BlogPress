@@ -16,16 +16,13 @@ module.exports = {
       ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
       ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
       ['script', {}, `
-        <script>
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
           hm.src = "https://hm.baidu.com/hm.js?03fcbc1674d5d46ad9125d7e0dbb5d51";
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
-        })();
-        </script>
-        `
+        })();`
       ]
     ],
     base: '/', // 这是部署到github相关的配置
