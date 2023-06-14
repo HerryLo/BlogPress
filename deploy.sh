@@ -17,9 +17,8 @@ function fileForEach() {
         then
             if [ -n "`find $1$file -maxdepth 1 -name '*.html'`" ];
             then
-                # echo $1$file"/"*.html
-                sed -i '' '/<\/body/a\
-<script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1277950578&web_id=1277950578"></script><style>body>a{display:none!important;}</style>' $1$file"/"*.html
+                echo $1$file"/"*.html
+                sed -i '/</head>\</head><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?03fcbc1674d5d46ad9125d7e0dbb5d51";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>' $1$file"/"*.html
             fi
         fi
     done
@@ -30,7 +29,7 @@ echo "开始构建项目"
 npm run build
 echo "构建完毕"
 
-# fileForEach $sourcePath
+fileForEach $sourcePath
 
 cd $sourcePath
 
