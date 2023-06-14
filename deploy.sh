@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# https://www.sojson.com/robots/ 生成Robots.txt
+# https://www.xml-sitemaps.com/  生成sitemap.xml站点地图
+
 # 确保脚本抛出遇到的错误
 set -e
 # fd0073ed132eb69233860692ecb5cae8cafa61aa
