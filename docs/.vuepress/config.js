@@ -1,11 +1,11 @@
 module.exports = {
     title: "Herrylo`s Blog - 前端开发",
-    description: '🧐不是技术的创造者，只是技术的搬运工🧐',
+    description: '不是技术的创造者，只是技术的搬运工',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
       ['meta', { charset: 'utf-8' }],
-      ['meta', { name: 'description', content: 'Herrylo`s Blog,分享了解的前端开发技术,让技术知识变得更加简单,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流' }],
+      ['meta', { name: 'description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流'}],
       ['meta', { name: 'keywords', content: '前端,JavaScript,ReactJs,前端开发,Nodejs,Docker,Rancher,数据结构,小程序,技术交流' }],
-      ['meta', { property: 'og:description', content: 'Herrylo`s Blog,分享了解的前端开发技术,让技术知识变得更加简单,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流' }],
+      ['meta', { property: 'og:description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流' }],
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],
       ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
       ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
