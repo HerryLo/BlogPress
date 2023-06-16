@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import moment from "moment";
+
 export default {
   name: "ArticlecardComponent",
   data() {
@@ -74,7 +76,7 @@ export default {
       }
       if (page && page.length) {
         const frontmatter = page[0].frontmatter;
-        frontmatter.createDate = frontmatter.date;
+        frontmatter.createDate = moment(frontmatter.date).format('YYYY-MM-DD');
         list.push(page[0]);
       }
     });
@@ -98,7 +100,8 @@ export default {
 }
 
 .createtime {
-  color: #3eaf7c;
+  // color: #3eaf7c;
+  color: #2c3e50;
   font-size: 13px;
   display: flex;
   align-items: center;
@@ -112,29 +115,29 @@ export default {
   // color: #e33131
 }
 .createtime::before {
-  content: '🍅';
+  content: '👨‍💻';
   display: inline-block;
   border-radius: 50%;
   margin-right: 4px;
   cursor: pointer;
 }
 
-.createtime::after {
-  content: '👉';
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  top: -3px;
-  left: 5px;
-}
+// .createtime::after {
+//   content: '👉';
+//   display: inline-block;
+//   cursor: pointer;
+//   position: relative;
+//   top: -3px;
+//   left: 5px;
+// }
 
 .line-height {
   border-radius: 2px;
   height: 51px;
-  width: 0.5rem;
+  width: 0.3rem;
   position: absolute;
   top: 37px;
-  left: 5px;
+  left: 6px;
   background-color: #eee;
 }
 
@@ -147,8 +150,8 @@ export default {
   display: block;
 
   .title {
-    font-weight: 700;
-    color: #000;
+    // font-weight: 700;
+    color: #2c3e50;
     font-size: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -186,7 +189,7 @@ export default {
 }
 
 .itemCard:nth-child(n) {
-  background: rgba(215, 232, 224, 1);
+  // background: rgba(215, 232, 224, 1);
 }
 
 @media (max-width: 1300px) {

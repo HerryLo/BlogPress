@@ -2,11 +2,8 @@
   <div class="right-time">
     <div class="content-title">🥰Me</div>
     <div class="content-wrapper">
-        <div>男性，武汉工作，会点Web，不精通，没进过大厂.</div>
-        <br></br>
-        <div>技术或工作问题交流，可联系微信：<i>1169170165</i>.</div>
-        <br></br>
-        <div>想添加友链的，可以联系我.</div>
+        <p>男性，武汉工作，会点Web，不精通，没进过大厂.</p>
+        <p>技术或工作问题交流，可联系微信：<i>1169170165</i>.</p>
     </div>
   </div>
 </template>

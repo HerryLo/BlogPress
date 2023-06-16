@@ -3,15 +3,15 @@
     <div class="content-title">🚀小程序&公众号</div>
     <div class="content-wrapper">
       <div class="item">
-        <span class="title">个人博客小程序</span>
-        <span class="desc">扫码查看 <span class="inner">欢迎</span></span>
+        <!-- <span class="title">个人博客小程序</span>
+        <span class="desc">扫码查看 <span class="inner">欢迎</span></span> -->
         <img width="100%" src="https://herrylo.github.io/image/gh_blog.jpg" />
       </div>
       <div class="item">
-        <span class="title">关注微信公号</span>
-        <span class="desc">更多干货 <span class="inner">分享</span></span>
+        <!-- <span class="title">关注微信公号</span>
+        <span class="desc">更多干货 <span class="inner">分享</span></span> -->
         <img
-          width="100%"
+          width="75%"
           src="https://herrylo.github.io/image/qrcode_for_gh.jpg"
         />
       </div>
@@ -33,7 +33,7 @@ export default {
   margin-bottom: 1em;
 }
 
-.content-title {
+.right-group .content-title {
   height: 40px;
     line-height: 40px;
     background: #eeeeeebf;
@@ -41,7 +41,7 @@ export default {
     font-size: 15px;
 }
 
-.content-wrapper {
+.right-group .content-wrapper {
   display: flex;
   padding: 20px 10px 0 10px;
 }

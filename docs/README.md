@@ -1,7 +1,7 @@
 ---
 home: true
 title: '前端开发'
-description: ''
+description: '前端工程师'
 heroImage: /image/1.jpg
 actionText: Get Start →
 actionLink: /front/
