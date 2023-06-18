@@ -1,11 +1,12 @@
 module.exports = {
     title: "Herrylo`s Blog",
-    // description: 'JavaScript,ReactJs,小程序,Vuejs,Nodejs',
+    description: '',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
       ['meta', { charset: 'utf-8' }],
-      ['meta', { name: 'description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流'}],
-      ['meta', { name: 'keywords', content: '前端,JavaScript,ReactJs,前端开发,Nodejs,Docker,Rancher,数据结构,小程序,技术交流' }],
-      ['meta', { property: 'og:description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流' }],
+      ['meta', { name: 'description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流,技术分享'}],
+      ['meta', { name: 'keywords', content: '前端,JavaScript,ReactJs,前端开发,Nodejs,Docker,Rancher,数据结构,小程序,技术交流,技术分享' }],
+      ['meta', { property: 'og:title', content: 'Herrylo`s Blog' }],
+      ['meta', { property: 'og:description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流,技术分享' }],
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],
       ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
       ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
