@@ -1,7 +1,7 @@
 ---
 home: true
 title: '前端开发'
-description: ''
+description: 'JavaScript,Reactjs,小程序,数据结构,Docker,技术,随笔,推荐'
 heroImage: /image/1.jpg
 actionText: Get Start →
 actionLink: /front/
