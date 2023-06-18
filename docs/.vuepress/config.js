@@ -1,6 +1,6 @@
 module.exports = {
     title: "Herrylo`s Blog",
-    description: 'JavaScript,Reactjs,小程序,数据结构,Docker,技术,随笔,推荐',
+    description: 'This is my personal blog site, I hope to share the content can help you',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
       ['meta', { charset: 'utf-8' }],
       ['meta', { name: 'apple-mobile-web-app-title', content: 'Herrylo`s Blog'}],
@@ -8,10 +8,10 @@ module.exports = {
       ['meta', { name: 'twitter:title', content: 'Herrylo`s Blog'}],
       ['meta', { name: 'og:site_name', content: 'Herrylo`s Blog'}],
       ['meta', { name: 'og:url', content: 'https://herrylo.github.io/'}],
-      ['meta', { name: 'description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流,技术分享'}],
+      ['meta', { name: 'description', content: 'This is my personal blog site, I hope to share the content can help you'}],
       ['meta', { name: 'keywords', content: '前端,JavaScript,ReactJs,前端开发,Nodejs,Docker,Rancher,数据结构,小程序,技术交流,技术分享' }],
       ['meta', { property: 'og:title', content: 'Herrylo`s Blog' }],
-      ['meta', { property: 'og:description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流,技术分享' }],
+      ['meta', { property: 'og:description', content: 'This is my personal blog site, I hope to share the content can help you' }],
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],
       ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
       ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
@@ -23,7 +23,8 @@ module.exports = {
       ['link', { rel: 'apple-touch-icon', href: '/image/logotouchicon.jpg' }],
       ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
       ['script', {}, `
-        var _hmt = _hmt || [];
+        var _hmt = _hmt || [];56
+        var _hmt = _hmt || [];56
         (function() {
           var hm = document.createElement("script");
           hm.src = "https://hm.baidu.com/hm.js?03fcbc1674d5d46ad9125d7e0dbb5d51";
