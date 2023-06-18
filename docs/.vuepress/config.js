@@ -3,6 +3,8 @@ module.exports = {
     description: 'JavaScript,Reactjs,小程序,数据结构,Docker,技术,随笔,推荐',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
       ['meta', { charset: 'utf-8' }],
+      ['meta', { name: 'apple-mobile-web-app-title', content: 'Herrylo`s Blog'}],
+      ['meta', { name: 'application-name', content: 'Herrylo`s Blog'}],
       ['meta', { name: 'description', content: 'Herrylo`s Blog,JavaScript,ReactJs,小程序,Vuejs,Nodejs,技术交流,技术分享'}],
       ['meta', { name: 'keywords', content: '前端,JavaScript,ReactJs,前端开发,Nodejs,Docker,Rancher,数据结构,小程序,技术交流,技术分享' }],
       ['meta', { property: 'og:title', content: 'Herrylo`s Blog' }],
@@ -13,6 +15,7 @@ module.exports = {
       ['meta', { name: 'msapplication-TileImage', content: '/image/logotouchicon.jpg' }],
       ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
       ['link', { rel: 'icon', href: '/image/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
+      ['link', { rel: 'shortcut icon', href: '/image/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
       ['link', { rel: 'manifest', href: '/manifest.json' }],
       ['link', { rel: 'apple-touch-icon', href: '/image/logotouchicon.jpg' }],
       ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
