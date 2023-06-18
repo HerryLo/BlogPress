@@ -110,15 +110,20 @@ export default {
       &:hover
         background-color lighten($accentColor, 10%)
   .features
-    border-top 1px solid $borderColor
+    // border-top 1px solid $borderColor
     padding 1.2rem 0
     margin-top 2.5rem
     display flex
     flex-wrap wrap
-    align-items flex-start
+    align-items center
     align-content stretch
     justify-content center
   .feature
+    margin-right 1em
+    margin-bottom 1em
+    padding 0 5rem
+    text-align: center
+    box-shadow: 0px 0px 5px 1px #eee
     // flex-grow 1
     // flex-basis 30%
     // max-width 30%
@@ -127,9 +132,12 @@ export default {
       font-weight 500
       border-bottom none
       padding-bottom 0
-      color lighten($textColor, 10%)
+      // color lighten($textColor, 10%)
+      color: lighten(#4abf8a, 10%)
     p
       color lighten($textColor, 25%)
+  .feature:hover
+      background: #d7e8e0 !important;
   .footer
     font-size 0.6rem
     padding 1.0rem
