@@ -120,6 +120,7 @@ export default {
   border-radius: 50%;
   margin-right: 4px;
   cursor: pointer;
+  transform: scale(.6);
 }
 
 // .createtime::after {
@@ -133,11 +134,11 @@ export default {
 
 .line-height {
   border-radius: 2px;
-  height: 51px;
-  width: 0.3rem;
+  height: 55px;
+  width: 0.1rem;
   position: absolute;
-  top: 37px;
-  left: 6px;
+  top: 34px;
+  left: 8px;
   background-color: #eee;
 }
 
