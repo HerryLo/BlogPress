@@ -196,7 +196,7 @@ function flatten(items, res) {
   width: 27%
   margin-top 10rem
   height auto
-  margin-left: 6em
+  // margin-left: 6em
   padding-right: 7%;
 
 .page-edit
@@ -245,7 +245,7 @@ function flatten(items, res) {
       float none
       text-align left
 
-@media (max-width: 1200px)
+@media (max-width: 1500px)
   .right-group,
   .right-wrapper
     display none

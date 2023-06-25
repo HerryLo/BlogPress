@@ -52,6 +52,14 @@ export default {
     & > li:not(:first-child)
       margin-top .75rem
 
+.sidebar::-webkit-scrollbar
+  width: 0.5em;
+.sidebar::-webkit-scrollbar-thumb
+  height: 1em
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  border-radius: 10px;
+
 @media (max-width: $MQMobile)
   .sidebar
     .nav-links
