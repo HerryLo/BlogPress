@@ -9,6 +9,8 @@
 ```javscript
 $ npm install vuepress@1.9.7
 
+$ npm install
+
 // 发布到 Github Pages，如：https://herrylo.github.io
 $ npm run deploy 
 ```

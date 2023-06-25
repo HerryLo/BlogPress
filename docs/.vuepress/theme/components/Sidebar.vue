@@ -22,7 +22,7 @@ export default {
 
 <style lang="stylus">
 .sidebar
-  transform translateX(-100%)
+  // transform translateX(-100%)
   ul
     padding 0
     margin 0

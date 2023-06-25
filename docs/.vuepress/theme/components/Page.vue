@@ -48,7 +48,6 @@
 
     <slot name="bottom" />
     <Valine></Valine>
-    <!-- <Gitalk></Gitalk> -->
   </main>
 </template>
 
