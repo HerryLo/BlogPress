@@ -58,19 +58,19 @@ module.exports = {
         color: "#3eaf7c",
       },
     ],
-    // [
-    //   "script",
-    //   {},
-    //   `
-    //     var _hmt = _hmt || [];
-    //     var _hmt = _hmt || [];
-    //     (function() {
-    //       var hm = document.createElement("script");
-    //       hm.src = "https://hm.baidu.com/hm.js?03fcbc1674d5d46ad9125d7e0dbb5d51";
-    //       var s = document.getElementsByTagName("script")[0]; 
-    //       s.parentNode.insertBefore(hm, s);
-    //     })();`,
-    // ],
+    [
+      "script",
+      {},
+      `
+        var _hmt = _hmt || [];
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?03fcbc1674d5d46ad9125d7e0dbb5d51";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();`,
+    ],
   ],
   base: "/", // 这是部署到github相关的配置
   markdown: {
