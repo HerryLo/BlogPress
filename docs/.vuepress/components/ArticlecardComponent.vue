@@ -1,5 +1,5 @@
 <template>
-  <div class="ArtCard">
+  <div class="ArtCard" v-if="list.length">
     <div class="cardLists" v-for="(item, index) in list" v-bind:key="item.path">
       <div class="createtime">{{ item.frontmatter.createDate }}</div>
       <a class="itemCard" v-bind:href="item.path">
@@ -7,18 +7,8 @@
           <div>{{ item.frontmatter.title }}</div>
         </div>
         <div class="desc">
-          <!-- <span v-for="slug in item.headers" v-bind:key="slug">{{slug.slug}}</span> -->
         </div>
         <div class="line-height" v-if="index !== list.length - 1"></div>
-        <!-- <div class="detail tags">
-          <div
-            class="tag"
-            v-bind:key="tage"
-            v-for="tage in item.frontmatter.tagList"
-          >
-            {{ tage }}
-          </div>
-        </div> -->
       </a>
     </div>
   </div>
