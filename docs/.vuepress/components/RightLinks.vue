@@ -38,6 +38,11 @@ export default {
           link: "https://www.iceice.top/",
           blog: "https://www.iceice.top/",
         },
+        {
+          name: "衔蝉 Blog",
+          link: "https://www.xianchan.ah.cn",
+          blog: "https://www.xianchan.ah.cn",
+        }
       ],
     };
   },
