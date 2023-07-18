@@ -117,11 +117,17 @@ module.exports = {
             { title: "🔥 JavaScript-图解Promise", path: "2021-02-05" },
             { title: "🔥 TCP-的三次握手和四次挥手", path: "2019-08-17" },
             { title: "🔥 TCP&UDP-传输层的TCP和UDP协议", path: "2019-08-02" },
-            { title: "🔥 JavaScript-Axios部分源码解析-拦截器", path: "2020-10-21" },
+            {
+              title: "🔥 JavaScript-Axios部分源码解析-拦截器",
+              path: "2020-10-21",
+            },
             { title: "🔥 JavaScript-react-redux原理解析", path: "2019-12-20" },
             { title: "🔥 JavaScript-redux原理解析", path: "2019-10-26" },
             { title: "🔥 JavaScript-Promise原理解析", path: "2019-09-22" },
-            { title: "🔥 JavaScript-ES6中的Iterator迭代器", path: "2020-06-04" },
+            {
+              title: "🔥 JavaScript-ES6中的Iterator迭代器",
+              path: "2020-06-04",
+            },
             {
               title: "🔥 JavaScript-JS如何工作：垃圾回收",
               path: "2019-04-01",
@@ -143,17 +149,26 @@ module.exports = {
             { title: ". 小程序-小程序开发指南之性能优化", path: "2019-11-30" },
             { title: ". 知识扩展-Rancher前端服务发布", path: "2022-04-27" },
             { title: ". 知识扩展-SQL查询基础", path: "2022-02-11" },
-            { title: ". 知识扩展-AntV G2可视化引擎, 有用过嘛？", path: "2021-11-24" },
+            {
+              title: ". 知识扩展-AntV G2可视化引擎, 有用过嘛？",
+              path: "2021-11-24",
+            },
             { title: ". 知识扩展-Docker构建前端项目", path: "2021-10-30" },
             { title: ". JavaScript-async/await应用和原理", path: "2020-04-05" },
             { title: ". React Hooks useRef 使用范围", path: "2022-04-22" },
             { title: ". React-Hooks的功能组件", path: "2019-04-25" },
             { title: ". React-正交React组件的好处", path: "2019-12-29" },
             { title: ". React-开发中应该规避的问题", path: "2019-11-24" },
-            { title: ". React解析: render的中的update(四)", path: "2019-10-06" },
+            {
+              title: ". React解析: render的中的update(四)",
+              path: "2019-10-06",
+            },
             { title: ". React解析 render的FiberRoot(三)", path: "2019-08-10" },
             { title: ". React解析 React.Children(二)", path: "2019-05-13" },
-            { title: ". React解析: React.createElement(一)", path: "2019-05-12" },
+            {
+              title: ". React解析: React.createElement(一)",
+              path: "2019-05-12",
+            },
             { title: ". 设计模式-项目中使用订阅发布", path: "2020-12-31" },
             { title: ". 数据结构-项目中的使用队列", path: "2021-01-01" },
             { title: ". 数据结构-二叉树的实现和遍历", path: "2020-07-01" },
@@ -161,7 +176,7 @@ module.exports = {
             { title: ". 数据结构-循环队列的应用和实现", path: "2020-03-02" },
             { title: ". 数据结构-链表的应用和实现", path: "2020-02-14" },
           ],
-        }
+        },
       ],
       "/essay/": ["", "2023-01-06", "2022-01-21", "2021-08-29"],
       "/recommend/": [
@@ -181,27 +196,45 @@ module.exports = {
     searchMaxSuggestions: 10,
     // sidebar: 'auto'
   },
-  plugins: {
-    "@vuepress/register-components": {
-      componentsDir: "./components",
-    },
-    "@vuepress/pwa": {
-      serviceWorker: true,
-      updatePopup: {
-        message: "New content is available.",
-        buttonText: "Refresh",
+  plugins: [
+    [
+      "@vuepress/register-components",
+      {
+        componentsDir: "./components",
       },
-    },
-    "@vuepress/back-to-top": {},
-    "vuepress-plugin-nuggets-style-copy": {
-      copyText: "复制代码",
-      tip: {
-        content: "复制成功",
+    ],
+    [
+      "@vuepress/pwa",
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: "New content is available.",
+          buttonText: "Refresh",
+        },
       },
-    },
-    copyright: {
-      authorName: "Herrylo", // 选中的文字将无法被复制
-      minLength: 30, // 如果长度超过  30 个字符
-    },
-  },
+    ],
+    [
+      "vuepress-plugin-nuggets-style-copy",
+      {
+        copyText: "复制代码",
+        tip: {
+          content: "复制成功",
+        },
+      },
+    ],
+    [
+      "copyright",
+      {
+        authorName: "Herrylo", // 选中的文字将无法被复制
+        minLength: 30, // 如果长度超过  30 个字符
+      },
+    ],
+    [require("./vuepress-plugin-md-tags"), {
+      type: 'default',
+      color: '#fff',  // 标签字体颜色
+      borderColor: 'transparent', // 标签边框颜色
+      background: 'rgb(45, 183, 245)', // 标签背景颜色
+    }],
+    "@vuepress/back-to-top",
+  ],
 };
