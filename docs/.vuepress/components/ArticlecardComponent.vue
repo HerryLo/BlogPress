@@ -6,8 +6,7 @@
         <div class="title" v-bind:href="item.path">
           <div>{{ item.frontmatter.title }}</div>
         </div>
-        <div class="desc">
-        </div>
+        <div class="desc"></div>
         <div class="line-height" v-if="index !== list.length - 1"></div>
       </a>
     </div>
@@ -39,7 +38,12 @@ export default {
 
     let sidebarList = [];
     // console.log(currentSidebar)
-    if (currentSidebar[0] instanceof Object && this.path == "front") {
+    if (this.path == "front" && this.sidebarIndex instanceof Array) {
+      this.sidebarIndex.forEach((idx) => {
+        sidebarList = sidebarList.concat(currentSidebar[idx].children);
+      });
+      sidebarList = sidebarList.sort((a, b) => moment(b.path) - moment(a.path) )
+    } else if (currentSidebar[0] instanceof Object && this.path == "front") {
       // 二维数组 font页面
       sidebarList = sidebarList.concat(
         currentSidebar[this.sidebarIndex].children
@@ -48,30 +52,32 @@ export default {
       sidebarList = sidebarList.concat(currentSidebar);
     }
 
-    try{
-    const list = [];
-    console.log(sidebarList);
-    // console.log(pages);
-    sidebarList.forEach((item) => {
-      let page = null;
-       if (item instanceof Array){
-        page = pages.filter((page) => page.regularPath.includes(item[0]));
-      } else if (item instanceof Object) {
-        const path = item.path;
-        console.log(path)
-        const date = path instanceof Array ? path[0].split("/") : path.split("/").pop();
-        page = pages.filter((page) => page.regularPath.includes(date));
-      } else if (item && typeof item === "string") {
-        page = pages.filter((page) => page.regularPath.includes(item));
-      }
-      if (page && page.length) {
-        const frontmatter = page[0].frontmatter;
-        frontmatter.createDate = moment(frontmatter.date).format('YYYY-MM-DD');
-        list.push(page[0]);
-      }
-    });
-    this.list = list;
-    }catch(e){}
+    try {
+      const list = [];
+      console.log(sidebarList);
+      // console.log(pages);
+      sidebarList.forEach((item) => {
+        let page = null;
+        if (item instanceof Array) {
+          page = pages.filter((page) => page.regularPath.includes(item[0]));
+        } else if (item instanceof Object) {
+          const path = item.path;
+          const date =
+            path instanceof Array ? path[0].split("/") : path.split("/").pop();
+          page = pages.filter((page) => page.regularPath.includes(date));
+        } else if (item && typeof item === "string") {
+          page = pages.filter((page) => page.regularPath.includes(item));
+        }
+        if (page && page.length) {
+          const frontmatter = page[0].frontmatter;
+          frontmatter.createDate = moment(frontmatter.date).format(
+            "YYYY-MM-DD"
+          );
+          list.push(page[0]);
+        }
+      });
+      this.list = list;
+    } catch (e) {}
   },
   methods: {},
 };
@@ -101,27 +107,28 @@ export default {
   overflow: hidden;
   padding-right: 10px;
 }
+
 .createtime:first-child {
   // color: #e33131
 }
+
 .createtime::before {
   content: '👨‍💻';
   display: inline-block;
   border-radius: 50%;
   margin-right: 4px;
   cursor: pointer;
-  transform: scale(.6);
+  transform: scale(0.6);
 }
 
 // .createtime::after {
-//   content: '👉';
-//   display: inline-block;
-//   cursor: pointer;
-//   position: relative;
-//   top: -3px;
-//   left: 5px;
+// content: '👉';
+// display: inline-block;
+// cursor: pointer;
+// position: relative;
+// top: -3px;
+// left: 5px;
 // }
-
 .line-height {
   border-radius: 2px;
   height: 55px;
@@ -188,11 +195,10 @@ export default {
     margin-left: 0px;
   }
 }
+
 @media (max-width: 1111px) {
-  .createtime,
-  .line-height {
+  .createtime, .line-height {
     display: none;
   }
 }
-
 </style>
