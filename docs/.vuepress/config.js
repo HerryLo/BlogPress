@@ -230,7 +230,8 @@ module.exports = {
       },
     ],
     [require("./vuepress-plugin-md-tags"), {
-      type: 'rainbow',
+      // type: 'rainbow',
+      type: 'default'
       // color: '#fff',  // 标签字体颜色
       // borderColor: 'transparent', // 标签边框颜色
       // background: 'rgb(45, 183, 245)', // 标签背景颜色
