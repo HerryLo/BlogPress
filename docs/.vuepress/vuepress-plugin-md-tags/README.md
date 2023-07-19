@@ -1,4 +1,4 @@
-# vuepress-plugin-tags
+# vuepress-plugin-md-tags
 
 适用于 [vuepress](https://vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 插件的插件
 
