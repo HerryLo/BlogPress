@@ -91,6 +91,7 @@ module.exports = {
     nav: [
       // 导航栏配置
       { text: "主页", link: "/" },
+      { text: "vuepress-plugin-md-tags", link: "/vuepress-plugin/" },
       { text: "😎技术", link: "/front/" },
       { text: "🙈随笔", link: "/essay/" },
       { text: "👏推荐", link: "/recommend/" },
@@ -189,7 +190,7 @@ module.exports = {
         "2019-12-09",
         "2019-11-17",
         "2019-09-20",
-      ],
+      ]
     },
     activeHeaderLinks: false,
     search: true,
