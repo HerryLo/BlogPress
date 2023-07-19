@@ -118,7 +118,7 @@ module.exports = {
             { title: "🔥 TCP-的三次握手和四次挥手", path: "2019-08-17" },
             { title: "🔥 TCP&UDP-传输层的TCP和UDP协议", path: "2019-08-02" },
             {
-              title: "🔥 JavaScript-Axios部分源码解析-拦截器",
+              title: "🔥 JavaScript-Axios源码解析拦截器",
               path: "2020-10-21",
             },
             { title: "🔥 JavaScript-react-redux原理解析", path: "2019-12-20" },
@@ -230,10 +230,10 @@ module.exports = {
       },
     ],
     [require("./vuepress-plugin-md-tags"), {
-      type: 'default',
-      color: '#fff',  // 标签字体颜色
-      borderColor: 'transparent', // 标签边框颜色
-      background: 'rgb(45, 183, 245)', // 标签背景颜色
+      type: 'rainbow',
+      // color: '#fff',  // 标签字体颜色
+      // borderColor: 'transparent', // 标签边框颜色
+      // background: 'rgb(45, 183, 245)', // 标签背景颜色
     }],
     "@vuepress/back-to-top",
   ],
