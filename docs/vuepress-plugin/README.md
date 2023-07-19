@@ -69,10 +69,10 @@ module.exports = {
 
 type 有如下的选项：
 
-- default 默认主题，与 vuepress 官方默认主题颜色一致；其他的 5 个则是不同的语义主题
+- rainbow : 默认彩虹主题 目前不支持自定义
+- default 设置后，才可以定义修改颜色；与 vuepress 官方默认主题颜色一致；
 - primary : 语义主题
 - success : 语义主题
 - info : 语义主题
 - warning : 语义主题
 - danger : 语义主题
-- rainbow : 彩虹主题 目前不支持自定义
