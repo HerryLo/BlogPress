@@ -26,6 +26,7 @@
     "vuepress": "^1.9.7",
     "vuepress-plugin-copyright": "^1.0.2",
     "vuepress-plugin-cursor-effects": "^1.1.6",
+    "vuepress-plugin-md-tags": "^1.0.3",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3"
   },
   "dependencies": {

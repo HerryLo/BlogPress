@@ -230,7 +230,7 @@ module.exports = {
         minLength: 30, // 如果长度超过  30 个字符
       },
     ],
-    [require("./vuepress-plugin-md-tags"), {
+    ["vuepress-plugin-md-tags", {
       // type: 'rainbow',
       type: 'default'
       // color: '#fff',  // 标签字体颜色
