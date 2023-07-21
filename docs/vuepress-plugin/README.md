@@ -54,6 +54,10 @@ module.exports = {
 
 ## 详细配置参数
 
+::: warning
+提示：tag标签会被默认插入到h1标题下，建议h1文章标题添加到文章顶部，在文档中`# vuepress-plugin-md-tags` 会即是h1标题
+:::
+
 ```javascript
 module.exports = {
   "plugins": [
