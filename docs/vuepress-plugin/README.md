@@ -17,9 +17,11 @@ tags:
 
 ## Intro
 
-vuepress@1.x文档tag插件
+[npm vuepress@1.x文档tag插件](https://www.npmjs.com/package/vuepress-plugin-md-tags)
 
-适用于 [vuepress@1.x](https://vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 的插件，参考tag样式可以查看 [link here](https://herrylo.github.io/front/2021-06-23.html)，配置代码参考[link here](https://github.com/HerryLo/BlogPress/blob/master/docs/.vuepress/config.js#L225)
+[文档tag插件示例](https://herrylo.github.io/vuepress-plugin/)
+
+适用于 [vuepress@1.x](https://vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 的插件，参考tag样式可以查看 [link here](https://herrylo.github.io/vuepress-plugin/)，配置代码参考[link here](https://github.com/HerryLo/BlogPress/blob/master/docs/.vuepress/config.js#L225)
 
 当然这需要你的这个页面顶部有 [Front Matter](https://vuepress.vuejs.org/zh/guide/frontmatter.html#front-matter), 本插件使用了官方预定义的 [内置搜索中的 `tags`](https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%86%85%E7%BD%AE%E6%90%9C%E7%B4%A2)
 来渲染。
@@ -29,8 +31,8 @@ Front Matter 对应如下
 ```
 ---
 tags:
-  - 前端
-  - javascript
+  - vuepress
+  - plugin
 ---
 ```
 
@@ -39,8 +41,6 @@ tags:
 ```bash
 npm install vuepress-plugin-md-tags
 ```
-
-> open npm : https://www.npmjs.com/package/vuepress-plugin-md-tags
 
 ## Usage
 
@@ -52,28 +52,28 @@ module.exports = {
 }
 ```
 
-## Option
+## 详细配置参数
 
 ```javascript
 module.exports = {
   "plugins": [
     ["vuepress-plugin-tags", {
       type: 'default', // 标签预定义样式
-      color: '#42b983',  // 标签字体颜色
-      border: '1px solid #e2faef', // 标签边框颜色
-      backgroundColor: '#f0faf5', // 标签背景颜色
+      color: '#fff',  // 标签字体颜色
+      borderColor: 'transparent', // 标签边框颜色
+      background: 'rgb(45, 183, 245)', // 标签背景颜色
       selector: '.page .content__default h1'
     }]
   ]
 }
 ```
 
-上述配置中的 color、border、backgroundColor 只在 type=default 时生效。
+上述配置中的 color、borderColor、background 只在 type=default 时生效。
 
 type 有如下的选项：
 
-- rainbow : 默认彩虹主题 目前不支持自定义
-- default 设置后，才可以定义修改颜色；与 vuepress 官方默认主题颜色一致；
+- rainbow : 彩虹主题 目前不支持自定义
+- default 默认主题，与 vuepress 官方默认主题颜色一致；
 - primary : 语义主题
 - success : 语义主题
 - info : 语义主题
