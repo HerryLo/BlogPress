@@ -54,7 +54,7 @@ module.exports = {
 ```javascript
 module.exports = {
   "plugins": [
-    ["vuepress-plugin-tags", {
+    ["vuepress-plugin-md-tags", {
       type: 'default', // 标签预定义样式
       color: '#42b983',  // 标签字体颜色
       border: '1px solid #e2faef', // 标签边框颜色
