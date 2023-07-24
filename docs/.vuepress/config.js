@@ -105,6 +105,7 @@ module.exports = {
           initialOpenGroupIndex: -1,
           path: "/front/",
           children: [
+            { title: ". 如何使用Github Actions发布npm包", path: "2023-07-23" },
             { title: "🔥 2022非面试季前端知识整理总结", path: "2021-06-23" },
             {
               title: "🔥 知道前端工程部署有哪些方式嘛？",
