@@ -4,12 +4,10 @@ description: HerryLo`s Blog, 个人技术成长路线
 date: 2019-08-20
 ---
 
-## 个人成长时间线
+# 个人成长时间线
 <div class="time-line">
 
-[**我的网站**](https://www.didiheng.com/)，邮箱: herryloyopai@gmail.com，微信号：18516158419，欢迎交流哦！！
-
-[**GitHub**: ✨✨Record Blog Articles](https://github.com/AttemptWeb/Record)，[**掘金**：😄😄HerryLo](https://juejin.im/user/5b3ec4e9e51d4519162e2779)，欢迎来踩😯😯！！
+[**我的网站**](https://herrylo.github.io/)，邮箱: herryloyopai@163.com，微信号：1169170165，欢迎交流哦！！
 
 * **2019年9月**
 > 学习[算法与数据结构](https://www.bilibili.com/video/av12907870/?p=12)，同时自己尽量的看更多的书，不限制类型。学习[Promise原理](https://herrylo.github.io/front/2019-09-22.html)、[redux原理](https://herrylo.github.io/front/2019-10-26.html)、webapck原理。
