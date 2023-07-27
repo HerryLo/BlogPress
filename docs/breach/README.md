@@ -1,6 +1,6 @@
 ---
 title: 个人成长时间线
-description: HerryLo`s Blog, 个人技术成长路线
+description: HerryLo`s Blog 技术成长路线
 date: 2019-08-20
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: vuepress-plugin插件
-description: vuepress@1.x文档tag插件 vuepress-plugin-md-tags
+description: HerryLo`s Blog vuepress@1.x文档tag插件 vuepress-plugin-md-tags
 sidebar: auto
 sidebarDepth: 3
 tags: 
