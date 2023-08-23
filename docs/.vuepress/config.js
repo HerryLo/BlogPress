@@ -58,19 +58,19 @@ module.exports = {
         color: "#3eaf7c",
       },
     ],
-    [
-      "script",
-      {},
-      `
-        var _hmt = _hmt || [];
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?03fcbc1674d5d46ad9125d7e0dbb5d51";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();`,
-    ],
+    // [
+    //   "script",
+    //   {},
+    //   `
+    //     var _hmt = _hmt || [];
+    //     var _hmt = _hmt || [];
+    //     (function() {
+    //       var hm = document.createElement("script");
+    //       hm.src = "https://hm.baidu.com/hm.js?03fcbc1674d5d46ad9125d7e0dbb5d51";
+    //       var s = document.getElementsByTagName("script")[0]; 
+    //       s.parentNode.insertBefore(hm, s);
+    //     })();`,
+    // ],
     [
       "script",
       {},
@@ -105,6 +105,7 @@ module.exports = {
           initialOpenGroupIndex: -1,
           path: "/front/",
           children: [
+            { title: ". 关于Web GIS基础知识", path: "2023-08-23" },
             { title: ". 如何使用Github Actions发布npm包", path: "2023-07-23" },
             { title: "🔥 2022非面试季前端知识整理总结", path: "2021-06-23" },
             {
