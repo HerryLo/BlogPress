@@ -47,6 +47,11 @@ export default {
           name: "blogweb",
           link: "https://blogweb.cn/",
           blog: "https://blogweb.cn/",
+        },
+        {
+          name: "krimeshu",
+          link: "https://blog.krimeshu.com/",
+          blog: "https://blog.krimeshu.com/",
         }
       ],
     };
