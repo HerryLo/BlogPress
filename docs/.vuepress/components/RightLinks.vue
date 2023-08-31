@@ -52,6 +52,11 @@ export default {
           name: "krimeshu",
           link: "https://blog.krimeshu.com/",
           blog: "https://blog.krimeshu.com/",
+        },
+        {
+          name: "Tsix's 编程日记",
+          link: "https://www.tsix.top/",
+          blog: "https://www.tsix.top/",
         }
       ],
     };
