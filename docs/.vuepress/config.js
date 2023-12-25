@@ -147,6 +147,7 @@ module.exports = {
           path: "/front/",
           children: [
             { title: "OpenLayers之基础入门", path: "/front/gis/2023-12-25" },
+            { title: "OpenLayers之地图控件", path: "/front/gis/2023-12-26" },
           ]
         },
         {
