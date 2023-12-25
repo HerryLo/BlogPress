@@ -140,14 +140,24 @@ module.exports = {
           ],
         },
         {
+          title: "GIS地图",
+          collapsable: true,
+          initialOpenGroupIndex: -1,
+          sidebarDepth: 3,
+          path: "/front/",
+          children: [
+            { title: "OpenLayers之基础入门", path: "/front/gis/2023-12-25" },
+          ]
+        },
+        {
           title: "Web开发",
           collapsable: true,
           initialOpenGroupIndex: -1,
           sidebarDepth: 3,
           path: "/front/",
           children: [
-            { title: "☕Java-Java语言编译运行", path: "2023-10-24" },
-            { title: "☕Java-Spring Boot打包部署", path: "2023-10-25" },
+            { title: "☕Java-Java语言编译运行", path: "/front/java/2023-10-24" },
+            { title: "☕Java-Spring Boot打包部署", path: "/front/java/2023-10-25" },
             { title: "🐧小程序-个人博客小程序构建", path: "2022-11-17" },
             { title: "🐧小程序-个人开发指南", path: "2019-07-22" },
             { title: "🐧小程序-小程序开发指南之性能优化", path: "2019-11-30" },

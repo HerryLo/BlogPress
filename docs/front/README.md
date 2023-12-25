@@ -11,5 +11,5 @@ description: Herrylo`s Blog Herrylo大流星的个人博客，会持续不断的
 # 时间线
 
 <!-- 文章卡片 -->
-<articlecard-component type='front' :index="[0, 1]"></articlecard-component>
+<articlecard-component type='front' :index="[0, 1, 2]"></articlecard-component>
 
