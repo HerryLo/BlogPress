@@ -150,6 +150,7 @@ module.exports = {
             { title: "OpenLayers之地图控件", path: "/front/gis/2023-12-26" },
             { title: "OpenLayers之图层", path: "/front/gis/2023-12-27" },
             { title: "OpenLayers之点标记", path: "/front/gis/2023-12-28" },
+            { title: "OpenLayers之信息窗体", path: "/front/gis/2023-12-29" },
           ]
         },
         {
