@@ -239,7 +239,7 @@ function flatten(items, res) {
   justify-content: space-between;
 
 .page .gitalk-container
-  width: 70%
+  width: 55%
   padding-left: 2.4rem
 
 @media (max-width: $MQMobile)
