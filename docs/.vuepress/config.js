@@ -241,16 +241,16 @@ module.exports = {
         componentsDir: "./components",
       },
     ],
-    [
-      "@vuepress/pwa",
-      {
-        serviceWorker: true,
-        updatePopup: {
-          message: "New content is available.",
-          buttonText: "Refresh",
-        },
-      },
-    ],
+    // [
+    //   "@vuepress/pwa",
+    //   {
+    //     serviceWorker: true,
+    //     updatePopup: {
+    //       message: "New content is available.",
+    //       buttonText: "Refresh",
+    //     },
+    //   },
+    // ],
     [
       "vuepress-plugin-nuggets-style-copy",
       {

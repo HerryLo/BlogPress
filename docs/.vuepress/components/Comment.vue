@@ -31,3 +31,8 @@ export default {
   },
 };
 </script>
+<style lang="stylus">
+.gitalk-container
+  width: 70%
+  padding-left: 2.4rem
+</style>
