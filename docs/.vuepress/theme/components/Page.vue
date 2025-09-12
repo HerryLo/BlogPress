@@ -50,7 +50,6 @@
 
     <!-- 评论组件 -->
     <Comment></Comment>
-    
   </main>
 </template>
 
