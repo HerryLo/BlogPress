@@ -47,7 +47,8 @@
     </div>
 
     <slot name="bottom" />
-    <Valine></Valine>
+    <!-- <Valine></Valine> -->
+    <Comment></Comment>
   </main>
 </template>
 

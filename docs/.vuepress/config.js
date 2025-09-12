@@ -67,7 +67,7 @@ module.exports = {
     //     (function() {
     //       var hm = document.createElement("script");
     //       hm.src = "https://hm.baidu.com/hm.js?03fcbc1674d5d46ad9125d7e0dbb5d51";
-    //       var s = document.getElementsByTagName("script")[0]; 
+    //       var s = document.getElementsByTagName("script")[0];
     //       s.parentNode.insertBefore(hm, s);
     //     })();`,
     // ],
@@ -91,11 +91,22 @@ module.exports = {
     nav: [
       // 导航栏配置
       { text: "主页", link: "/" },
-      { text: "vuepress-plugin-md-tags", link: "/vuepress-plugin/" },
       { text: "😎技术", link: "/front/" },
       { text: "🙈随笔", link: "/essay/" },
       { text: "👏推荐", link: "/recommend/" },
-      { text: "GitHub", link: "https://github.com/HerryLo/BlogPress" },
+      {
+        text: "更多",
+        items: [
+          {
+            text: "GitHub",
+            link: "https://github.com/HerryLo/BlogPress",
+          },
+          {
+            text: "vuepress-plugin-md-tags",
+            link: "/vuepress-plugin/",
+          },
+        ],
+      },
     ],
     sidebar: {
       "/front/": [
@@ -152,7 +163,7 @@ module.exports = {
             { title: "OpenLayers之点标记", path: "/front/gis/2023-12-28" },
             { title: "OpenLayers之信息窗体", path: "/front/gis/2023-12-29" },
             { title: "OpenLayers之矢量图形", path: "/front/gis/2024-01-01" },
-          ]
+          ],
         },
         {
           title: "Web开发",
@@ -161,8 +172,14 @@ module.exports = {
           sidebarDepth: 3,
           path: "/front/",
           children: [
-            { title: "☕Java-Java语言编译运行", path: "/front/java/2023-10-24" },
-            { title: "☕Java-Spring Boot打包部署", path: "/front/java/2023-10-25" },
+            {
+              title: "☕Java-Java语言编译运行",
+              path: "/front/java/2023-10-24",
+            },
+            {
+              title: "☕Java-Spring Boot打包部署",
+              path: "/front/java/2023-10-25",
+            },
             { title: "🐧小程序-个人博客小程序构建", path: "2022-11-17" },
             { title: "🐧小程序-个人开发指南", path: "2019-07-22" },
             { title: "🐧小程序-小程序开发指南之性能优化", path: "2019-11-30" },
@@ -210,7 +227,7 @@ module.exports = {
         "2019-12-09",
         "2019-11-17",
         "2019-09-20",
-      ]
+      ],
     },
     activeHeaderLinks: false,
     search: true,
@@ -250,13 +267,23 @@ module.exports = {
         minLength: 30, // 如果长度超过  30 个字符
       },
     ],
-    ["vuepress-plugin-md-tags", {
-      // type: 'rainbow',
-      type: 'default'
-      // color: '#fff',  // 标签字体颜色
-      // borderColor: 'transparent', // 标签边框颜色
-      // background: 'rgb(45, 183, 245)', // 标签背景颜色
-    }],
+    [
+      "vuepress-plugin-md-tags",
+      {
+        // type: 'rainbow',
+        type: "default",
+        // color: '#fff',  // 标签字体颜色
+        // borderColor: 'transparent', // 标签边框颜色
+        // background: 'rgb(45, 183, 245)', // 标签背景颜色
+      },
+    ],
     "@vuepress/back-to-top",
+    'gitalk', {
+      clientID: 'YOUR_CLIENT_ID',
+      clientSecret: 'YOUR_CLIENT_SECRET',
+      repo: 'YOUR_REPO',
+      owner: 'YOUR_OWNER',
+      admin: ['YOUR_ADMIN']
+    }
   ],
 };

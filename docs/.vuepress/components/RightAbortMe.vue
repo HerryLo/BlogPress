@@ -2,7 +2,7 @@
   <div class="right-time">
     <div class="content-title">🥰Me</div>
     <div class="content-wrapper">
-        <p>男性，武汉工作，会点Web，擅长Javascript.</p>
+        <p>武汉工作，会点Web，擅长Javascript.</p>
         <p>技术或工作问题交流，可联系微信：<i>1169170165</i>.</p>
     </div>
   </div>

@@ -1,7 +1,7 @@
 ---
 home: true
 title: '前端开发'
-description: 'HerryLo`s Blog I hope to share the content can help you'
+description: 'HerryLo`s Blog - I hope to share the content can help you'
 # heroImage: /image/1.jpg
 heroImage: /image/logo.jpg
 # actionText: Get Start →
