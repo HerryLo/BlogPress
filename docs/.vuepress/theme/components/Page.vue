@@ -49,9 +49,7 @@
     <slot name="bottom" />
 
     <!-- 评论组件 -->
-    <div class="comment" style="width: 70%;padding-left: 2.4rem">
-      <Comment></Comment>
-    </div>
+    <Comment></Comment>
     
   </main>
 </template>
@@ -240,6 +238,10 @@ function flatten(items, res) {
 .contentwapper
   display:flex;
   justify-content: space-between;
+
+.page .gitalk-container
+  width: 70%
+  padding-left: 2.4rem
 
 @media (max-width: $MQMobile)
   .page-edit
