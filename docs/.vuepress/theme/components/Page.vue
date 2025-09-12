@@ -47,8 +47,12 @@
     </div>
 
     <slot name="bottom" />
-    <!-- <Valine></Valine> -->
-    <Comment></Comment>
+
+    <!-- 评论组件 -->
+    <div class="comment" style="width: 70%;padding-left: 2.4rem">
+      <Comment></Comment>
+    </div>
+    
   </main>
 </template>
 
