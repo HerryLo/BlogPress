@@ -29,6 +29,8 @@ $ npm run deploy
 
 `docs/README.md` 网站首页
 
+评论插件使用：[Gitalk](https://github.com/gitalk/gitalk)
+
 更多详细内容可以参考：[vuepress官网](https://v1.vuepress.vuejs.org/zh/guide/getting-started.html)
 
 ## 写法
