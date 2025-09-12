@@ -37,7 +37,7 @@ export default {
     // console.log(this);
 
     let sidebarList = [];
-    console.log(currentSidebar)
+    // console.log(currentSidebar)
     if (this.path == "front" && this.sidebarIndex instanceof Array) {
       this.sidebarIndex.forEach((idx) => {
         sidebarList = sidebarList.concat(currentSidebar[idx].children);
@@ -54,8 +54,8 @@ export default {
 
     try {
       const list = [];
-      console.log(sidebarList);
-      console.log(pages);
+      // console.log(sidebarList);
+      // console.log(pages);
       sidebarList.forEach((item) => {
         let page = null;
         if (item instanceof Array) {
@@ -65,7 +65,7 @@ export default {
           page = pages.filter((page) => {
             return decodeURIComponent(page.regularPath).includes(path)
           });
-          console.log(path);
+          // console.log(path);
         } else if (item && typeof item === "string") {
           page = pages.filter((page) => decodeURIComponent(page.regularPath).includes(item));
         }

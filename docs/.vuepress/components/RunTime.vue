@@ -20,7 +20,7 @@ export default {
     this.timeInterval();
   },
   beforeDestroy() {
-    console.log('销毁运行时间组件')
+    // console.log('销毁运行时间组件')
     clearInterval(this.timer);
   },
   methods: {

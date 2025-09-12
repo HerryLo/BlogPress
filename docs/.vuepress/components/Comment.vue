@@ -1,5 +1,5 @@
 <template>
-  <div class="gitalk-container">
+  <div class="gitalk-container" style="width: 70%;padding-left: 2.4rem">
     <div id="gitalk-container"></div>
   </div>
 </template>
