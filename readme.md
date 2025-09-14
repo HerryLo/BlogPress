@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/-vuepress%401.0-brightgreen)
 ![](https://img.shields.io/badge/-vue%402.0-brightgreen)
 
-> 博客由[vuepress cli](https://v1.vuepress.vuejs.org/zh/guide/getting-started.html)构建完成，vuepres@1.x构建，本人有点懒。
+> 博客由[vuepress cli](https://v1.vuepress.vuejs.org/zh/guide/getting-started.html)构建完成，vuepres@1.x构建，目前vuepress已经有@2.0版本。
 >
 > 博客地址：https://herrylo.github.io/front/，欢迎各位star、fork
 
