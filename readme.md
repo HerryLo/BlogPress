@@ -5,7 +5,7 @@
 
 > 博客由[vuepress cli](https://v1.vuepress.vuejs.org/zh/guide/getting-started.html)构建完成，vuepres@1.x构建，目前vuepress已经有@2.0版本。
 >
-> 博客地址：https://herrylo.github.io/front/，欢迎各位star、fork
+> 博客地址：[https://herrylo.github.io](https://herrylo.github.io/front/)，欢迎各位star、fork!!
 
 ## 发布
 ```javscript
