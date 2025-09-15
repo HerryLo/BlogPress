@@ -3,7 +3,11 @@
 ![](https://img.shields.io/badge/-vuepress%401.0-brightgreen)
 ![](https://img.shields.io/badge/-vue%402.0-brightgreen)
 
-> 博客由[vuepress cli](https://v1.vuepress.vuejs.org/zh/guide/getting-started.html)构建完成
+> 博客由[vuepress cli](https://v1.vuepress.vuejs.org/zh/guide/getting-started.html)构建完成，vuepres@1.x构建，目前vuepress已经有@2.0版本。
+>
+> 博客地址：[https://herrylo.github.io](https://herrylo.github.io/front/)，欢迎各位star、fork!!
+
+此博客通过Github Pages发布，如果你也希望创建自己的博客，但是没有服务器和域名，那么Github Pages发布个人博客一定非常适合你。
 
 ## 发布
 ```javscript
@@ -17,7 +21,7 @@ $ npm run deploy
 
 ## 配置
 
-`deploy.sh` Github Pages 配置
+`deploy.sh` Github Pages 发布配置
 
 `docs/.vuepress/config.js` 网站配置
 
