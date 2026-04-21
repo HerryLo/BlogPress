@@ -24,6 +24,11 @@ highlights:
     description: 部署、构建、性能优化的经验总结
     icon: laptop-code
 projects:
+  - icon: book
+    name: 关于博客
+    desc: 我的个人博客的历史
+    link: /zh/intro.html
+
   - icon: link
     name: 我的语雀花园
     desc: 持续更新的知识沉淀
