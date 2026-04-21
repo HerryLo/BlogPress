@@ -4,12 +4,13 @@
 
 个人博客项目，使用 VuePress 2 + vuepress-theme-hope 构建。
 
-## 技术背景
+## 技术栈
 
-- VuePress 2.x + vuepress-theme-hope 2.0.0-rc.106
-- @vuepress/plugin-blog 2.0.0-rc.106 存在 replaceAll bug，需要在 `node_modules/vuepress-theme-hope/node_modules/@vuepress/plugin-blog/dist/node/index.js` 中打补丁
-- 插件降级到 rc.106 版本以避免兼容性问题
+- VuePress 2.0.0-rc.28
+- vuepress-theme-hope 2.0.0-rc.106
+- @vuepress/plugin-blog 2.0.0-rc.106
 - Vue 3 Composition API
+- dayjs
 
 ## 常见问题
 
@@ -28,11 +29,15 @@ sed -i 's/k=e=>e\.replaceAll(/k=e=>String(e).replaceAll(/g' node_modules/vuepres
 
 **解决方案**：暂不配置，使用默认文章识别。
 
-### 3. CSS 样式
+### 3. 构建时 ENOTEMPTY 警告
 
-- 主题使用 SCSS，不需要也不建议引入 Tailwind CSS
-- 组件使用 scoped CSS
-- 深色模式通过 `prefers-color-scheme: dark` 媒体查询支持
+**原因**：临时目录 `.temp` 清理失败，通常是 dev 服务器未关闭导致文件被锁定。
+
+**解决方案**：构建前确保没有 vuepress-vite 进程运行
+```bash
+pkill -f vuepress-vite
+npm run docs:build
+```
 
 ## 文件约定
 
@@ -40,3 +45,19 @@ sed -i 's/k=e=>e\.replaceAll(/k=e=>String(e).replaceAll(/g' node_modules/vuepres
 - 文章使用 frontmatter 中的 `date` 字段，格式：`YYYY-MM-DDTHH:mm:ss+08:00`
 - 组件放在 `src/.vuepress/components/` 目录
 - 公共资源放在 `src/.vuepress/public/` 目录
+- 侧边栏配置在 `src/.vuepress/sidebar/` 目录
+
+## 组件说明
+
+- **CursorParticle**: 彩色鼠标拖尾粒子效果，带点击 +1 浮动文字
+- **LinksComponent**: 友链组件
+- **PageFooter**: 页面底部组件
+
+## npm 脚本
+
+```bash
+npm run docs:dev      # 开发预览
+npm run docs:build    # 构建静态文件
+npm run docs:clean-dev # 清理缓存并重新开发
+bash deploy.sh        # 构建并部署到 GitHub Pages
+```
