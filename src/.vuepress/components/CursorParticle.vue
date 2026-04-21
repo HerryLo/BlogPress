@@ -69,8 +69,10 @@ export default {
         p.y += p.vy;
         p.life -= p.decay;
 
+        if (p.life <= 0) return;
+
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size * p.life, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, Math.max(0.1, p.size * p.life), 0, Math.PI * 2);
         ctx.fillStyle = `rgba(62, 175, 124, ${p.life * 0.8})`;
         ctx.fill();
       });
