@@ -109,8 +109,9 @@ export default {
 
         if (p.life <= 0) return;
 
-        ctx.font = "bold 18px 'JetBrains Mono', 'Fira Code', monospace";
+        ctx.font = "bold 32px 'JetBrains Mono', 'Fira Code', monospace";
         ctx.fillStyle = `rgba(255, 189, 87, ${p.life})`;
+        ctx.textAlign = "center";
         ctx.fillText(p.text, p.x, p.y);
       });
 
