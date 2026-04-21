@@ -140,26 +140,6 @@ export default {
         this.dots.push(dot);
       }
 
-      // --- Village silhouette ---
-      const village = new PIXI.Graphics();
-      village.beginFill(0x1a1a2e, 0.85);
-      // Buildings
-      village.drawRect(0, 0, w * 0.15, h * 0.15);
-      village.drawRect(w * 0.05, -h * 0.05, w * 0.08, h * 0.2);
-      village.drawRect(w * 0.12, -h * 0.08, w * 0.06, h * 0.23);
-      village.drawRect(w * 0.18, -h * 0.03, w * 0.04, h * 0.18);
-      village.drawRect(w * 0.22, -h * 0.06, w * 0.06, h * 0.21);
-      village.drawRect(w * 0.28, -h * 0.02, w * 0.03, h * 0.17);
-      // Church steeple
-      village.drawRect(w * 0.08, -h * 0.18, w * 0.025, h * 0.13);
-      village.drawRect(w * 0.065, -h * 0.22, w * 0.04, h * 0.05);
-      village.endFill();
-      village.x = w * 0.3;
-      village.y = h * 0.82;
-      village.alpha = 0;
-      container.addChild(village);
-      this.village = village;
-
       this.t = 0;
     },
     animate() {
