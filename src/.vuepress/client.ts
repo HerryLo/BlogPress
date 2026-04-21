@@ -2,6 +2,7 @@ import { defineClientConfig } from '@vuepress/client';
 import CursorParticle from './components/CursorParticle.vue';
 import LinksComponent from './components/LinksComponent.vue';
 import PageFooter from './components/PageFooter.vue';
+import VillageOverlay from './components/VillageOverlay.vue';
 
 export default defineClientConfig({
   enhance: ({ app }) => {
@@ -10,5 +11,5 @@ export default defineClientConfig({
     app.component('PageFooter', PageFooter);
   },
   layouts: {},
-  rootComponents: [CursorParticle],
+  rootComponents: [CursorParticle, VillageOverlay],
 });
