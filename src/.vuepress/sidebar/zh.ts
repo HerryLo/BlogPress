@@ -151,6 +151,14 @@ export const zhSidebar = sidebar({
       ],
     },
   ],
+  "/links/": [
+    {
+      text: "友链",
+      icon: "link",
+      collapsible: false,
+      children: [""],
+    },
+  ],
   "/archive/": [
     {
       text: "微信小程序",

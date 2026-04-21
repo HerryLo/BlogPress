@@ -150,6 +150,14 @@ export const enSidebar = sidebar({
       ],
     },
   ],
+  "/en/links/": [
+    {
+      text: "Links",
+      icon: "link",
+      collapsible: false,
+      children: [""],
+    },
+  ],
   "/en/archive/": [
     {
       text: "Mini Programs",

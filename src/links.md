@@ -1,5 +1,5 @@
 ---
-title: 外链
+title: 友链
 permalink: /links/
 ---
 
