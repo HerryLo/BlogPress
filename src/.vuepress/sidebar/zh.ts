@@ -53,6 +53,7 @@ export const zhSidebar = sidebar({
       icon: "map",
       collapsible: true,
       children: [
+        { text: "关于Web GIS基础知识", link: "/frontend/2023-08-23" },
         { text: "OpenLayers之基础入门", link: "/frontend/gis/2023-12-25" },
         { text: "OpenLayers之地图控件", link: "/frontend/gis/2023-12-26" },
         { text: "OpenLayers之图层", link: "/frontend/gis/2023-12-27" },

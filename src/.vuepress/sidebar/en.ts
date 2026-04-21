@@ -53,6 +53,7 @@ export const enSidebar = sidebar({
       icon: "map",
       collapsible: true,
       children: [
+        { text: "Web GIS Basics", link: "/en/frontend/2023-08-23" },
         { text: "OpenLayers Getting Started", link: "/en/frontend/gis/2023-12-25" },
         { text: "OpenLayers Map Controls", link: "/en/frontend/gis/2023-12-26" },
         { text: "OpenLayers Layers", link: "/en/frontend/gis/2023-12-27" },
