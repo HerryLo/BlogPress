@@ -1,7 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-  "/front/": [
+  "/frontend/": [
     {
       text: "技术文章",
       icon: "book",
@@ -53,22 +53,12 @@ export const zhSidebar = sidebar({
       icon: "map",
       collapsible: true,
       children: [
-        { text: "OpenLayers之基础入门", link: "/front/gis/2023-12-25" },
-        { text: "OpenLayers之地图控件", link: "/front/gis/2023-12-26" },
-        { text: "OpenLayers之图层", link: "/front/gis/2023-12-27" },
-        { text: "OpenLayers之点标记", link: "/front/gis/2023-12-28" },
-        { text: "OpenLayers之信息窗体", link: "/front/gis/2023-12-29" },
-        { text: "OpenLayers之矢量图形", link: "/front/gis/2024-01-01" },
-      ],
-    },
-    {
-      text: "微信小程序",
-      icon: "book",
-      collapsible: true,
-      children: [
-        { text: "小程序-个人博客小程序构建", link: "2022-11-17" },
-        { text: "小程序-个人开发指南", link: "2019-07-22" },
-        { text: "小程序-小程序开发指南之性能优化", link: "2019-11-30" }
+        { text: "OpenLayers之基础入门", link: "/frontend/gis/2023-12-25" },
+        { text: "OpenLayers之地图控件", link: "/frontend/gis/2023-12-26" },
+        { text: "OpenLayers之图层", link: "/frontend/gis/2023-12-27" },
+        { text: "OpenLayers之点标记", link: "/frontend/gis/2023-12-28" },
+        { text: "OpenLayers之信息窗体", link: "/frontend/gis/2023-12-29" },
+        { text: "OpenLayers之矢量图形", link: "/frontend/gis/2024-01-01" },
       ],
     },
     {
@@ -82,7 +72,17 @@ export const zhSidebar = sidebar({
         { text: "数据结构-二叉树的实现和遍历", link: "2020-07-01" },
         { text: "数据结构-项目中的使用队列", link: "2021-01-01" },
       ],
-    }
+    },
+    {
+      text: "归档",
+      icon: "archive",
+      collapsible: true,
+      children: [
+        { text: "小程序-个人博客小程序构建", link: "/archive/2022-11-17" },
+        { text: "小程序-个人开发指南", link: "/archive/2019-07-22" },
+        { text: "小程序-小程序开发指南之性能优化", link: "/archive/2019-11-30" },
+      ],
+    },
   ],
   "/react/": [
     {
@@ -147,6 +147,18 @@ export const zhSidebar = sidebar({
         "2019-12-09",
         "2019-11-17",
         "2019-09-20",
+      ],
+    },
+  ],
+  "/archive/": [
+    {
+      text: "微信小程序",
+      icon: "book",
+      collapsible: true,
+      children: [
+        { text: "小程序-个人博客小程序构建", link: "2022-11-17" },
+        { text: "小程序-个人开发指南", link: "2019-07-22" },
+        { text: "小程序-小程序开发指南之性能优化", link: "2019-11-30" },
       ],
     },
   ],

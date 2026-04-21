@@ -1,7 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const enSidebar = sidebar({
-  "/en/front/": [
+  "/en/frontend/": [
     {
       text: "Articles",
       icon: "book",
@@ -53,22 +53,12 @@ export const enSidebar = sidebar({
       icon: "map",
       collapsible: true,
       children: [
-        { text: "OpenLayers Getting Started", link: "/front/gis/2023-12-25" },
-        { text: "OpenLayers Map Controls", link: "/front/gis/2023-12-26" },
-        { text: "OpenLayers Layers", link: "/front/gis/2023-12-27" },
-        { text: "OpenLayers Markers", link: "/front/gis/2023-12-28" },
-        { text: "OpenLayers Info Windows", link: "/front/gis/2023-12-29" },
-        { text: "OpenLayers Vector Graphics", link: "/front/gis/2024-01-01" },
-      ],
-    },
-    {
-      text: "Mini Programs",
-      icon: "book",
-      collapsible: true,
-      children: [
-        { text: "Blog Mini Program", link: "2022-11-17" },
-        { text: "Mini Program Dev Guide", link: "2019-07-22" },
-        { text: "Mini Program Performance", link: "2019-11-30" }
+        { text: "OpenLayers Getting Started", link: "/en/frontend/gis/2023-12-25" },
+        { text: "OpenLayers Map Controls", link: "/en/frontend/gis/2023-12-26" },
+        { text: "OpenLayers Layers", link: "/en/frontend/gis/2023-12-27" },
+        { text: "OpenLayers Markers", link: "/en/frontend/gis/2023-12-28" },
+        { text: "OpenLayers Info Windows", link: "/en/frontend/gis/2023-12-29" },
+        { text: "OpenLayers Vector Graphics", link: "/en/frontend/gis/2024-01-01" },
       ],
     },
     {
@@ -82,7 +72,17 @@ export const enSidebar = sidebar({
         { text: "Binary Tree", link: "2020-07-01" },
         { text: "Queue in Projects", link: "2021-01-01" },
       ],
-    }
+    },
+    {
+      text: "Archive",
+      icon: "archive",
+      collapsible: true,
+      children: [
+        { text: "Blog Mini Program", link: "/en/archive/2022-11-17" },
+        { text: "Mini Program Dev Guide", link: "/en/archive/2019-07-22" },
+        { text: "Mini Program Performance", link: "/en/archive/2019-11-30" },
+      ],
+    },
   ],
   "/en/react/": [
     {
@@ -146,6 +146,18 @@ export const enSidebar = sidebar({
         "2019-12-09",
         "2019-11-17",
         "2019-09-20",
+      ],
+    },
+  ],
+  "/en/archive/": [
+    {
+      text: "Mini Programs",
+      icon: "book",
+      collapsible: true,
+      children: [
+        { text: "Blog Mini Program", link: "2022-11-17" },
+        { text: "Mini Program Dev Guide", link: "2019-07-22" },
+        { text: "Mini Program Performance", link: "2019-11-30" },
       ],
     },
   ],

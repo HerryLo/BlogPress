@@ -5,7 +5,7 @@ export const enNavbar = navbar([
   {
     text: "Articles",
     icon: "code",
-    link: "/en/front/",
+    link: "/en/frontend/",
   },
   {
     text: "React",
