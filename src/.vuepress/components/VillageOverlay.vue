@@ -45,93 +45,48 @@ export default {
       const h = this.h;
       this.elements = [];
 
-      // === LEFT SIDE: Large Cypress + Person ===
-      // Left cypress
+      // === FAR LEFT ===
       this.elements.push({
         type: "cypress",
-        x: w * 0.04,
+        x: w * 0.02,
         y: h,
-        baseX: w * 0.04,
-        height: h * 0.55,
-        width: 18,
+        baseX: w * 0.02,
+        height: h * 0.48,
+        width: 16,
         color: "#1a1a2e",
         phase: 0,
-        driftX: 0,
       });
-      // Left person (silhouette)
       this.elements.push({
-        type: "person",
+        type: "house",
         x: w * 0.08,
-        y: h * 0.82,
-        baseX: w * 0.08,
-        baseY: h * 0.82,
-        color: "#1a1a2e",
-        swayAmp: 3,
-        swaySpeed: 0.8,
-        phase: 0,
-      });
-
-      // === RIGHT SIDE: Houses + Small Cypress ===
-      // Right small cypress
-      this.elements.push({
-        type: "cypress",
-        x: w * 0.94,
         y: h,
-        baseX: w * 0.94,
-        height: h * 0.28,
-        width: 12,
+        baseX: w * 0.08,
+        baseY: h,
+        width: w * 0.035,
+        height: h * 0.065,
         color: "#1a1a2e",
         phase: 1,
-        driftX: 0,
       });
-      // Right houses cluster
+
+      // === FAR RIGHT ===
       this.elements.push({
         type: "houses",
-        x: w * 0.87,
+        x: w * 0.90,
         y: h,
-        baseX: w * 0.87,
+        baseX: w * 0.90,
         baseY: h,
         color: "#1a1a2e",
         phase: 2,
       });
-
-      // === SCATTERED VILLAGE elements ===
-      // Small distant house left
       this.elements.push({
-        type: "house",
-        x: w * 0.18,
-        y: h * 0.88,
-        baseX: w * 0.18,
-        baseY: h * 0.88,
-        width: w * 0.04,
-        height: h * 0.08,
+        type: "cypress",
+        x: w * 0.97,
+        y: h,
+        baseX: w * 0.97,
+        height: h * 0.25,
+        width: 11,
         color: "#1a1a2e",
         phase: 3,
-      });
-      // Small distant house center-right
-      this.elements.push({
-        type: "house",
-        x: w * 0.76,
-        y: h * 0.90,
-        baseX: w * 0.76,
-        baseY: h * 0.90,
-        width: w * 0.03,
-        height: h * 0.06,
-        color: "#1a1a2e",
-        phase: 4,
-      });
-      // Distant person right
-      this.elements.push({
-        type: "person",
-        x: w * 0.82,
-        y: h * 0.85,
-        baseX: w * 0.82,
-        baseY: h * 0.85,
-        color: "#1a1a2e",
-        swayAmp: 2,
-        swaySpeed: 0.6,
-        phase: 1,
-        scale: 0.7,
       });
     },
     animate() {
@@ -148,8 +103,6 @@ export default {
       this.elements.forEach((el) => {
         if (el.type === "cypress") {
           this.drawCypress(ctx, el, t);
-        } else if (el.type === "person") {
-          this.drawPerson(ctx, el, t);
         } else if (el.type === "houses") {
           this.drawHouses(ctx, el, t);
         } else if (el.type === "house") {
@@ -175,23 +128,6 @@ export default {
         ctx.ellipse(0, ly, lw, lh, 0, 0, Math.PI * 2);
         ctx.fill();
       }
-      ctx.restore();
-    },
-    drawPerson(ctx, el, t) {
-      ctx.save();
-      const sway = Math.sin(t * el.swaySpeed + el.phase) * el.swayAmp;
-      const scale = el.scale || 1;
-      ctx.translate(el.baseX + sway, el.baseY);
-      ctx.scale(scale, scale);
-      ctx.fillStyle = el.color;
-      // Body
-      ctx.beginPath();
-      ctx.ellipse(0, -35, 7, 18, 0, 0, Math.PI * 2);
-      ctx.fill();
-      // Head
-      ctx.beginPath();
-      ctx.arc(0, -60, 8, 0, Math.PI * 2);
-      ctx.fill();
       ctx.restore();
     },
     drawHouses(ctx, el, t) {
@@ -251,7 +187,7 @@ export default {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 3;
+  z-index: 1;
   pointer-events: none;
 }
 </style>
