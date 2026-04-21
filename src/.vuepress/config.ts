@@ -26,13 +26,23 @@ export default defineUserConfig({
     ["meta", { charset: "utf-8" }],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
     ["link", { rel: "icon", href: "/image/logo.jpg" }],
+    ["style", { id: "vp-blog-mask-animation" }, `
+.vp-blog-mask {
+  background-size: 200% 200%;
+  animation: starryMove 20s ease-in-out infinite;
+}
+@keyframes starryMove {
+  0%, 100% { background-position: 0% 0%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 50%; }
+}
+    `],
   ],
 
   markdown: {},
 
   alias: {
-    // 你可以在这里将别名定向到自己的组件
-    // 比如这里我们将主题的主页组件改为用户 .vuepress/components 下的 HomePage.vue
     "@theme-hope/components/base/PageFooter": path.resolve(__dirname, "./components/PageFooter.vue"),
   },
 });
