@@ -3,8 +3,8 @@ import BlogMaskAnimator from './components/BlogMaskAnimator.vue';
 import CursorParticle from './components/CursorParticle.vue';
 import LinksComponent from './components/LinksComponent.vue';
 import PageFooter from './components/PageFooter.vue';
+import VanGoghOverlay from './components/VanGoghOverlay.vue';
 
-import StarryOverlay from './components/StarryOverlay.vue';
 export default defineClientConfig({
   enhance: ({ app }) => {
     app.component('BlogMaskAnimator', BlogMaskAnimator);
@@ -13,5 +13,5 @@ export default defineClientConfig({
     app.component('PageFooter', PageFooter);
   },
   layouts: {},
-  rootComponents: [StarryOverlay, CursorParticle],
+  rootComponents: [VanGoghOverlay, CursorParticle],
 });
