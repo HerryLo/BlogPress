@@ -45,6 +45,17 @@ export default {
       }
     },
     createParticle() {
+      const colors = [
+        [255, 87, 87, 1],    // red
+        [255, 189, 87, 1],   // orange
+        [255, 236, 87, 1],   // yellow
+        [87, 255, 149, 1],   // green
+        [87, 189, 255, 1],   // cyan
+        [87, 134, 255, 1],   // blue
+        [189, 87, 255, 1],   // purple
+        [255, 87, 201, 1],   // pink
+      ];
+      const color = colors[Math.floor(Math.random() * colors.length)];
       return {
         x: this.mouse.x,
         y: this.mouse.y,
@@ -53,6 +64,7 @@ export default {
         life: 1,
         decay: Math.random() * 0.015 + 0.005,
         size: Math.random() * 3 + 1,
+        color,
       };
     },
     animate() {
@@ -73,7 +85,7 @@ export default {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, Math.max(0.1, p.size * p.life), 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(62, 175, 124, ${p.life * 0.8})`;
+        ctx.fillStyle = `rgba(${p.color[0]}, ${p.color[1]}, ${p.color[2]}, ${p.life * 0.8})`;
         ctx.fill();
       });
 
