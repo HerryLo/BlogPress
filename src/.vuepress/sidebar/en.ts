@@ -138,7 +138,7 @@ export const enSidebar = sidebar({
       icon: "thumbs-up",
       collapsible: false,
       children: [
-        "",
+        "JavaProgrammingPrinciples",
         "2023-04-01",
         "2023-03-31",
         "2022-11-27",
