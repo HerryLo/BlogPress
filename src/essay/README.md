@@ -1,10 +1,15 @@
 ---
 title: 随笔
-description: Herrylo`s Blog 随缘顺性，因为需要我手动同步，同步会有延时，想看更多的同学，可以移步到我的 [花园：思绪飘飘](https://www.yuque.com/yopai/vso99m)
+description: 记录生活与思考的一些随笔
 category:
   - 随笔
+icon: pen-to-square
 ---
 
 # 随笔
 
-随缘顺性，因为需要我手动同步，同步会有延时，想看更多的同学，可以移步到我的 [花园：思绪飘飘](https://www.yuque.com/yopai/vso99m)
+随缘顺性，想到什么就写什么。
+
+这里没有固定的主题，可能是某个午后的一点感悟，也可能是某本书读完后的一丝余韵。文字不求完美，只求真诚。
+
+> 部分内容会同步更新到 [语雀花园](https://www.yuque.com/yopai/vso99m)，同步会有延时。
