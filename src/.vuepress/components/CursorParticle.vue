@@ -17,10 +17,12 @@ export default {
     this.initCanvas();
     window.addEventListener("resize", this.resize);
     window.addEventListener("mousemove", this.onMouseMove);
+    window.addEventListener("click", this.onClick);
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.resize);
     window.removeEventListener("mousemove", this.onMouseMove);
+    window.removeEventListener("click", this.onClick);
     cancelAnimationFrame(this.animationId);
   },
   methods: {
@@ -41,6 +43,13 @@ export default {
       this.mouse.x = e.clientX;
       this.mouse.y = e.clientY;
       for (let i = 0; i < 3; i++) {
+        this.particles.push(this.createParticle());
+      }
+    },
+    onClick(e) {
+      this.mouse.x = e.clientX;
+      this.mouse.y = e.clientY;
+      for (let i = 0; i < 8; i++) {
         this.particles.push(this.createParticle());
       }
     },
