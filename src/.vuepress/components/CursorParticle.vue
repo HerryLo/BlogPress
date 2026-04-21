@@ -9,6 +9,7 @@ export default {
     return {
       ctx: null,
       particles: [],
+      textParticles: [],
       animationId: null,
       mouse: { x: 0, y: 0 },
     };
@@ -47,11 +48,13 @@ export default {
       }
     },
     onClick(e) {
-      this.mouse.x = e.clientX;
-      this.mouse.y = e.clientY;
-      for (let i = 0; i < 8; i++) {
-        this.particles.push(this.createParticle());
-      }
+      this.textParticles.push({
+        x: e.clientX,
+        y: e.clientY,
+        life: 1,
+        decay: 0.02,
+        text: "+1",
+      });
     },
     createParticle() {
       const colors = [
@@ -85,6 +88,8 @@ export default {
 
       this.particles = this.particles.filter((p) => p.life > 0);
 
+      this.textParticles = this.textParticles.filter((p) => p.life > 0);
+
       this.particles.forEach((p) => {
         p.x += p.vx;
         p.y += p.vy;
@@ -96,6 +101,17 @@ export default {
         ctx.arc(p.x, p.y, Math.max(0.1, p.size * p.life), 0, Math.PI * 2);
         ctx.fillStyle = `rgba(${p.color[0]}, ${p.color[1]}, ${p.color[2]}, ${p.life * 0.8})`;
         ctx.fill();
+      });
+
+      this.textParticles.forEach((p) => {
+        p.y -= 1.5;
+        p.life -= p.decay;
+
+        if (p.life <= 0) return;
+
+        ctx.font = "bold 18px 'JetBrains Mono', 'Fira Code', monospace";
+        ctx.fillStyle = `rgba(255, 189, 87, ${p.life})`;
+        ctx.fillText(p.text, p.x, p.y);
       });
 
       this.animationId = requestAnimationFrame(() => this.animate());
