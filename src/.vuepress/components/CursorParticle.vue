@@ -129,7 +129,7 @@ export default {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  z-index: 99999;
+  z-index: 9999;
   opacity: 0.85;
 }
 </style>

@@ -164,10 +164,7 @@ export default {
         const arms = 10;
         for (let a = 0; a < arms; a++) {
           const angle = (a / arms) * Math.PI * 2 + this.t * 0.3 + sw.phase;
-          const innerR = r * 0.2;
           const outerR = r * (0.8 + Math.sin(this.t + a) * 0.2);
-          const cx2 = cx + Math.cos(angle) * innerR;
-          const cy2 = cy + Math.sin(angle) * innerR;
           const ex = cx + Math.cos(angle) * outerR;
           const ey = cy + Math.sin(angle) * outerR;
           const cp1x = cx + Math.cos(angle + 0.4) * r * 0.5;
@@ -185,10 +182,6 @@ export default {
         d.alpha = d.baseAlpha * (0.5 + Math.sin(this.t * d.twinkleSpeed * 60 + d.twinklePhase) * 0.5);
         d.alpha = Math.max(0.05, Math.min(1, d.alpha));
       });
-
-      if (this.village) {
-        this.village.alpha = Math.min(0.85, this.village.alpha + 0.003);
-      }
     },
   },
 };
