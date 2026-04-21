@@ -124,7 +124,8 @@ export const zhSidebar = sidebar({
       icon: "pen-to-square",
       collapsible: false,
       children: [
-        "",
+        "2025年积累等待",
+        "2024年迟到的总结篇",
         "2024-05-20",
         "2023-01-06",
         "2022-01-21",
