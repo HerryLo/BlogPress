@@ -43,7 +43,7 @@ export default hopeTheme({
       footer: "MIT Licensed | Copyright © 2018-present Herrylo",
       displayFooter: true,
       blog: {
-        description: "一个前端开发者",
+        description: "探索前端技术，分享 React、GIS 与工程化实践",
         intro: "/zh/intro.html",
       },
     },
@@ -53,7 +53,7 @@ export default hopeTheme({
       footer: "MIT Licensed | Copyright © 2018-present Herrylo",
       displayFooter: true,
       blog: {
-        description: "A FrontEnd programmer",
+        description: "Exploring frontend tech, sharing React, GIS and engineering insights",
         intro: "/en/intro.html",
       },
     },

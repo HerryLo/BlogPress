@@ -9,8 +9,13 @@ export const zhNavbar = navbar([
   },
   {
     text: "React",
-    icon: "fab fa-react",
+    icon: "code",
     link: "/react/",
+  },
+  {
+    text: "Java",
+    icon: "code",
+    link: "/java/",
   },
   {
     text: "随笔",

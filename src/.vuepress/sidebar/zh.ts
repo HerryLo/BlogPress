@@ -37,9 +37,6 @@ export const zhSidebar = sidebar({
       icon: "laptop-code",
       collapsible: true,
       children: [
-        { text: "Java-Java语言编译运行", link: "/front/java/2023-10-24" },
-        { text: "Java-Spring Boot打包部署", link: "/front/java/2023-10-25" },
-        
         { text: "TCP的三次握手和四次挥手", link: "2019-08-17" },
         { text: "TCP&UDP-传输层的TCP和UDP协议", link: "2019-08-02" },
         { text: "设计模式-项目中使用订阅发布", link: "2020-12-31" },
@@ -106,6 +103,20 @@ export const zhSidebar = sidebar({
         { text: "React底层运行简记", link: "2022-10-27" },
       ],
     },
+  ],
+  "/java/": [
+    {
+      text: "Java",
+      icon: "laptop-code",
+      collapsible: true,
+      children: [
+        { text: "Java基础上", link: "Java基础1" },
+        { text: "Java基础下", link: "Java基础2" },
+        { text: "JavaWeb开发", link: "JavaWeb开发" },
+        { text: "Spring Boot项目打包部署", link: "2023-10-25" },
+        { text: "Java语言编译运行", link: "2023-10-24" },
+      ]
+    }
   ],
   "/essay/": [
     {

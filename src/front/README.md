@@ -1,6 +1,6 @@
 ---
 title: 技术
-description: Herrylo`s Blog Herrylo大流星的个人博客，会持续不断的分享，希望我的文章对你有所帮助，共勉！
+description: Herrylo's Blog Herrylo大流星的个人博客，会持续不断的分享，希望我的文章对你有所帮助，共勉！ Blog Herrylo大流星的个人博客，会持续不断的分享，希望我的文章对你有所帮助，共勉！
 category:
   - 技术
 ---

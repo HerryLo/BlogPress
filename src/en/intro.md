@@ -1,10 +1,10 @@
 ---
 category:
-  - 博客
+  - Frontend
 icon: circle-info
 cover: /assets/images/cover3.jpg
 ---
 
-# Intro Page
+# Introduction
 
-Place your introduction and profile here.
+Place your personal introduction and profile here.
