@@ -5,7 +5,9 @@ cover: /assets/images/cover3.jpg
 
 # 关于我
 
+:::tip
 我是一名全栈开发工程师，热爱技术，喜欢分享。
+:::
 
 ## 技术栈
 
@@ -44,5 +46,6 @@ cover: /assets/images/cover3.jpg
 
 - GitHub: [HerryLo](https://github.com/HerryLo)
 - Email: herryloyopai@163.com
+- Wechat: 1169170165
 
 欢迎来访，欢迎交流。

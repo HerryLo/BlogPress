@@ -38,10 +38,10 @@ tagline: 分享让世界更美好
 #         link: ./guide/interface/others.html
 
 projects:
-  # - icon: folder-open
-  #   name: 项目名称
-  #   desc: 项目详细描述
-  #   link: https://你的项目链接
+  - icon: book
+    name: 关于博客
+    desc: 我的个人博客的历史
+    link: /intro.html
 
   - icon: link
     name: 我的语雀花园
@@ -63,7 +63,7 @@ projects:
   #   desc: 伙伴详细介绍
   #   link: https://你的伙伴链接
 
-  - icon: https://theme-hope-assets.vuejs.press/logo.svg
+  - icon: newspaper
     name: 图文转语音系统
     desc: 支持python图片和文档转MP3语音系统，项目完全依赖minimax2.7大模型
     link: https://github.com/HerryLo/bookvoice
