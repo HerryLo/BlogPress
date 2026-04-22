@@ -159,10 +159,22 @@ export const enSidebar = sidebar({
       children: [""],
     },
   ],
+  "/en/ai/": [
+    {
+      text: "AI",
+      icon: "robot",
+      collapsible: false,
+      children: [
+        "大模型",
+        "白嫖党体验Claude Code",
+        "如何使用AI搭建工作流",
+      ],
+    },
+  ],
   "/en/archive/": [
     {
       text: "Mini Programs",
-      icon: "book",
+      icon: "circle-question",
       collapsible: true,
       children: [
         { text: "Blog Mini Program", link: "2022-11-17" },

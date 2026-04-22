@@ -9,13 +9,18 @@ export const enNavbar = navbar([
   },
   {
     text: "React",
-    icon: "code",
+    icon: "atom",
     link: "/en/react/",
   },
   {
     text: "Java",
-    icon: "code",
+    icon: "mug-saucer",
     link: "/en/java/",
+  },
+  {
+    text: "AI",
+    icon: "robot",
+    link: "/en/ai/",
   },
   {
     text: "Essays",
@@ -29,7 +34,7 @@ export const enNavbar = navbar([
   },
   {
     text: "More",
-    icon: "ellipsis",
+    icon: "face-smile-beam",
     children: [
       {
         text: "Links",

@@ -9,13 +9,18 @@ export const zhNavbar = navbar([
   },
   {
     text: "React",
-    icon: "code",
+    icon: "atom",
     link: "/react/",
   },
   {
     text: "Java",
-    icon: "code",
+    icon: "mug-saucer",
     link: "/java/",
+  },
+  {
+    text: "AI",
+    icon: "robot",
+    link: "/ai/",
   },
   {
     text: "随笔",
@@ -29,16 +34,16 @@ export const zhNavbar = navbar([
   },
   {
     text: "更多",
-    icon: "ellipsis",
+    icon: "face-smile-beam",
     children: [
       {
-        text: "外链",
+        text: "友链",
         icon: "link",
         link: "/links/",
       },
       {
         text: "GitHub",
-        icon: "fab fa-github",
+        icon: "link",
         link: "https://github.com/HerryLo/BlogPress",
       },
     ],

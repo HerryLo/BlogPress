@@ -88,7 +88,7 @@ export const zhSidebar = sidebar({
   "/react/": [
     {
       text: "React",
-      icon: "fab fa-react",
+      icon: "atom",
       collapsible: true,
       children: [
         { text: "React Hooks useRef 使用范围", link: "2022-04-22" },
@@ -108,7 +108,7 @@ export const zhSidebar = sidebar({
   "/java/": [
     {
       text: "Java",
-      icon: "laptop-code",
+      icon: "mug-saucer",
       collapsible: true,
       children: [
         { text: "Java基础上", link: "Java基础1" },
@@ -160,10 +160,23 @@ export const zhSidebar = sidebar({
       children: [""],
     },
   ],
+  "/ai/": [
+    {
+      text: "AI",
+      icon: "robot",
+      collapsible: false,
+      children: [
+        "大模型基础知识",
+        "大模型名词介绍",
+        "白嫖党体验Claude Code",
+        "如何使用AI搭建工作流",
+      ],
+    },
+  ],
   "/archive/": [
     {
       text: "微信小程序",
-      icon: "book",
+      icon: "circle-question",
       collapsible: true,
       children: [
         { text: "小程序-个人博客小程序构建", link: "2022-11-17" },

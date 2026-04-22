@@ -112,7 +112,8 @@ export default hopeTheme({
     },
 
     icon: {
-      prefix: "fa6-solid:",
+      // prefix: "fa6-solid:",
+      assets: "fontawesome",
     },
 
     copyCode: true,
