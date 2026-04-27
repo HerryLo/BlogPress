@@ -4,7 +4,7 @@
 
 个人博客项目，使用 VuePress 2 + vuepress-theme-hope 构建。
 
-> 当前 Claude Code 使用模型：**MiniMax-M2.7**
+> 当前 Claude Code 使用模型：**glm-4.6v**
 
 ## 技术栈
 
