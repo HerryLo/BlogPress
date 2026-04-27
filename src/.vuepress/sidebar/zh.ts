@@ -170,6 +170,7 @@ export const zhSidebar = sidebar({
         "大模型名词介绍",
         "白嫖党体验Claude Code",
         "如何使用AI搭建工作流",
+	        "生成式AI",
       ],
     },
   ],

@@ -168,6 +168,7 @@ export const enSidebar = sidebar({
         "大模型",
         "白嫖党体验Claude Code",
         "如何使用AI搭建工作流",
+	        "生成式AI",
       ],
     },
   ],
