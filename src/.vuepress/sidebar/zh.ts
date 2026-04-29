@@ -107,13 +107,56 @@ export const zhSidebar = sidebar({
   ],
   "/java/": [
     {
-      text: "Java",
-      icon: "mug-saucer",
+      text: "Java基础",
+      icon: "book",
       collapsible: true,
       children: [
-        { text: "Java基础上", link: "Java基础1" },
-        { text: "Java基础下", link: "Java基础2" },
-        { text: "JavaWeb开发", link: "JavaWeb开发" },
+        { text: "Java数据类型", link: "Java数据类型" },
+        { text: "JavaString", link: "JavaString" },
+        { text: "JavaArrayList", link: "JavaArrayList" },
+        { text: "Java面向对象", link: "Java面向对象" },
+        { text: "Java修饰符与代码块", link: "Java修饰符与代码块" },
+        { text: "Java抽象类与接口", link: "Java抽象类与接口" },
+        { text: "Java常用API", link: "Java常用API" },
+        { text: "Java算法", link: "Java算法" },
+      ]
+    },
+    {
+      text: "Java进阶",
+      icon: "book",
+      collapsible: true,
+      children: [
+        { text: "Java泛型", link: "Java泛型" },
+        { text: "Java单列集合", link: "Java单列集合" },
+        { text: "Java双列集合", link: "Java双列集合" },
+        { text: "Java集合扩展", link: "Java集合扩展" },
+        { text: "Java Stream流", link: "Java Stream流" },
+        { text: "Java函数式编程", link: "Java函数式编程" },
+        { text: "Java异常", link: "Java异常" },
+        { text: "Java注解", link: "Java注解" },
+        { text: "Java反射", link: "Java反射" },
+        { text: "Java-IO流", link: "Java-IO流" },
+        { text: "Java多线程", link: "Java多线程" },
+      ]
+    },
+    {
+      text: "JavaWeb开发",
+      icon: "laptop-code",
+      collapsible: true,
+      children: [
+        { text: "JavaWeb与Servlet", link: "JavaWeb与Servlet" },
+        { text: "Maven项目构建", link: "Maven项目构建" },
+        { text: "Java数据库与JDBC", link: "Java数据库与JDBC" },
+        { text: "Redis缓存实战", link: "Redis缓存实战" },
+        { text: "Spring核心概念", link: "Spring核心概念" },
+        { text: "SpringBoot项目架构", link: "SpringBoot项目架构" },
+      ]
+    },
+    {
+      text: "其他",
+      icon: "file",
+      collapsible: true,
+      children: [
         { text: "Spring Boot项目打包部署", link: "2023-10-25" },
         { text: "Java语言编译运行", link: "2023-10-24" },
       ]

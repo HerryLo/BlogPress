@@ -107,12 +107,56 @@ export const enSidebar = sidebar({
   ],
   "/en/java/": [
     {
-      text: "Java",
+      text: "Java Basics",
+      icon: "book",
+      collapsible: true,
+      children: [
+        { text: "Java Data Types", link: "Java数据类型" },
+        { text: "Java String", link: "JavaString" },
+        { text: "Java ArrayList", link: "JavaArrayList" },
+        { text: "Java OOP", link: "Java面向对象" },
+        { text: "Java Modifiers & Blocks", link: "Java修饰符与代码块" },
+        { text: "Java Abstract & Interface", link: "Java抽象类与接口" },
+        { text: "Java Common APIs", link: "Java常用API" },
+        { text: "Java Algorithms", link: "Java算法" },
+      ]
+    },
+    {
+      text: "Java Advanced",
+      icon: "book",
+      collapsible: true,
+      children: [
+        { text: "Java Generics", link: "Java泛型" },
+        { text: "Java Single Col", link: "Java单列集合" },
+        { text: "Java Double Col", link: "Java双列集合" },
+        { text: "Java Col Extensions", link: "Java集合扩展" },
+        { text: "Java Stream流", link: "Java Stream流" },
+        { text: "Java函数式编程", link: "Java函数式编程" },
+        { text: "Java Exception", link: "Java异常" },
+        { text: "Java Annotation", link: "Java注解" },
+        { text: "Java Reflection", link: "Java反射" },
+        { text: "Java IO Stream", link: "Java-IO流" },
+        { text: "Java Multithreading", link: "Java多线程" },
+      ]
+    },
+    {
+      text: "JavaWeb Development",
       icon: "laptop-code",
       collapsible: true,
       children: [
-        { text: "Java Basics Part 1", link: "Java基础1" },
-        { text: "Java Basics Part 2", link: "Java基础2" },
+        { text: "JavaWeb & Servlet", link: "JavaWeb与Servlet" },
+        { text: "Maven Build", link: "Maven项目构建" },
+        { text: "Java Database & JDBC", link: "Java数据库与JDBC" },
+        { text: "Redis Cache", link: "Redis缓存实战" },
+        { text: "Spring Core Concepts", link: "Spring核心概念" },
+        { text: "Spring Boot Architecture", link: "SpringBoot项目架构" },
+      ]
+    },
+    {
+      text: "Others",
+      icon: "file",
+      collapsible: true,
+      children: [
         { text: "Spring Boot Deploy", link: "2023-10-25" },
         { text: "Java Compile & Run", link: "2023-10-24" },
       ]
@@ -168,7 +212,7 @@ export const enSidebar = sidebar({
         "大模型",
         "白嫖党体验Claude Code",
         "如何使用AI搭建工作流",
-		        "生成式AI",
+        "生成式AI",
         "为什么需要RAG",
       ],
     },
