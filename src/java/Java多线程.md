@@ -11,7 +11,7 @@ tags:
 
 # Java多线程
 
-原文链接：https://www.yuque.com/yopai/pp6bv5/uel16rwvgfu825g0
+原文链接：[语雀链接](https://www.yuque.com/yopai/pp6bv5/uel16rwvgfu825g0)
 
 ## 多线程概述
 
