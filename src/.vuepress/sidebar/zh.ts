@@ -67,20 +67,41 @@ export const zhSidebar = sidebar({
 ],
   "/react/": [
     {
-      text: "React",
+      text: "Hooks",
       icon: "atom",
       collapsible: true,
       children: [
         { text: "React Hooks useRef 使用范围", link: "2022-04-22" },
         { text: "React-Hooks的功能组件", link: "2019-04-25" },
+      ],
+    },
+    {
+      text: "源码解析",
+      icon: "book",
+      collapsible: true,
+      children: [
+        { text: "React解析: React.createElement(一)", link: "2019-05-12" },
+        { text: "React解析 React.Children(二)", link: "2019-05-13" },
+        { text: "React解析 render的FiberRoot(三)", link: "2019-08-10" },
+        { text: "React解析: render的中的update(四)", link: "2019-10-06" },
+      ],
+    },
+    {
+      text: "状态管理",
+      icon: "book",
+      collapsible: true,
+      children: [
+        { text: "JavaScript-redux原理解析", link: "2019-10-26" },
+        { text: "JavaScript-react-redux原理解析", link: "2019-12-20" },
+      ],
+    },
+    {
+      text: "工程实践",
+      icon: "laptop-code",
+      collapsible: true,
+      children: [
         { text: "React-正交React组件的好处", link: "2019-12-29" },
         { text: "React-开发中应该规避的问题", link: "2019-11-24" },
-        { text: "React解析: render的中的update(四)", link: "2019-10-06" },
-        { text: "React解析 render的FiberRoot(三)", link: "2019-08-10" },
-        { text: "React解析 React.Children(二)", link: "2019-05-13" },
-        { text: "React解析: React.createElement(一)", link: "2019-05-12" },
-        { text: "JavaScript-react-redux原理解析", link: "2019-12-20" },
-        { text: "JavaScript-redux原理解析", link: "2019-10-26" },
         { text: "React底层运行简记", link: "2022-10-27" },
       ],
     },

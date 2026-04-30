@@ -13,9 +13,9 @@ icon: atom
 ## 主要内容
 
 - **Hooks** — useState、useEffect、useRef 等常用 Hook 的使用与原理
-- **源码解析** — 虚拟 DOM、Fiber 架构、Diff 算法、Hooks 链表机制
-- **状态管理** — Redux 原理、Context API、状态管理最佳实践
-- **工程实践** — 组件设计、性能优化、开发规范
+- **源码解析** — 虚拟 DOM、React.createElement、FiberRoot、update 机制
+- **状态管理** — Redux 原理、react-redux 源码解析
+- **工程实践** — 组件设计原则、开发规避问题、React 底层运行机制
 
 ## 关于本栏
 
