@@ -161,6 +161,7 @@ export const zhSidebar = sidebar({
       collapsible: true,
       children: [
         { text: "Maven", link: "Maven" },
+        { text: "MySQL", link: "MySQL" },
         { text: "JDBC", link: "JDBC" },
         { text: "Redis", link: "Redis" },
         { text: "Servlet", link: "Servlet" },

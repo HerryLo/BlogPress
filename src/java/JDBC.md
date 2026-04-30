@@ -4,7 +4,6 @@ date: 2025-10-03T00:00:00+08:00
 category:
   - java开发
 tags:
-  - MySQL
   - JDBC
   - 数据库
 ---
@@ -13,55 +12,20 @@ tags:
 
 ## 为什么学习JDBC
 
-在实际项目中，前端发送的请求需要后端处理，业务逻辑最终要与数据库交互。JDBC是Java操作数据库的基础，本章学习JDBC的使用，为后续ORM框架学习打下基础。
+JDBC是Java连接数据库的标准API。通过JDBC，Java程序可以执行SQL语句，实现数据的增删改查。
 
-## MySQL基础回顾
+## JDBC是什么
 
-MySQL是一个开源的关系型数据库管理系统，是目前最流行的数据库之一。本节回顾SQL基础操作，为后续JDBC实践做准备。
+JDBC（Java Database Connectivity）定义了Java程序与数据库通信的接口规范。
 
-### 数据库和表操作
+**为什么需要JDBC：**
+- 应用程序不能直接操作数据库
+- 通过JDBC统一接口，屏蔽底层数据库差异
+- MySQL驱动、Oracle驱动都实现JDBC接口
 
-```sql
--- 创建数据库
-CREATE DATABASE blog DEFAULT CHARACTER SET utf8mb4;
+## JDBC操作步骤
 
--- 使用数据库
-USE blog;
-
--- 创建用户表
-CREATE TABLE user (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(100) NOT NULL,
-    email VARCHAR(100)
-);
-```
-
-### 增删改查操作
-
-```sql
--- 插入数据
-INSERT INTO user (username, password, email) VALUES ('admin', '123456', 'admin@example.com');
-
--- 查询数据
-SELECT * FROM user WHERE username = 'admin';
-
--- 更新数据
-UPDATE user SET email = 'new@example.com' WHERE id = 1;
-
--- 删除数据
-DELETE FROM user WHERE id = 1;
-```
-
-## JDBC使用步骤
-
-JDBC（Java Database Connectivity）是Java连接数据库的标准API。通过JDBC，Java程序可以执行SQL语句，实现数据的增删改查。
-
-### 为什么需要JDBC
-
-应用程序不能直接操作数据库，必须通过数据库厂商提供的驱动接口。JDBC定义了统一的接口规范，各种数据库驱动都实现这一接口，这样Java代码只需调用JDBC API，无需关心底层数据库差异。
-
-### JDBC操作步骤
+JDBC操作数据库的六个步骤：加载驱动→获取连接→创建语句→执行SQL→处理结果→关闭资源。
 
 ```java
 // 1. 加载驱动
@@ -91,9 +55,9 @@ conn.close();
 **URL参数说明：**
 ```java
 jdbc:mysql://localhost:3306/blog
-  ?useSSL=false              // 关闭SSL
-  &serverTimezone=UTC       // 设置时区
-  &allowPublicKeyRetrieval=true  // MySQL8.0+
+  ?useSSL=false
+  &serverTimezone=UTC
+  &allowPublicKeyRetrieval=true
 ```
 
 ## CRUD完整示例
@@ -150,13 +114,12 @@ public class UserDao {
 
 ### 什么是ORM
 
-ORM（Object Relational Mapping）对象关系映射，将数据库表映射为Java对象。表名对应类名，列对应属性，行对应对象实例。
+ORM（Object Relational Mapping）对象关系映射，将数据库表映射为Java对象。
 
 ### ORM映射关系
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                                                             │
 │   Java 对象              数据库表                            │
 │   ┌─────────┐           ┌─────────────┐                     │
 │   │  User   │  <──────> │    user     │                     │
@@ -165,7 +128,6 @@ ORM（Object Relational Mapping）对象关系映射，将数据库表映射为J
 │   │ name    │           │ username    │                     │
 │   │ email   │           │ email       │                     │
 │   └─────────┘           └─────────────┘                     │
-│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -175,8 +137,7 @@ ORM（Object Relational Mapping）对象关系映射，将数据库表映射为J
 |------|------|----------|
 | MyBatis | 半自动ORM，SQL可控 | 需要灵活SQL的项目 |
 | Hibernate | 全自动ORM，学习成本高 | 快速开发，中小项目 |
-| Spring Data JPA | 基于Hibernate，简化开发 | Spring生态项目 |
 
 ### JDBC vs ORM
 
-JDBC是基础，ORM是其上层封装。学习JDBC理解SQL执行过程，学习ORM理解对象映射思想。后续学习Spring Data JPA/MyBatis会更容易理解。
+JDBC是基础，ORM是其上层封装。学习JDBC理解SQL执行过程，学习ORM理解对象映射思想。
