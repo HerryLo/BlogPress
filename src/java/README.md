@@ -12,10 +12,11 @@ icon: coffee
 
 ## 主要内容
 
-- **Java 基础** — 面向对象、集合框架、多线程、JVM 原理
-- **Spring Boot** — 快速构建 RESTful API 与微服务
-- **JavaWeb** — Servlet 原理、Maven 构建、MySQL/Redis 实战
-- **工程部署** — 打包发布、日志管理、生产环境部署
+- **Java 基础** — 数据类型、String、面向对象、修饰符、抽象类、常用API、算法
+- **Java 集合** — 单列集合、双列集合、集合扩展
+- **Java 新特性** — Stream流、函数式编程、日期时间、正则
+- **Java 高级** — 泛型、异常、注解、反射、IO流、多线程
+- **工程实践** — Maven、JDBC、Redis、Servlet、Spring、SpringBoot
 
 ## 实践与思考
 

@@ -12,7 +12,7 @@ icon: robot
 
 ## 主要内容
 
-- **大模型基础** — 机器学习、神经网络、Transformer、注意力机制等核心概念
+- **大模型基础** — 机器学习、神经网络、Transformer、注意力机制
 - **AI 工具** — Claude Code、Cursor 等 AI 编码工具的使用体验
 - **AI 工作流** — 如何利用 AI 提升开发效率，构建 AI 编码工作流
 

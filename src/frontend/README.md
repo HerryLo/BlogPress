@@ -1,6 +1,6 @@
 ---
 title: 前端技术
-description: 前端开发知识记录，涵盖 JavaScript 基础、Web 开发、网络协议、工程化实践、数据结构与 GIS 地图入门
+description: 前端开发知识记录，涵盖 JavaScript 核心原理、工程实践、专题扩展与数据结构
 category:
   - 前端技术
 icon: code
@@ -12,11 +12,10 @@ icon: code
 
 ## 主要内容
 
-- **JavaScript** — 原型链、作用域、Promise、async/await、垃圾回收等核心概念
-- **Web 开发** — TCP/UDP 协议、Docker 部署、SQL 基础、AntV 可视化
-- **工程化** — GitHub Actions、npm 包发布、前端架构设计
+- **核心原理** — JavaScript 核心概念（原型链、作用域、Promise、async/await）、设计模式
+- **工程实践** — GitHub Actions、DOMock部署、SQL查询、前端架构
+- **专题扩展** — Web GIS 基础、OpenLayers 地图开发、AntV 可视化、问题排查
 - **数据结构** — 链表、队列、栈、二叉树等基础与实现
-- **GIS 地图** — OpenLayers 入门，了解 WebGIS 基础
 
 ## 关于本栏
 
