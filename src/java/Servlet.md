@@ -11,8 +11,6 @@ tags:
 
 # JavaWeb与Servlet
 
-## 为什么学习Servlet
-
 Servlet是JavaWeb的基石，所有Java Web框架（Spring MVC、Struts）底层都建立在Servlet之上。理解Servlet，才能理解框架工作原理。
 
 ## 什么是Servlet
@@ -81,54 +79,6 @@ public class HelloServlet extends HttpServlet {
     }
 }
 ```
-
-## 会话管理
-
-HTTP是无状态协议，服务器无法识别两次请求是否来自同一用户。会话管理解决这一问题。
-
-### 为什么需要会话管理
-
-用户登录后，服务器需要记住用户身份，以便后续请求携带用户信息。Cookie和Session是两种主要的会话管理机制。
-
-### Cookie机制
-
-Cookie是服务器发送给浏览器的小文件，存储在浏览器端。
-
-```java
-// 服务器创建Cookie
-Cookie cookie = new Cookie("username", "admin");
-cookie.setMaxAge(7 * 24 * 60 * 60);  // 7天有效
-response.addCookie(cookie);
-
-// 浏览器请求时自动携带Cookie
-Cookie[] cookies = request.getCookies();
-```
-
-### Session机制
-
-Session存储在服务器端，比Cookie更安全。
-
-```java
-// 获取Session
-HttpSession session = request.getSession();
-
-// 存储数据
-session.setAttribute("user", user);
-
-// 获取数据
-User user = (User) session.getAttribute("user");
-
-// 销毁Session
-session.invalidate();
-```
-
-### Cookie vs Session
-
-| 特征 | Cookie | Session |
-|------|--------|---------|
-| 存储位置 | 客户端浏览器 | 服务器端 |
-| 安全性 | 较低 | 较高 |
-| 存储大小 | ≤4KB | 无限制 |
 
 ## 注解开发Servlet
 
