@@ -18,6 +18,7 @@ export const zhSidebar = sidebar({
       { text: "JavaScript-闭包的错误使用", link: "2018-12-27" },
       { text: "JavaScript-async/await应用和原理", link: "2020-04-05" },
       { text: "设计模式-项目中使用订阅发布", link: "2020-12-31" },
+      { text: "2022非面试季前端知识整理总结", link: "2021-06-23" },
     ],
   },
   {
@@ -49,6 +50,18 @@ export const zhSidebar = sidebar({
       { text: "OpenLayers之矢量图形", link: "gis/2024-01-01" },
       { text: "知识扩展-AntV G2可视化", link: "2021-11-24" },
       { text: "直播流IOS无法播放问题排查", link: "2023-09-11" },
+    ],
+  },
+  {
+    text: "数据结构",
+    icon: "book",
+    collapsible: true,
+    children: [
+      { text: "数据结构-链表的应用和实现", link: "2020-02-14" },
+      { text: "数据结构-循环队列的应用和实现", link: "2020-03-02" },
+      { text: "数据结构-栈的应用和实现", link: "2020-03-14" },
+      { text: "数据结构-二叉树的实现和遍历", link: "2020-07-01" },
+      { text: "数据结构-项目中的使用队列", link: "2021-01-01" },
     ],
   },
 ],
