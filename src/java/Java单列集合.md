@@ -232,6 +232,54 @@ class Student implements Comparable<Student> {
 TreeSet<Student> set = new TreeSet<>((s1, s2) -> s1.getAge() - s2.getAge());
 ```
 
+## Arrays 数组工具
+
+Arrays 是操作数组的的工具类：
+
+```java
+int[] arr = {3, 1, 4, 1, 5, 9, 2, 6};
+
+// 数组转字符串（方便查看内容）
+Arrays.toString(arr);  // [3, 1, 4, 1, 5, 9, 2, 6]
+
+// 排序
+Arrays.sort(arr);  // [1, 1, 2, 3, 4, 5, 6, 9]
+
+// 二分查找（必须先排序）
+int index = Arrays.binarySearch(arr, 5);  // 返回索引位置
+
+// 拷贝
+int[] copy = Arrays.copyOf(arr, 10);         // 长度变为10，不足的补0
+int[] copyRange = Arrays.copyOfRange(arr, 0, 4);  // [1, 1, 2, 3]
+
+// 填充
+int[] arr2 = new int[5];
+Arrays.fill(arr2, 0);  // 所有元素变为0
+
+// 判断相等
+int[] arr3 = {1, 1, 2, 3, 4, 5, 6, 9};
+Arrays.equals(arr, arr3);  // true（内容相同）
+
+// 数组转 List
+Integer[] arr4 = {1, 2, 3};
+List<Integer> list = Arrays.asList(arr4);
+// 注意：asList 返回的 List 不能进行 add/remove 操作（固定长度）
+```
+
+**Arrays 与集合的配合**：
+
+```java
+// 数组 → List（可变）
+Integer[] arr = {1, 2, 3};
+List<Integer> list = new ArrayList<>(Arrays.asList(arr));
+
+// List → 数组
+List<String> list2 = new ArrayList<>();
+list2.add("a");
+list2.add("b");
+String[] arr2 = list2.toArray(new String[0]);
+```
+
 ## 总结
 
 ```

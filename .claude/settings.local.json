@@ -52,7 +52,17 @@
       "Bash(rm -rf src/.vuepress/.temp)",
       "Bash(rm -rf src/.vuepress/dist)",
       "Bash(pkill -f \"vuepress-vite\")",
-      "Bash(taskkill //F //IM vuepress-vite.exe)"
+      "Bash(taskkill //F //IM vuepress-vite.exe)",
+      "WebSearch",
+      "Bash(git clone *)",
+      "Bash(bash setup-env.sh)",
+      "Bash(bash easy-install.sh)",
+      "Bash(pip install *)",
+      "Bash(playwright install *)",
+      "Bash(git checkout *)",
+      "Bash(git branch *)",
+      "Bash(grep -v \"^\\\\s*[0-9]*:\\\\`\")",
+      "Bash(npx tsc *)"
     ]
   }
 }

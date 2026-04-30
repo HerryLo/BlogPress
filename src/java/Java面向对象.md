@@ -212,6 +212,90 @@ Student s = (Student) p;
 s.study();  // OK
 ```
 
+## Object 根类
+
+Object 是所有类的父类，每个类都继承自 Object：
+
+```java
+Object obj = new Object();
+
+// toString：返回对象地址值
+obj.toString();  // java.lang.Object@1a2b3c4d
+
+// equals：默认比较地址值
+obj.equals(obj2);
+
+// hashCode：返回对象哈希值
+obj.hashCode();
+
+// getClass：返回 Class 对象
+obj.getClass();
+
+// clone：克隆对象（需要实现 Cloneable 接口）
+obj.clone();
+```
+
+### 重写 toString
+
+默认 toString 返回类名@哈希值，通常需要重写为更有意义的字符串表示：
+
+```java
+class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{name='" + name + "', age=" + age + "}";
+    }
+}
+
+// 使用
+Person p = new Person("张三", 20);
+System.out.println(p);  // Person{name='张三', age=20}
+```
+
+### 重写 equals
+
+默认 equals 比较引用地址，实际业务中通常需要比较对象的属性值：
+
+```java
+class Person {
+    private String name;
+    private int age;
+
+    @Override
+    public boolean equals(Object o) {
+        // 1. 比较引用地址
+        if (this == o) return true;
+        // 2. 比较类型
+        if (o == null || getClass() != o.getClass()) return false;
+        // 3. 比较属性
+        Person person = (Person) o;
+        return age == person.age && Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+}
+```
+
+**重写 equals 必须同时重写 hashCode**（.hashCode() 依赖于 hashCode() 的对象必须有一致的 hashCode）：
+
+| 要点 | 说明 |
+|------|------|
+| `this == o` | 比较引用地址，性能最快 |
+| `getClass() != o.getClass()` | 或使用 `instanceof`，但 `instanceof` 更宽松 |
+| 属性比较 | 使用 `Objects.equals()` 处理 null 安全性 |
+| hashCode | 使用 `Objects.hash()` 方便组合多个属性 |
+
 ## static 修饰符
 
 static 修饰成员变量和成员方法，表示共享：

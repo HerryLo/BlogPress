@@ -13,6 +13,8 @@ tags:
 
 原文链接：https://www.yuque.com/yopai/pp6bv5/xqfzn5tio8k1nnvg
 
+> 本篇文章保留为基础工具类合集。Object/equals/hashCode 重写见 `Java面向对象.md`；Arrays 工具类见 `Java单列集合.md`；日期时间见 `Java日期时间.md`；正则表达式见 `Java正则.md`。
+
 ## Math 数学工具
 
 ```java
@@ -55,65 +57,6 @@ System.exit(0);  // 0 表示正常退出
 
 // 建议 JVM 回收垃圾
 System.gc();
-```
-
-## Object 根类
-
-Object 是所有类的父类：
-
-```java
-Object obj = new Object();
-
-// toString：返回对象地址值
-obj.toString();  // java.lang.Object@1a2b3c4d
-
-// equals：默认比较地址值
-obj.equals(obj2);
-
-// hashCode：返回对象哈希值
-obj.hashCode();
-
-// getClass：返回 Class 对象
-obj.getClass();
-
-// clone：克隆对象（浅克隆）
-obj.clone();
-```
-
-### 重写 toString
-
-```java
-class Person {
-    private String name;
-    private int age;
-
-    @Override
-    public String toString() {
-        return "Person{name='" + name + "', age=" + age + "}";
-    }
-}
-```
-
-### 重写 equals
-
-```java
-class Person {
-    private String name;
-    private int age;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return age == person.age && Objects.equals(name, person.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, age);
-    }
-}
 ```
 
 ## Objects 工具类
@@ -174,127 +117,6 @@ BigDecimal bd3 = BigDecimal.valueOf(10);
 - 使用字符串创建，避免精度丢失
 - valueOf 内部会优化 -10 到 10 的整数
 
-## 正则表达式
-
-### 校验格式
-
-```java
-// 手机号：1开头，第二位3-9，后面9位数字
-String phoneRegex = "1[3-9][0-9]{9}";
-"13812345678".matches(phoneRegex);  // true
-
-// 邮箱
-String emailRegex = "\\w+@\\w+\\.\\w+";
-"test@example.com".matches(emailRegex);  // true
-
-// 座机号
-String telRegex = "0\\d{2,3}-?\\d{7,8}";
-"010-12345678".matches(telRegex);  // true
-```
-
-### 查找内容
-
-```java
-String str = "Java 是最好的语言，Java 很有趣";
-Pattern p = Pattern.compile("Java");
-Matcher m = p.matcher(str);
-
-while (m.find()) {
-    System.out.println(m.group());  // 找到所有 "Java"
-}
-```
-
-### 替换和分割
-
-```java
-String str = "java,c++;python|go";
-
-// 分割
-String[] parts = str.split("[,\\|;]");  // ["java", "c++", "python", "go"]
-
-// 替换
-String replaced = str.replaceAll("Java", "Python");
-String replaced2 = str.replaceFirst("Java", "Python");
-```
-
-## Date 日期
-
-### JDK7 日期
-
-```java
-// Date
-Date date = new Date();
-date.getTime();  // 获取时间戳
-
-// SimpleDateFormat 格式化
-SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-String format = sdf.format(date);
-
-// 解析字符串为 Date
-Date parsed = sdf.parse("2024-01-01 12:00:00");
-
-// Calendar 日历
-Calendar cal = Calendar.getInstance();
-int year = cal.get(Calendar.YEAR);
-int month = cal.get(Calendar.MONTH) + 1;  // 0-11
-int day = cal.get(Calendar.DATE);
-cal.add(Calendar.DAY_OF_MONTH, 7);  // 加7天
-```
-
-### JDK8 新日期
-
-```java
-import java.time.*;
-
-// LocalDate 日期
-LocalDate now = LocalDate.now();
-LocalDate date = LocalDate.of(2024, 1, 1);
-
-// LocalTime 时间
-LocalTime time = LocalTime.now();
-
-// LocalDateTime 日期时间
-LocalDateTime ldt = LocalDateTime.now();
-
-// 格式化
-DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-String formatted = ldt.format(fmt);
-
-// 解析
-LocalDateTime parsed = LocalDateTime.parse("2024-01-01 12:00", fmt);
-
-// 加减
-ldt.plusDays(7);    // 加7天
-ldt.minusHours(2);  // 减2小时
-```
-
-**JDK8 新日期特点**：返回新对象（不可变），线程安全。
-
-## Arrays 数组工具
-
-```java
-int[] arr = {3, 1, 4, 1, 5, 9, 2, 6};
-
-// 数组转字符串
-Arrays.toString(arr);  // [3, 1, 4, 1, 5, 9, 2, 6]
-
-// 排序
-Arrays.sort(arr);
-
-// 二分查找（必须先排序）
-Arrays.binarySearch(arr, 5);  // 返回索引
-
-// 拷贝
-int[] copy = Arrays.copyOf(arr, 10);         // 长度变为10
-int[] copyRange = Arrays.copyOfRange(arr, 0, 5);  // [3, 1, 4, 1, 5]
-
-// 填充
-Arrays.fill(arr, 0);  // 所有元素变为0
-
-// 判断相等
-Arrays.equals(arr1, arr2);
-```
-
 ## 总结
 
 ```
@@ -304,20 +126,13 @@ Arrays.equals(arr1, arr2);
 │                                                             │
 │   Math：abs / ceil / floor / round / max / min / pow / random │
 │                                                             │
-│   System：currentTimeMillis / arraycopy / exit             │
+│   System：currentTimeMillis / arraycopy / exit / gc         │
 │                                                             │
-│   Object：toString / equals / hashCode / clone              │
+│   Objects：equals / isNull / requireNonNull / toString     │
 │                                                             │
-│   Objects：equals / isNull / requireNonNull                │
+│   BigInteger：大整数运算（超出 long 范围）                   │
 │                                                             │
-│   BigInteger / BigDecimal：精确计算                        │
-│                                                             │
-│   正则：matches / split / replace / Pattern / Matcher      │
-│                                                             │
-│   Date：SimpleDateFormat / Calendar（JDK7）                │
-│         LocalDate / LocalDateTime（JDK8，线程安全）        │
-│                                                             │
-│   Arrays：sort / binarySearch / copyOf / toString          │
+│   BigDecimal：精确小数计算                                   │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
