@@ -222,16 +222,34 @@ export const zhSidebar = sidebar({
   ],
   "/ai/": [
     {
-      text: "AI",
-      icon: "robot",
-      collapsible: false,
+      text: "大模型基础",
+      icon: "book",
+      collapsible: true,
       children: [
-        "大模型基础知识",
-        "大模型名词介绍",
-        "白嫖党体验Claude Code",
-        "如何使用AI搭建工作流",
-        "生成式AI",
-        "为什么需要RAG",
+        { text: "大模型基础知识", link: "大模型基础知识" },
+        { text: "大模型名词介绍", link: "大模型名词介绍" },
+        { text: "生成式AI", link: "生成式AI" },
+        { text: "为什么需要RAG", link: "为什么需要RAG" },
+      ],
+    },
+    {
+      text: "LangChainJS",
+      icon: "link",
+      collapsible: true,
+      children: [
+        { text: "LangChainJS之基础模型(一)", link: "LangChainJS之基础模型" },
+        { text: "LangChainJS之Prompt提示词(二)", link: "LangChainJS之Prompt提示词" },
+        { text: "LangChainJS之Runnable(三)", link: "LangChainJS之Runnable" },
+        { text: "LangChainJS之Chain链(四)", link: "LangChainJS之Chain链" },
+      ],
+    },
+    {
+      text: "AI实践",
+      icon: "laptop-code",
+      collapsible: true,
+      children: [
+        { text: "如何使用AI搭建工作流", link: "如何使用AI搭建工作流" },
+        { text: "白嫖党体验Claude Code", link: "白嫖党体验Claude Code" },
       ],
     },
   ],
