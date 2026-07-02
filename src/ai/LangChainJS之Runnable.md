@@ -1,5 +1,5 @@
 ---
-title: 'LangChainJS之Runnable(三) '
+title: 'LangChainJS之Runnable(三)'
 date: 2026-07-02T10:00:00+08:00
 description: LangChainJS之Runnable
 category:
