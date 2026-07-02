@@ -1,7 +1,7 @@
 ---
-title: 'LangChainJs之Prompt提示词(二)'
+title: 'LangChainJS之Prompt提示词(二)'
 date: 2026-07-02T10:00:00+08:00
-description: LangChainJs之Prompt提示词
+description: LangChainJS之Prompt提示词
 category:
   - AI
 tags:

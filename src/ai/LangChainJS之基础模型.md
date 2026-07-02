@@ -1,7 +1,7 @@
 ---
-title: 'LangChainJs之基础模型(一)'
-date: 2026-03-01T10:00:00+08:00
-description: LangChainJs之基础模型调用
+title: 'LangChainJS之基础模型(一)'
+date: 2026-07-02T10:00:00+08:00
+description: LangChainJS之基础模型调用
 category:
   - AI
 tags:

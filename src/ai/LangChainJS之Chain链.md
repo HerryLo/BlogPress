@@ -1,6 +1,6 @@
 ---
 title: 'LangChainJS之Chain链(四)'
-date: 2026-03-01T10:00:00+08:00
+date: 2026-07-02T10:00:00+08:00
 description: LangChainJS之Chain链
 category:
   - AI
