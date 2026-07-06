@@ -12,7 +12,7 @@ icon: atom
 
 ## 主要内容
 
-- **Hooks** — useState、useEffect、useRef 等常用 Hook 的使用与原理
+- **Hooks** — useRef 使用范围、Hooks 功能组件
 - **源码解析** — 虚拟 DOM、React.createElement、FiberRoot、update 机制
 - **状态管理** — Redux 原理、react-redux 源码解析
 - **工程实践** — 组件设计原则、开发规避问题、React 底层运行机制
@@ -21,4 +21,4 @@ icon: atom
 
 理解源码是为了写出更好的代码。希望这些内容能帮助你深入理解 React，写出更高效、更可靠的应用。
 
-> 整理好的目录文章，可以移步 [语雀知识库](https://www.yuque.com/yopai/pp6bv5) 查看。
+> 整理好的目录文章，可以移步 [我的飞书知识库](https://my.feishu.cn/wiki/space/7621473012973521888) 查看。
