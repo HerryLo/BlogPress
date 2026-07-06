@@ -13,7 +13,7 @@ icon: code
 ## 主要内容
 
 - **核心原理** — JavaScript 核心概念（原型链、作用域、Promise、async/await）、设计模式
-- **工程实践** — GitHub Actions、DOMock部署、SQL查询、前端架构
+- **工程实践** — GitHub Actions、Docker 部署、Rancher 发布、SQL 查询、博客站点搭建
 - **专题扩展** — Web GIS 基础、OpenLayers 地图开发、AntV 可视化、问题排查
 - **数据结构** — 链表、队列、栈、二叉树等基础与实现
 
@@ -21,4 +21,4 @@ icon: code
 
 每篇文章都是实践中的总结，希望给同样在前端路上探索的同学一些参考。
 
-> 整理好的目录文章，可以移步 [我的知识库](https://my.feishu.cn/wiki/space/7621473012973521888、) 查看。
+> 整理好的目录文章，可以移步 [我的飞书知识库](https://my.feishu.cn/wiki/space/7621473012973521888?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home) 查看。
