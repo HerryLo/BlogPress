@@ -16,10 +16,11 @@ icon: coffee
 - **Java 集合** — 单列集合、双列集合、集合扩展
 - **Java 新特性** — Stream流、函数式编程、日期时间、正则
 - **Java 高级** — 泛型、异常、注解、反射、IO流、多线程
-- **工程实践** — Maven、JDBC、Redis、Servlet、Spring、SpringBoot
+- **工程实践** — Maven、MySQL、JDBC、Redis、Servlet、Spring、SpringBoot
+- **其他** — Spring Boot 打包部署、Java 编译运行
 
 ## 实践与思考
 
 学习路上免不了踩坑，这些记录既是笔记也是分享。
 
-> 整理好的目录文章，可以移步 [语雀知识库](https://www.yuque.com/yopai/pp6bv5) 查看。
+> 整理好的目录文章，可以移步 [我的飞书知识库](https://my.feishu.cn/wiki/space/7621473012973521888) 查看。
